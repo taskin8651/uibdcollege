@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B.D. College, Patna | Official Website Redesign</title>
+  <meta name="description" content="Frontend redesign prototype for B.D. College, Patna covering notices, admissions, academics, departments, NAAC/IQAC, RTI, downloads and student support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Accessibility: keyboard users can jump directly to page content -->
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <!-- Top contact bar: affiliation, AISHE code, email and phone -->
+  <div class="topbar">
+    <div class="site-shell topbar-inner">
+      <div class="topbar-left">
+        <span><i class="bi bi-bank2"></i> A Constituent Unit of Patliputra University, Patna</span>
+        <span><i class="bi bi-patch-check-fill"></i> AISHE Code C-12847</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:principalbdcollegepatna@gmail.com"><i class="bi bi-envelope"></i> principalbdcollegepatna@gmail.com</a>
+        <a href="tel:06122209909"><i class="bi bi-telephone"></i> 06122209909</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand header: college logo, name, university logo and accreditation highlights -->
+  <header class="masthead" id="top">
+    <div class="site-shell masthead-inner">
+      <a href="#top" class="brand">
+        <img src="https://bdcollegepatna.ac.in/_Devloper/Img/logo_bdcpat.png" alt="B.D. College logo">
+        <span>
+          <strong>B.D. College, Patna</strong>
+          <small>भुवनेश्वरी दयाल कॉलेज, पटना</small>
+        </span>
+      </a>
+
+      <div class="identity-strip">
+        <img src="https://bdcollegepatna.ac.in/_Devloper/Img/logo_ppupat.png" alt="Patliputra University logo">
+        <span>NAAC Accredited Grade B+ with CGPA 2.39/4</span>
+        <span>Near Gauriamath, Mithapur, Patna</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main menu: dropdown structure follows the current B.D. College website grouping -->
+  <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+    <div class="site-shell nav-inner">
+      <a class="nav-link" href="#home">Home</a>
+      <div class="nav-item has-dropdown">
+        <button class="nav-link nav-drop" type="button">About <i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="#about">Introduction</a>
+          <a href="#about">Vision & Mission</a>
+          <a href="#about">Rules & Regulation</a>
+          <a href="#about">Principal's Message</a>
+          <a href="#downloads">College Magazine</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <button class="nav-link nav-drop" type="button">Academic <i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="#academics">Courses Offered</a>
+          <a href="#downloads">List of Holidays</a>
+          <a href="#academics">Time Table</a>
+          <a href="#academics">Syllabus</a>
+          <a href="#downloads">National Digital Initiatives</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <button class="nav-link nav-drop" type="button">Administration <i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="#administration">Former Principals</a>
+          <a href="#administration">Administrative Staff</a>
+          <a href="#administration">Staff List</a>
+          <a href="#gallery">Photo Gallery</a>
+          <a href="#media">News & Media</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <button class="nav-link nav-drop" type="button">Department <i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="#departments">All Department</a>
+          <a href="#students">Placement & Guidance Cell</a>
+          <a href="#students">Students Grievance Redressal</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <button class="nav-link nav-drop" type="button">Student Zone <i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="#students">Student Login</a>
+          <a href="#students">Online Fee Payment</a>
+          <a href="#admissions">Online Admission (PPU)</a>
+          <a href="#admissions">Reservation Policy</a>
+          <a href="#downloads">Certificates / Forms</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <button class="nav-link nav-drop" type="button">Extension Activity <i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="#students">NSS</a>
+          <a href="#students">NCC</a>
+          <a href="#students">Startup Cell</a>
+          <a href="#students">Eco Club</a>
+          <a href="#gallery">Literary & Cultural Society</a>
+        </div>
+      </div>
+      <a class="nav-link" href="#naac">IQAC & SSR</a>
+      <a class="nav-link" href="#disclosure">NIRF</a>
+      <div class="nav-item has-dropdown">
+        <button class="nav-link nav-drop" type="button">Notice <i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="#notices">Notice</a>
+          <a href="#events">Events</a>
+          <a href="#disclosure">Tenders</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <button class="nav-link nav-drop" type="button">Feedback <i class="bi bi-chevron-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="#contact">Student's Feedback</a>
+          <a href="#contact">Teachers' Feedback</a>
+          <a href="#contact">Parents Feedback</a>
+          <a href="#students">Statistics of Feedback</a>
+        </div>
+      </div>
+      <a class="nav-link" href="#contact">Contact Us</a>
+      <a class="nav-link login-link" href="#alumni">Login</a>
+      <button class="search-trigger" id="searchTrigger" type="button" aria-label="Search website"><i class="bi bi-search"></i></button>
+    </div>
+  </nav>
+
+  <!-- Notice ticker: fast access to latest college/university updates -->
+  <section class="alert-strip" aria-label="Latest updates">
+    <div class="site-shell alert-inner">
+      <strong><i class="bi bi-megaphone-fill"></i> Latest Updates</strong>
+      <div class="ticker">
+        <span>Vocational Part-I Exam Schedule 2026 &nbsp; | &nbsp; UG Admission updates & merit list placeholder &nbsp; | &nbsp; Semester subject selection notices &nbsp; | &nbsp; NAAC / IQAC reports and statutory disclosures</span>
+      </div>
+      <a href="#notices">View All</a>
+    </div>
+  </section>
+
+  <!-- Main page content starts here -->
+  <main id="mainContent">
+    <!-- Hero section: official intro, primary actions and student statistics -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="site-shell hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><i class="bi bi-stars"></i> Official Academic Information Portal</span>
+          <h1>B.D. College, Patna</h1>
+          <p class="hero-lead">Official academic portal for notices, admissions, examination updates, departments, NAAC/IQAC, downloads, RTI disclosure and student support.</p>
+          <div class="hero-actions">
+            <a href="#notices" class="btn primary"><i class="bi bi-megaphone"></i> Latest Notices</a>
+            <a href="#admissions" class="btn light"><i class="bi bi-journal-check"></i> Admission Updates</a>
+            <a href="#downloads" class="btn ghost"><i class="bi bi-download"></i> Downloads</a>
+          </div>
+          <div class="hero-metrics">
+            <div><strong data-count="9174">0</strong><span>Total Students</span></div>
+            <div><strong data-count="5196">0</strong><span>Male Students</span></div>
+            <div><strong data-count="3978">0</strong><span>Female Students</span></div>
+            <div><strong>UG / PG</strong><span>Programmes</span></div>
+            <div><strong>B+</strong><span>NAAC Highlight</span></div>
+            <div><strong>C-12847</strong><span>AISHE Code</span></div>
+          </div>
+        </div>
+
+        <div class="hero-media reveal delay-1">
+          <img src="https://bdcollegepatna.ac.in/_Devloper/Gallery/bdcpat_img_001.jpg" alt="B.D. College campus building">
+          <div class="media-card one">
+            <i class="bi bi-file-earmark-text"></i>
+            <span>Notice-first communication</span>
+          </div>
+          <div class="media-card two">
+            <i class="bi bi-phone"></i>
+            <span>Fully responsive frontend</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick services: most-used links for students and visitors -->
+    <section class="quick-services">
+      <div class="site-shell service-grid">
+        <a class="service-card reveal" href="#admissions"><i class="bi bi-person-plus"></i><strong>Admissions</strong><span>Forms, eligibility, merit list</span></a>
+        <a class="service-card reveal delay-1" href="#examination"><i class="bi bi-clipboard-check"></i><strong>Examination</strong><span>Schedules, forms, results</span></a>
+        <a class="service-card reveal delay-2" href="#notices"><i class="bi bi-megaphone"></i><strong>Notices</strong><span>Circulars and archives</span></a>
+        <a class="service-card reveal delay-3" href="#students"><i class="bi bi-life-preserver"></i><strong>Student Support</strong><span>Scholarship, grievance, cells</span></a>
+        <a class="service-card reveal delay-4" href="#naac"><i class="bi bi-award"></i><strong>NAAC / IQAC</strong><span>AQAR, SSR, minutes</span></a>
+        <a class="service-card reveal delay-5" href="#disclosure"><i class="bi bi-shield-check"></i><strong>Disclosure</strong><span>RTI, policies, tenders</span></a>
+      </div>
+    </section>
+
+    <!-- About section: college profile, vision/mission and institutional identity -->
+    <section class="section about-section" id="about">
+      <div class="site-shell two-col">
+        <div class="image-panel reveal">
+          <img src="https://bdcollegepatna.ac.in/_Devloper/Img/founder_bdcpat.jpg" alt="Founder of B.D. College">
+        </div>
+        <div class="content-block reveal delay-1">
+          <span class="section-kicker">About Institution</span>
+          <h2>Formal, transparent and student-friendly college communication.</h2>
+          <p>B.D. College, Patna frontend is structured for a constituent government college. It focuses on verified academic information, administrative notices, statutory documents, admission updates, examination updates and easy public access.</p>
+          <div class="check-grid">
+            <span><i class="bi bi-check2-circle"></i> College profile</span>
+            <span><i class="bi bi-check2-circle"></i> Vision & mission</span>
+            <span><i class="bi bi-check2-circle"></i> Principal's message</span>
+            <span><i class="bi bi-check2-circle"></i> College at a glance</span>
+            <span><i class="bi bi-check2-circle"></i> Institutional values</span>
+            <span><i class="bi bi-check2-circle"></i> Public transparency</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Administration section: principal, officials and administrative information -->
+    <section class="section official-section" id="administration">
+      <div class="site-shell">
+        <div class="section-title reveal">
+          <span class="section-kicker">Administration</span>
+          <h2>Administrative information and important officials.</h2>
+          <p>Profiles can show approved name, designation, role, photograph and official contact details.</p>
+        </div>
+        <div class="official-grid">
+          <article class="official-card reveal">
+            <img src="https://bdcollegepatna.ac.in/_Devloper/Img/principal_bdcpat.jpg" alt="Principal of B.D. College">
+            <h3>Principal</h3><p>Principal's message, office information and institutional leadership.</p>
+          </article>
+          <article class="official-card reveal delay-1">
+            <img src="https://bdcollegepatna.ac.in/_Devloper/Img/chancellor_bdcpat.jpg" alt="Chancellor, Universities of Bihar">
+            <h3>Administrative Office</h3><p>Office sections, staff list, organizational structure and responsibilities.</p>
+          </article>
+          <article class="official-card reveal delay-2">
+            <img src="https://bdcollegepatna.ac.in/_Devloper/Img/vc_bdcpat.jpg" alt="Vice Chancellor, Patliputra University">
+            <h3>Committees</h3><p>Governing body, bursar, exam department, admission section and library administration.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notices section: tabbed notice board with category filters -->
+    <section class="section notice-section" id="notices">
+      <div class="site-shell notice-layout">
+        <div class="notice-board reveal">
+          <div class="board-head">
+            <div>
+              <span class="section-kicker">Notices & Circulars</span>
+              <h2>Searchable public notice system.</h2>
+            </div>
+            <div class="tabs" role="tablist">
+              <button class="tab active" data-tab="general">General</button>
+              <button class="tab" data-tab="admission">Admission</button>
+              <button class="tab" data-tab="exam">Exam</button>
+              <button class="tab" data-tab="iqac">IQAC</button>
+            </div>
+          </div>
+          <div class="tab-panel active" id="general">
+            <article class="notice-item"><time><strong>18</strong><span>May 2026</span></time><div><b>Patliputra University Vocational Part-I Exam Schedule 2026</b><p>Schedule, sitting details and practical/viva-voce instructions.</p></div><a href="#"><i class="bi bi-download"></i></a></article>
+            <article class="notice-item"><time><strong>01</strong><span>Apr 2026</span></time><div><b>Revised remuneration rates and examination department charges</b><p>University circular placeholder for official PDF upload.</p></div><a href="#"><i class="bi bi-download"></i></a></article>
+            <article class="notice-item"><time><strong>09</strong><span>Mar 2026</span></time><div><b>Semester course selection notice for 2025-29 batch</b><p>Faculty-wise subject offering details for students.</p></div><a href="#"><i class="bi bi-download"></i></a></article>
+          </div>
+          <div class="tab-panel" id="admission">
+            <article class="notice-item"><time><strong>05</strong><span>Jun 2026</span></time><div><b>UG Admission 2026-30 important dates</b><p>Application link, document verification and helpdesk placeholder.</p></div><a href="#"><i class="bi bi-download"></i></a></article>
+            <article class="notice-item"><time><strong>02</strong><span>Jun 2026</span></time><div><b>Admission merit list publication schedule</b><p>Selection list and reporting instructions placeholder.</p></div><a href="#"><i class="bi bi-download"></i></a></article>
+          </div>
+          <div class="tab-panel" id="exam">
+            <article class="notice-item"><time><strong>04</strong><span>Jun 2026</span></time><div><b>Examination form fill-up instruction</b><p>Form, fee, admit card and university link placeholder.</p></div><a href="#"><i class="bi bi-download"></i></a></article>
+          </div>
+          <div class="tab-panel" id="iqac">
+            <article class="notice-item"><time><strong>28</strong><span>May 2026</span></time><div><b>IQAC meeting minutes and action taken report</b><p>Quality assurance document placeholder.</p></div><a href="#"><i class="bi bi-download"></i></a></article>
+          </div>
+        </div>
+
+        <aside class="priority-panel reveal delay-1">
+          <h3>Priority Access</h3>
+          <a href="#admissions"><span><i class="bi bi-journal-bookmark"></i> Admission Notice</span><i class="bi bi-arrow-right"></i></a>
+          <a href="#examination"><span><i class="bi bi-file-medical"></i> Exam Updates</span><i class="bi bi-arrow-right"></i></a>
+          <a href="#downloads"><span><i class="bi bi-folder2-open"></i> Student Forms</span><i class="bi bi-arrow-right"></i></a>
+          <a href="#disclosure"><span><i class="bi bi-file-lock2"></i> RTI / Disclosure</span><i class="bi bi-arrow-right"></i></a>
+          <a href="#contact"><span><i class="bi bi-whatsapp"></i> Admission Helpdesk</span><i class="bi bi-arrow-right"></i></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Academics section: courses, calendar, syllabus and timetable -->
+    <section class="section" id="academics">
+      <div class="site-shell">
+        <div class="section-title reveal">
+          <span class="section-kicker">Academics</span>
+          <h2>Courses, syllabus, calendar and time table.</h2>
+          <p>Final course list must be verified by the college before upload.</p>
+        </div>
+        <div class="programme-grid">
+          <article class="programme-card reveal"><i class="bi bi-mortarboard"></i><h3>Courses Offered</h3><p>UG, PG, vocational and professional programme details.</p></article>
+          <article class="programme-card reveal delay-1"><i class="bi bi-calendar2-week"></i><h3>Academic Calendar</h3><p>Session-wise calendar upload and download.</p></article>
+          <article class="programme-card reveal delay-2"><i class="bi bi-file-earmark-text"></i><h3>Syllabus</h3><p>Course-wise and subject-wise syllabus PDFs.</p></article>
+          <article class="programme-card reveal delay-3"><i class="bi bi-table"></i><h3>Time Table</h3><p>Class, department and exam timetable uploads.</p></article>
+          <article class="programme-card reveal delay-4"><i class="bi bi-link-45deg"></i><h3>University Guidelines</h3><p>Useful links to PPU and official academic documents.</p></article>
+          <article class="programme-card reveal delay-5"><i class="bi bi-card-checklist"></i><h3>Programme Details</h3><p>Eligibility, duration, seats, fee and admission process.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Departments section: department categories and subject links -->
+    <section class="section departments-section" id="departments">
+      <div class="site-shell">
+        <div class="section-title reveal">
+          <span class="section-kicker">Departments</span>
+          <h2>Department-wise pages with faculty, syllabus and activities.</h2>
+        </div>
+        <div class="dept-grid">
+          <a class="dept-card reveal" href="#"><span>Science</span><strong>Botany</strong><small>Faculty, lab, syllabus</small></a>
+          <a class="dept-card reveal delay-1" href="#"><span>Science</span><strong>Zoology</strong><small>Resources and notices</small></a>
+          <a class="dept-card reveal delay-2" href="#"><span>Science</span><strong>Chemistry</strong><small>Lab and academic details</small></a>
+          <a class="dept-card reveal delay-3" href="#"><span>Science</span><strong>Physics</strong><small>Course resources</small></a>
+          <a class="dept-card reveal delay-4" href="#"><span>Science</span><strong>Mathematics</strong><small>Faculty and syllabus</small></a>
+          <a class="dept-card reveal delay-5" href="#"><span>Commerce</span><strong>Commerce</strong><small>Programme updates</small></a>
+          <a class="dept-card reveal" href="#"><span>Humanities</span><strong>Hindi / English</strong><small>Department profile</small></a>
+          <a class="dept-card reveal delay-1" href="#"><span>Vocational</span><strong>BCA / BBA / MBA / MCA</strong><small>Professional courses</small></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admissions section: admission workflow, helpdesk and prospectus action -->
+    <section class="section admissions-section" id="admissions">
+      <div class="site-shell split-section">
+        <div class="content-block reveal">
+          <span class="section-kicker">Admissions</span>
+          <h2>Everything students need before applying.</h2>
+          <p>This frontend includes admission notice, courses available, eligibility criteria, process, dates, documents, merit lists, fee structure, reservation rules, helpdesk and prospectus download placeholders.</p>
+          <div class="timeline">
+            <div><span>01</span><b>Check official notice</b><small>Courses, dates and guidelines</small></div>
+            <div><span>02</span><b>Prepare documents</b><small>Certificates and ID proof</small></div>
+            <div><span>03</span><b>Apply / verify</b><small>PPU link and helpdesk</small></div>
+            <div><span>04</span><b>Merit list</b><small>Selection and reporting</small></div>
+          </div>
+        </div>
+        <div class="admission-card reveal delay-1">
+          <h3>Admission Helpdesk</h3>
+          <p>Contact & WhatsApp number can be retained or updated after confirmation by the college.</p>
+          <a href="tel:+917903275820" class="btn primary"><i class="bi bi-telephone"></i> +91 7903275820</a>
+          <a href="#" class="btn light"><i class="bi bi-file-earmark-pdf"></i> Prospectus Download</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Examination section: form fill-up, schedule, admit card and result links -->
+    <section class="section" id="examination">
+      <div class="site-shell exam-grid">
+        <div class="section-title left reveal">
+          <span class="section-kicker">Examination</span>
+          <h2>Visible exam hub for regular student visits.</h2>
+          <p>Exam notices, internal exams, practical schedule, form instructions, admit card notice, result link and helpdesk details.</p>
+        </div>
+        <div class="exam-cards">
+          <article class="exam-card reveal"><i class="bi bi-pencil-square"></i><h3>Form Fill-Up</h3><p>Instructions and dates.</p></article>
+          <article class="exam-card reveal delay-1"><i class="bi bi-calendar-event"></i><h3>Exam Schedule</h3><p>Theory and practical exams.</p></article>
+          <article class="exam-card reveal delay-2"><i class="bi bi-person-badge"></i><h3>Admit Card</h3><p>Download and verification.</p></article>
+          <article class="exam-card reveal delay-3"><i class="bi bi-graph-up-arrow"></i><h3>Result Links</h3><p>University result access.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Students corner: scholarships, cells, grievance, NSS/NCC and certificates -->
+    <section class="section students-section" id="students">
+      <div class="site-shell">
+        <div class="section-title reveal">
+          <span class="section-kicker">Students Corner</span>
+          <h2>Support services, forms, cells and student welfare.</h2>
+        </div>
+        <div class="support-grid">
+          <article class="support-card reveal"><i class="bi bi-cash-coin"></i><h3>Scholarship</h3><p>Scholarship information and links.</p></article>
+          <article class="support-card reveal delay-1"><i class="bi bi-ban"></i><h3>Anti-Ragging</h3><p>Information and undertaking links.</p></article>
+          <article class="support-card reveal delay-2"><i class="bi bi-person-raised-hand"></i><h3>Grievance Redressal</h3><p>Student grievance process.</p></article>
+          <article class="support-card reveal delay-3"><i class="bi bi-gender-female"></i><h3>ICC / Women Cell</h3><p>Internal complaint and support.</p></article>
+          <article class="support-card reveal delay-4"><i class="bi bi-book"></i><h3>Library</h3><p>Library rules and resources.</p></article>
+          <article class="support-card reveal delay-5"><i class="bi bi-briefcase"></i><h3>Placement Cell</h3><p>Career guidance and placement.</p></article>
+          <article class="support-card reveal"><i class="bi bi-people"></i><h3>NSS / NCC</h3><p>Extension activities.</p></article>
+          <article class="support-card reveal delay-1"><i class="bi bi-file-person"></i><h3>Certificates</h3><p>Bonafide, character and CLC links.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Committees and cells section: statutory and student-support committees -->
+    <section class="section committees-section" id="committees">
+      <div class="site-shell two-col reverse">
+        <div class="content-block reveal">
+          <span class="section-kicker">Committees / Cells</span>
+          <h2>Mandatory committees presented clearly.</h2>
+          <p>IQAC, NAAC, admission, examination, anti-ragging, grievance, ICC, SC/ST, minority, OBC, equal opportunity, NSS, NCC, placement, sports, library, cultural and research committees.</p>
+          <div class="chip-list">
+            <span>IQAC</span><span>NAAC</span><span>Anti-Ragging</span><span>Grievance</span><span>ICC</span><span>NSS</span><span>NCC</span><span>Placement</span><span>Sports</span><span>Library</span>
+          </div>
+        </div>
+        <div class="image-panel reveal delay-1">
+          <img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202604212319.jpg&amp;width=900&amp;Quality=90" alt="B.D. College institutional activity">
+        </div>
+      </div>
+    </section>
+
+    <!-- NAAC / IQAC section: quality assurance documents and reports -->
+    <section class="section naac-section" id="naac">
+      <div class="site-shell naac-grid">
+        <div class="naac-highlight reveal">
+          <span class="section-kicker light-kicker">NAAC / IQAC</span>
+          <strong>Quality Assurance</strong>
+          <p>Dedicated frontend for IQAC composition, meetings, minutes, action taken reports, AQAR, SSR, criteria-wise documents, best practices, SSS and institutional distinctiveness.</p>
+        </div>
+        <div class="document-list reveal delay-1">
+          <a href="#"><i class="bi bi-file-earmark-pdf"></i><span><b>AQAR Reports</b><small>Session-wise upload</small></span><em>PDF</em></a>
+          <a href="#"><i class="bi bi-file-earmark-pdf"></i><span><b>SSR Documents</b><small>Criteria-wise documents</small></span><em>PDF</em></a>
+          <a href="#"><i class="bi bi-file-earmark-pdf"></i><span><b>Meeting Minutes</b><small>IQAC records</small></span><em>PDF</em></a>
+          <a href="#"><i class="bi bi-file-earmark-pdf"></i><span><b>Best Practices</b><small>Institutional practices</small></span><em>PDF</em></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RTI / statutory disclosure section: mandatory public information -->
+    <section class="section disclosure-section" id="disclosure">
+      <div class="site-shell">
+        <div class="section-title reveal">
+          <span class="section-kicker">RTI / Statutory Disclosure</span>
+          <h2>Public transparency and mandatory information.</h2>
+        </div>
+        <div class="disclosure-grid">
+          <a class="disclosure-card reveal" href="#"><i class="bi bi-file-lock2"></i><strong>RTI</strong></a>
+          <a class="disclosure-card reveal delay-1" href="#"><i class="bi bi-building-check"></i><strong>Affiliation</strong></a>
+          <a class="disclosure-card reveal delay-2" href="#"><i class="bi bi-journal-text"></i><strong>Policies</strong></a>
+          <a class="disclosure-card reveal delay-3" href="#"><i class="bi bi-cash-stack"></i><strong>Audit Reports</strong></a>
+          <a class="disclosure-card reveal delay-4" href="#"><i class="bi bi-megaphone"></i><strong>Tenders</strong></a>
+          <a class="disclosure-card reveal delay-5" href="#"><i class="bi bi-person-workspace"></i><strong>Recruitment</strong></a>
+          <a class="disclosure-card reveal" href="#"><i class="bi bi-shield-exclamation"></i><strong>Anti-Ragging</strong></a>
+          <a class="disclosure-card reveal delay-1" href="#"><i class="bi bi-clipboard2-check"></i><strong>Self Declaration</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities section: library, labs, computer lab and seminar hall -->
+    <section class="section facilities-section" id="facilities">
+      <div class="site-shell">
+        <div class="section-title reveal">
+          <span class="section-kicker">Facilities</span>
+          <h2>Campus facilities and learning resources.</h2>
+        </div>
+        <div class="facility-track">
+          <article class="facility-card reveal"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605301534.jpg&amp;width=900&amp;Quality=90" alt="B.D. College activity"><h3>Library</h3></article>
+          <article class="facility-card reveal delay-1"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605301542.jpg&amp;width=900&amp;Quality=90" alt="B.D. College activity"><h3>Laboratories</h3></article>
+          <article class="facility-card reveal delay-2"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605201509.jpg&amp;width=900&amp;Quality=90" alt="B.D. College seminar activity"><h3>Computer Lab</h3></article>
+          <article class="facility-card reveal delay-3"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202604212358.jpg&amp;width=900&amp;Quality=90" alt="B.D. College conference activity"><h3>Seminar Hall</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery section: campus, activities, seminars and media coverage -->
+    <section class="section gallery-section" id="gallery">
+      <div class="site-shell">
+        <div class="section-title reveal">
+          <span class="section-kicker">Gallery</span>
+          <h2>Events, campus life, NSS, NCC and academic activities.</h2>
+        </div>
+        <div class="gallery-grid">
+          <a class="gallery-item big reveal" href="#"><img src="https://bdcollegepatna.ac.in/_Devloper/Gallery/bdcpat_img_001.jpg" alt="B.D. College campus"><span>Campus & Academic Activities</span></a>
+          <a class="gallery-item reveal delay-1" href="#"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605232005.jpg&amp;width=900&amp;Quality=90" alt="NCC activity at B.D. College"><span>NSS / NCC</span></a>
+          <a class="gallery-item reveal delay-2" href="#"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605201518.jpg&amp;width=900&amp;Quality=90" alt="Seminar at B.D. College"><span>Seminars</span></a>
+          <a class="gallery-item reveal delay-3" href="#"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202604212325.jpg&amp;width=900&amp;Quality=90" alt="Academic activity at B.D. College"><span>Learning</span></a>
+          <a class="gallery-item reveal delay-4" href="#"><img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605101337.jpg" alt="News media coverage of B.D. College"><span>News & Media</span></a>
+        </div>
+
+        <div class="media-highlights">
+          <article class="media-news reveal">
+            <img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605261137.jpg" alt="BD College crowned college champion in NCC camp">
+            <div><strong>NCC Camp Achievement</strong><span>BD College crowned college champion in NCC camp.</span></div>
+          </article>
+          <article class="media-news reveal delay-1">
+            <img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605261148.jpg" alt="BD College annual training camp achievement">
+            <div><strong>College Champion</strong><span>Annual training camp title and student achievement highlight.</span></div>
+          </article>
+          <article class="media-news reveal delay-2">
+            <img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605101337.jpg" alt="Research and dissertation writing information">
+            <div><strong>Academic Media</strong><span>Information on research and dissertation writing.</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events section: dedicated college events and activity highlights -->
+    <section class="section events-section" id="events">
+      <div class="site-shell">
+        <div class="section-title reveal">
+          <span class="section-kicker">Events</span>
+          <h2>College events, activities and achievements.</h2>
+          <p>Important academic, cultural, NSS/NCC and institutional event highlights can be managed from admin panel later.</p>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605232005.jpg&amp;width=900&amp;Quality=90" alt="NCC activity at B.D. College">
+            <div>
+              <span>NCC Activity</span>
+              <h3>Annual Training Camp Achievement</h3>
+              <p>Student participation, discipline, leadership and NCC achievement updates.</p>
+            </div>
+          </article>
+          <article class="event-card reveal delay-1">
+            <img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605201518.jpg&amp;width=900&amp;Quality=90" alt="Seminar at B.D. College">
+            <div>
+              <span>Academic Event</span>
+              <h3>Seminar & Workshop Updates</h3>
+              <p>Research, dissertation writing and department-level academic programmes.</p>
+            </div>
+          </article>
+          <article class="event-card reveal delay-2">
+            <img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202604212319.jpg&amp;width=900&amp;Quality=90" alt="B.D. College institutional event">
+            <div>
+              <span>Institutional Activity</span>
+              <h3>Campus Programme</h3>
+              <p>Official college activities, cultural events and student development programmes.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media section: dedicated news and media coverage cards -->
+    <section class="section media-section" id="media">
+      <div class="site-shell">
+        <div class="section-title reveal">
+          <span class="section-kicker">Media</span>
+          <h2>News, press coverage and media updates.</h2>
+          <p>Media section can show news clippings, captions, department, date and full-size image links.</p>
+        </div>
+
+        <div class="media-grid">
+          <article class="press-card reveal">
+            <img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605261137.jpg" alt="BD College crowned college champion in NCC camp">
+            <div><span>24 May 2026</span><h3>BD College crowned college champion in NCC camp</h3><p>Department: National Cadet Corps (NCC)</p></div>
+          </article>
+          <article class="press-card reveal delay-1">
+            <img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605261148.jpg" alt="BD College got the title of College Champion">
+            <div><span>24 May 2026</span><h3>BD College got the title of College Champion</h3><p>Annual training camp achievement and student recognition.</p></div>
+          </article>
+          <article class="press-card reveal delay-2">
+            <img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605101337.jpg" alt="Information on research and dissertation writing">
+            <div><span>10 May 2026</span><h3>Information on research and dissertation writing</h3><p>Department: Sociology</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads section: document library and forms -->
+    <section class="section downloads-section" id="downloads">
+      <div class="site-shell downloads-layout">
+        <div class="content-block reveal">
+          <span class="section-kicker">Downloads</span>
+          <h2>Document library with category-wise access.</h2>
+          <p>Prospectus, admission forms, examination forms, scholarship forms, syllabus, academic calendar, timetable, policies, committee documents, NAAC/IQAC documents, tender and recruitment documents.</p>
+        </div>
+        <div class="download-grid">
+          <a class="download-card reveal" href="#"><i class="bi bi-file-earmark-pdf"></i><b>Prospectus</b><span>PDF</span></a>
+          <a class="download-card reveal delay-1" href="#"><i class="bi bi-file-earmark-text"></i><b>Admission Forms</b><span>Forms</span></a>
+          <a class="download-card reveal delay-2" href="#"><i class="bi bi-calendar2-week"></i><b>Calendar</b><span>Academic</span></a>
+          <a class="download-card reveal delay-3" href="#"><i class="bi bi-folder-check"></i><b>NAAC Docs</b><span>Reports</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alumni and admin scope section: CMS modules and alumni area -->
+    <section class="section alumni-admin-section" id="alumni">
+      <div class="site-shell two-col">
+        <div class="admin-scope reveal">
+          <span class="section-kicker light-kicker">Admin Panel Scope</span>
+          <h2>Frontend ready for CMS integration.</h2>
+          <p>Modules: banners, notices, admissions, examination, courses, departments, faculty, committees, gallery, downloads, calendar, timetable, syllabus, events, contact enquiries, SEO fields and user roles.</p>
+          <div class="chip-list inverse">
+            <span>Super Admin</span><span>Notice Manager</span><span>Department Editor</span><span>Gallery Manager</span><span>Download Manager</span>
+          </div>
+        </div>
+        <div class="alumni-card reveal delay-1">
+          <img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202604212358.jpg&amp;width=900&amp;Quality=90" alt="B.D. College event">
+          <div>
+            <span class="section-kicker">Alumni</span>
+            <h2>Alumni registration, events and achievements.</h2>
+            <p>Dedicated area for alumni association details, achievements, gallery and contact information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section: address, phone, email, map and enquiry form -->
+    <section class="section contact-section" id="contact">
+      <div class="site-shell contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-kicker light-kicker">Contact Us</span>
+          <h2>B.D. College, Patna</h2>
+          <p>Near Gauriamath, Mithapur, Patna, Post-GPO, Bihar, India - 800001</p>
+          <a href="tel:06122209909"><i class="bi bi-telephone"></i> 06122209909</a>
+          <a href="mailto:principalbdcollegepatna@gmail.com"><i class="bi bi-envelope"></i> principalbdcollegepatna@gmail.com</a>
+          <a href="https://maps.google.com/?q=B.D.+College+Patna" target="_blank" rel="noopener"><i class="bi bi-map"></i> View Google Map</a>
+        </div>
+        <form class="enquiry-form reveal delay-1" action="#">
+          <h3>Send Enquiry</h3>
+          <div class="form-grid">
+            <label>Full Name<input type="text" placeholder="Enter name"></label>
+            <label>Phone<input type="tel" placeholder="Enter phone"></label>
+            <label>Email<input type="email" placeholder="Enter email"></label>
+            <label>Type<select><option>Admission</option><option>Examination</option><option>Notice</option><option>General</option></select></label>
+            <label class="wide">Message<textarea placeholder="Write your message"></textarea></label>
+          </div>
+          <button class="btn primary" type="submit"><i class="bi bi-send"></i> Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: repeated important links and copyright -->
+  <footer class="footer">
+    <div class="site-shell footer-grid">
+      <div>
+        <h3>B.D. College, Patna</h3>
+        <p>Frontend redesign for official communication, admission updates, notices, statutory disclosures, student support and institutional transparency.</p>
+      </div>
+      <div><h4>Academic</h4><a href="#academics">Courses</a><a href="#departments">Departments</a><a href="#examination">Examination</a><a href="#downloads">Downloads</a></div>
+      <div><h4>Public Info</h4><a href="#notices">Notices</a><a href="#naac">NAAC / IQAC</a><a href="#disclosure">RTI</a><a href="#committees">Committees</a></div>
+      <div><h4>Student Links</h4><a href="#admissions">Admissions</a><a href="#students">Students Corner</a><a href="#gallery">Gallery</a><a href="#events">Events</a><a href="#media">Media</a><a href="#contact">Contact</a></div>
+    </div>
+    <div class="site-shell footer-bottom">
+      <span>&copy; 2026 B.D. College, Patna. All Rights Reserved.</span>
+      <a href="#top">Back to top <i class="bi bi-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- Search modal: frontend-only search UI placeholder -->
+  <div class="search-modal" id="searchModal" aria-hidden="true">
+    <div class="search-box">
+      <button class="close-search" id="closeSearch" type="button" aria-label="Close search"><i class="bi bi-x-lg"></i></button>
+      <h3>Search Website</h3>
+      <div class="search-row">
+        <input type="search" placeholder="Search notices, admissions, departments, downloads...">
+        <button class="btn primary" type="button"><i class="bi bi-search"></i> Search</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

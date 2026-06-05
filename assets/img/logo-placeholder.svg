@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">B.D. College logo placeholder</title>
+  <desc id="desc">Circular academic seal placeholder for B.D. College, Patna.</desc>
+  <circle cx="120" cy="120" r="116" fill="#f8fbff" stroke="#0a4c87" stroke-width="8"/>
+  <circle cx="120" cy="120" r="88" fill="#eaf5ff" stroke="#b7791f" stroke-width="5"/>
+  <path d="M61 107h118v16H61z" fill="#0a4c87"/>
+  <path d="M76 123h16v48H76zm36 0h16v48h-16zm36 0h16v48h-16z" fill="#0a4c87"/>
+  <path d="M55 178h130v14H55zM120 43l70 40v12H50V83z" fill="#08375f"/>
+  <path d="M120 57l38 21H82z" fill="#b7791f"/>
+  <text x="120" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#08375f">B.D. COLLEGE</text>
+  <text x="120" y="103" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#08375f">BD</text>
+</svg>
