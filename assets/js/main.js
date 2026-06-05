@@ -43,6 +43,109 @@ dropdownButtons.forEach((button) => {
   });
 });
 
+// jQuery section sliders: arrows, dots, loop and mouse/touch drag support.
+if (window.jQuery) {
+  $(".js-slider").each(function () {
+    const $slider = $(this);
+    const $track = $slider.find(".slider-track");
+    const $items = $track.children();
+    const $prev = $slider.find(".slider-btn.prev");
+    const $next = $slider.find(".slider-btn.next");
+    let currentIndex = 0;
+    let dragStartX = 0;
+    let dragStartScroll = 0;
+    let isDragging = false;
+    let autoplayTimer = null;
+
+    if (!$track.length || !$items.length) return;
+
+    const getGap = () => Number.parseFloat($track.css("gap")) || 0;
+    const getStep = () => $items.eq(0).outerWidth() + getGap();
+    const getMaxIndex = () => Math.max(0, Math.ceil(($track[0].scrollWidth - $track.outerWidth()) / getStep()));
+
+    const goTo = (index) => {
+      const maxIndex = getMaxIndex();
+      currentIndex = index < 0 ? maxIndex : index > maxIndex ? 0 : index;
+      $track.stop(true).animate({ scrollLeft: currentIndex * getStep() }, 420);
+      updateDots();
+    };
+
+    const startAutoplay = () => {
+      stopAutoplay();
+      if (getMaxIndex() <= 0) return;
+      autoplayTimer = window.setInterval(() => goTo(currentIndex + 1), 2800);
+    };
+
+    const stopAutoplay = () => {
+      if (!autoplayTimer) return;
+      window.clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    };
+
+    const buildDots = () => {
+      $slider.find(".slider-dots").remove();
+      const maxIndex = getMaxIndex();
+      if (maxIndex <= 0) return;
+
+      const $dots = $('<div class="slider-dots" aria-label="Slider pagination"></div>');
+      for (let i = 0; i <= maxIndex; i += 1) {
+        const $dot = $('<button class="slider-dot" type="button" aria-label="Go to slide"></button>');
+        $dot.on("click", () => goTo(i));
+        $dots.append($dot);
+      }
+      $slider.append($dots);
+      updateDots();
+    };
+
+    const updateDots = () => {
+      const $dots = $slider.find(".slider-dot");
+      $dots.removeClass("active").eq(currentIndex).addClass("active");
+    };
+
+    $prev.on("click", () => goTo(currentIndex - 1));
+    $next.on("click", () => goTo(currentIndex + 1));
+
+    $slider.on("mouseenter focusin", stopAutoplay);
+    $slider.on("mouseleave focusout", startAutoplay);
+
+    $track.on("scroll", () => {
+      currentIndex = Math.round($track.scrollLeft() / getStep());
+      updateDots();
+    });
+
+    $track.on("mousedown touchstart", (event) => {
+      isDragging = true;
+      stopAutoplay();
+      dragStartX = event.pageX || event.originalEvent.touches?.[0]?.pageX || 0;
+      dragStartScroll = $track.scrollLeft();
+      $track.addClass("is-dragging");
+    });
+
+    $(document).on("mousemove touchmove", (event) => {
+      if (!isDragging) return;
+      const pageX = event.pageX || event.originalEvent.touches?.[0]?.pageX || 0;
+      $track.scrollLeft(dragStartScroll - (pageX - dragStartX));
+    });
+
+    $(document).on("mouseup touchend", () => {
+      if (!isDragging) return;
+      isDragging = false;
+      $track.removeClass("is-dragging");
+      goTo(Math.round($track.scrollLeft() / getStep()));
+      startAutoplay();
+    });
+
+    buildDots();
+    startAutoplay();
+    $(window).on("resize", () => {
+      currentIndex = 0;
+      buildDots();
+      goTo(0);
+      startAutoplay();
+    });
+  });
+}
+
 // Search modal helpers: open, focus input, close and update aria state.
 const openSearch = () => {
   if (!searchModal) return;

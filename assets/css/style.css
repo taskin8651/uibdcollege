@@ -716,6 +716,109 @@ textarea {
   background: linear-gradient(90deg, var(--blue), var(--gold));
 }
 
+/* Reusable section slider: used by Administration, Academics, Departments, Students, Facilities, Gallery, Events and Media */
+.slider-shell {
+  position: relative;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: -8px 0 14px;
+}
+
+.slider-btn {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--blue);
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.slider-btn:hover {
+  transform: translateY(-2px);
+  background: var(--blue);
+  color: #fff;
+}
+
+.slider-btn.is-disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.slider-track {
+  display: flex;
+  gap: 18px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 4px 4px 18px;
+  scrollbar-width: none;
+}
+
+.slider-track.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 6px;
+}
+
+.slider-dot {
+  width: 9px;
+  height: 9px;
+  border: 0;
+  border-radius: 999px;
+  background: #b9cbe0;
+  cursor: pointer;
+  transition: width 0.2s ease, background 0.2s ease;
+}
+
+.slider-dot.active {
+  width: 28px;
+  background: var(--blue);
+}
+
+.slider-track > * {
+  flex: 0 0 42%;
+  scroll-snap-align: start;
+}
+
+.programme-grid.slider-track > *,
+.dept-grid.slider-track > *,
+.support-grid.slider-track > * {
+  flex-basis: 31%;
+}
+
+.gallery-grid.slider-track > *,
+.facility-track.slider-track > *,
+.event-grid.slider-track > *,
+.media-grid.slider-track > * {
+  flex-basis: 42%;
+}
+
+.gallery-grid.slider-track .gallery-item.big {
+  flex-basis: 42%;
+  grid-row: auto;
+}
+
 .section-title.left {
   text-align: left;
   margin-left: 0;
@@ -1601,6 +1704,38 @@ h3 {
   background: #061e35;
 }
 
+/* Slider overrides: keep old grid classes usable as horizontal tracks */
+.official-grid.slider-track,
+.programme-grid.slider-track,
+.dept-grid.slider-track,
+.support-grid.slider-track,
+.facility-track.slider-track,
+.gallery-grid.slider-track,
+.event-grid.slider-track,
+.media-grid.slider-track {
+  display: flex;
+  grid-template-columns: none;
+  grid-auto-rows: auto;
+}
+
+.official-grid.slider-track > *,
+.event-grid.slider-track > *,
+.media-grid.slider-track > * {
+  flex: 0 0 42%;
+}
+
+.programme-grid.slider-track > *,
+.dept-grid.slider-track > *,
+.support-grid.slider-track > *,
+.facility-track.slider-track > * {
+  flex: 0 0 31%;
+}
+
+.gallery-grid.slider-track > * {
+  flex: 0 0 42%;
+  height: 280px;
+}
+
 /* Downloads section: document category cards */
 .downloads-layout {
   grid-template-columns: 0.95fr 1.05fr;
@@ -2031,6 +2166,17 @@ h3 {
     grid-column: span 2;
     grid-row: span 1;
   }
+
+  .official-grid.slider-track > *,
+  .programme-grid.slider-track > *,
+  .dept-grid.slider-track > *,
+  .support-grid.slider-track > *,
+  .facility-track.slider-track > *,
+  .gallery-grid.slider-track > *,
+  .event-grid.slider-track > *,
+  .media-grid.slider-track > * {
+    flex-basis: calc((100% - 18px) / 2);
+  }
 }
 
 /* Phone layout: single-column grids and compact media */
@@ -2180,6 +2326,26 @@ h3 {
 
   .form-grid .wide {
     grid-column: auto;
+  }
+
+  .slider-controls {
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .official-grid.slider-track > *,
+  .programme-grid.slider-track > *,
+  .dept-grid.slider-track > *,
+  .support-grid.slider-track > *,
+  .facility-track.slider-track > *,
+  .gallery-grid.slider-track > *,
+  .event-grid.slider-track > *,
+  .media-grid.slider-track > * {
+    flex-basis: 88%;
+  }
+
+  .gallery-grid.slider-track > * {
+    height: 240px;
   }
 }
 

@@ -231,7 +231,12 @@
           <h2>Administrative information and important officials.</h2>
           <p>Profiles can show approved name, designation, role, photograph and official contact details.</p>
         </div>
-        <div class="official-grid">
+        <div class="slider-shell js-slider" aria-label="Administration slider">
+          <div class="slider-controls">
+            <button class="slider-btn prev" type="button" aria-label="Previous administration item"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next" type="button" aria-label="Next administration item"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        <div class="official-grid slider-track">
           <article class="official-card reveal">
             <img src="https://bdcollegepatna.ac.in/_Devloper/Img/principal_bdcpat.jpg" alt="Principal of B.D. College">
             <h3>Principal</h3><p>Principal's message, office information and institutional leadership.</p>
@@ -244,6 +249,7 @@
             <img src="https://bdcollegepatna.ac.in/_Devloper/Img/vc_bdcpat.jpg" alt="Vice Chancellor, Patliputra University">
             <h3>Committees</h3><p>Governing body, bursar, exam department, admission section and library administration.</p>
           </article>
+        </div>
         </div>
       </div>
     </section>
@@ -300,13 +306,19 @@
           <h2>Courses, syllabus, calendar and time table.</h2>
           <p>Final course list must be verified by the college before upload.</p>
         </div>
-        <div class="programme-grid">
+        <div class="slider-shell js-slider" aria-label="Academics slider">
+          <div class="slider-controls">
+            <button class="slider-btn prev" type="button" aria-label="Previous academic item"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next" type="button" aria-label="Next academic item"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        <div class="programme-grid slider-track">
           <article class="programme-card reveal"><i class="bi bi-mortarboard"></i><h3>Courses Offered</h3><p>UG, PG, vocational and professional programme details.</p></article>
           <article class="programme-card reveal delay-1"><i class="bi bi-calendar2-week"></i><h3>Academic Calendar</h3><p>Session-wise calendar upload and download.</p></article>
           <article class="programme-card reveal delay-2"><i class="bi bi-file-earmark-text"></i><h3>Syllabus</h3><p>Course-wise and subject-wise syllabus PDFs.</p></article>
           <article class="programme-card reveal delay-3"><i class="bi bi-table"></i><h3>Time Table</h3><p>Class, department and exam timetable uploads.</p></article>
           <article class="programme-card reveal delay-4"><i class="bi bi-link-45deg"></i><h3>University Guidelines</h3><p>Useful links to PPU and official academic documents.</p></article>
           <article class="programme-card reveal delay-5"><i class="bi bi-card-checklist"></i><h3>Programme Details</h3><p>Eligibility, duration, seats, fee and admission process.</p></article>
+        </div>
         </div>
       </div>
     </section>
@@ -318,7 +330,12 @@
           <span class="section-kicker">Departments</span>
           <h2>Department-wise pages with faculty, syllabus and activities.</h2>
         </div>
-        <div class="dept-grid">
+        <div class="slider-shell js-slider" aria-label="Departments slider">
+          <div class="slider-controls">
+            <button class="slider-btn prev" type="button" aria-label="Previous department item"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next" type="button" aria-label="Next department item"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        <div class="dept-grid slider-track">
           <a class="dept-card reveal" href="#"><span>Science</span><strong>Botany</strong><small>Faculty, lab, syllabus</small></a>
           <a class="dept-card reveal delay-1" href="#"><span>Science</span><strong>Zoology</strong><small>Resources and notices</small></a>
           <a class="dept-card reveal delay-2" href="#"><span>Science</span><strong>Chemistry</strong><small>Lab and academic details</small></a>
@@ -327,6 +344,7 @@
           <a class="dept-card reveal delay-5" href="#"><span>Commerce</span><strong>Commerce</strong><small>Programme updates</small></a>
           <a class="dept-card reveal" href="#"><span>Humanities</span><strong>Hindi / English</strong><small>Department profile</small></a>
           <a class="dept-card reveal delay-1" href="#"><span>Vocational</span><strong>BCA / BBA / MBA / MCA</strong><small>Professional courses</small></a>
+        </div>
         </div>
       </div>
     </section>
@@ -378,7 +396,12 @@
           <span class="section-kicker">Students Corner</span>
           <h2>Support services, forms, cells and student welfare.</h2>
         </div>
-        <div class="support-grid">
+        <div class="slider-shell js-slider" aria-label="Students corner slider">
+          <div class="slider-controls">
+            <button class="slider-btn prev" type="button" aria-label="Previous student support item"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next" type="button" aria-label="Next student support item"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        <div class="support-grid slider-track">
           <article class="support-card reveal"><i class="bi bi-cash-coin"></i><h3>Scholarship</h3><p>Scholarship information and links.</p></article>
           <article class="support-card reveal delay-1"><i class="bi bi-ban"></i><h3>Anti-Ragging</h3><p>Information and undertaking links.</p></article>
           <article class="support-card reveal delay-2"><i class="bi bi-person-raised-hand"></i><h3>Grievance Redressal</h3><p>Student grievance process.</p></article>
@@ -387,6 +410,7 @@
           <article class="support-card reveal delay-5"><i class="bi bi-briefcase"></i><h3>Placement Cell</h3><p>Career guidance and placement.</p></article>
           <article class="support-card reveal"><i class="bi bi-people"></i><h3>NSS / NCC</h3><p>Extension activities.</p></article>
           <article class="support-card reveal delay-1"><i class="bi bi-file-person"></i><h3>Certificates</h3><p>Bonafide, character and CLC links.</p></article>
+        </div>
         </div>
       </div>
     </section>
@@ -452,11 +476,17 @@
           <span class="section-kicker">Facilities</span>
           <h2>Campus facilities and learning resources.</h2>
         </div>
-        <div class="facility-track">
+        <div class="slider-shell js-slider" aria-label="Facilities slider">
+          <div class="slider-controls">
+            <button class="slider-btn prev" type="button" aria-label="Previous facility item"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next" type="button" aria-label="Next facility item"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        <div class="facility-track slider-track">
           <article class="facility-card reveal"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605301534.jpg&amp;width=900&amp;Quality=90" alt="B.D. College activity"><h3>Library</h3></article>
           <article class="facility-card reveal delay-1"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605301542.jpg&amp;width=900&amp;Quality=90" alt="B.D. College activity"><h3>Laboratories</h3></article>
           <article class="facility-card reveal delay-2"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605201509.jpg&amp;width=900&amp;Quality=90" alt="B.D. College seminar activity"><h3>Computer Lab</h3></article>
           <article class="facility-card reveal delay-3"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202604212358.jpg&amp;width=900&amp;Quality=90" alt="B.D. College conference activity"><h3>Seminar Hall</h3></article>
+        </div>
         </div>
       </div>
     </section>
@@ -468,12 +498,18 @@
           <span class="section-kicker">Gallery</span>
           <h2>Events, campus life, NSS, NCC and academic activities.</h2>
         </div>
-        <div class="gallery-grid">
+        <div class="slider-shell js-slider" aria-label="Gallery slider">
+          <div class="slider-controls">
+            <button class="slider-btn prev" type="button" aria-label="Previous gallery item"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next" type="button" aria-label="Next gallery item"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        <div class="gallery-grid slider-track">
           <a class="gallery-item big reveal" href="#"><img src="https://bdcollegepatna.ac.in/_Devloper/Gallery/bdcpat_img_001.jpg" alt="B.D. College campus"><span>Campus & Academic Activities</span></a>
           <a class="gallery-item reveal delay-1" href="#"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605232005.jpg&amp;width=900&amp;Quality=90" alt="NCC activity at B.D. College"><span>NSS / NCC</span></a>
           <a class="gallery-item reveal delay-2" href="#"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605201518.jpg&amp;width=900&amp;Quality=90" alt="Seminar at B.D. College"><span>Seminars</span></a>
           <a class="gallery-item reveal delay-3" href="#"><img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202604212325.jpg&amp;width=900&amp;Quality=90" alt="Academic activity at B.D. College"><span>Learning</span></a>
           <a class="gallery-item reveal delay-4" href="#"><img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605101337.jpg" alt="News media coverage of B.D. College"><span>News & Media</span></a>
+        </div>
         </div>
 
         <div class="media-highlights">
@@ -502,7 +538,12 @@
           <p>Important academic, cultural, NSS/NCC and institutional event highlights can be managed from admin panel later.</p>
         </div>
 
-        <div class="event-grid">
+        <div class="slider-shell js-slider" aria-label="Events slider">
+          <div class="slider-controls">
+            <button class="slider-btn prev" type="button" aria-label="Previous event item"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next" type="button" aria-label="Next event item"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        <div class="event-grid slider-track">
           <article class="event-card reveal">
             <img src="https://bdcollegepatna.ac.in/Common/Image/Thumbnail?filepath=%2F_Devloper%2FGallery%2Fbdcpat%2F&amp;Filename=bdcpat_202605232005.jpg&amp;width=900&amp;Quality=90" alt="NCC activity at B.D. College">
             <div>
@@ -528,6 +569,7 @@
             </div>
           </article>
         </div>
+        </div>
       </div>
     </section>
 
@@ -540,7 +582,12 @@
           <p>Media section can show news clippings, captions, department, date and full-size image links.</p>
         </div>
 
-        <div class="media-grid">
+        <div class="slider-shell js-slider" aria-label="Media slider">
+          <div class="slider-controls">
+            <button class="slider-btn prev" type="button" aria-label="Previous media item"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next" type="button" aria-label="Next media item"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        <div class="media-grid slider-track">
           <article class="press-card reveal">
             <img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605261137.jpg" alt="BD College crowned college champion in NCC camp">
             <div><span>24 May 2026</span><h3>BD College crowned college champion in NCC camp</h3><p>Department: National Cadet Corps (NCC)</p></div>
@@ -553,6 +600,7 @@
             <img src="https://bdcollegepatna.ac.in/_Devloper/Media/bdcpat/Media_bdcpat_202605101337.jpg" alt="Information on research and dissertation writing">
             <div><span>10 May 2026</span><h3>Information on research and dissertation writing</h3><p>Department: Sociology</p></div>
           </article>
+        </div>
         </div>
       </div>
     </section>
@@ -651,6 +699,8 @@
     </div>
   </div>
 
+  <!-- jQuery: used for professional carousel/slider interactions -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
