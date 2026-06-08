@@ -1,0 +1,823 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B.D. College, Patna | Official Website Redesign</title>
+  <meta name="description" content="Frontend redesign prototype for B.D. College, Patna covering notices, admissions, academics, departments, NAAC/IQAC, RTI, downloads and student support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Accessibility: keyboard users can jump directly to page content -->
+    <!-- Accessibility: keyboard users can jump directly to page content -->
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <!-- Top contact bar: affiliation, AISHE code, email and phone -->
+  <div class="topbar">
+    <div class="site-shell topbar-inner">
+      <div class="topbar-left">
+        <span><i class="bi bi-bank2"></i> A Constituent Unit of Patliputra University, Patna</span>
+        <span><i class="bi bi-patch-check-fill"></i> AISHE Code C-12847</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:principalbdcollegepatna@gmail.com"><i class="bi bi-envelope"></i> principalbdcollegepatna@gmail.com</a>
+        <a href="tel:06122209909"><i class="bi bi-telephone"></i> 06122209909</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand header: college logo, name, university logo and accreditation highlights -->
+  <header class="masthead" id="top">
+    <div class="site-shell masthead-inner">
+      <a href="#top" class="brand">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College logo">
+        <span>
+          <strong>B.D. College, Patna</strong>
+          <small>भुवनेश्वरी दयाल कॉलेज, पटना</small>
+        </span>
+      </a>
+
+      <div class="identity-strip">
+        <img src="assets/img/logo_ppupat.png" alt="Patliputra University logo">
+        <span>NAAC Accredited Grade B+ with CGPA 2.39/4</span>
+        <span>Near Gauriamath, Mithapur, Patna</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main menu: dropdown structure follows the current B.D. College website grouping -->
+<nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+  <div class="site-shell nav-inner">
+
+    <a class="nav-link" href="index.html">Home</a>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        About <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="about.html#briefHistory">Introduction</a>
+        <a href="about.html#visionMission">Vision & Mission</a>
+        <a href="about.html#collegeGlance">Rules & Regulation</a>
+        <a href="administration.html#principalDesk">Principal's Message</a>
+        <a href="about.html#collegeGlance">College Magazine</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Academic <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="academics.html">Academic Overview</a>
+        <a href="academics.html#coursesOffered">Courses Offered</a>
+        <a href="academics.html#holidayCalendar">List of Holidays</a>
+        <a href="academics.html#timeTable">Time Table</a>
+        <a href="academics.html#syllabus">Syllabus</a>
+        <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Administration <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="administration.html">Administration</a>
+        <a href="administration.html#formerPrincipals">Former Principals</a>
+        <a href="administration.html#adminStaff">Administrative Staff</a>
+        <a href="administration.html#staffList">Staff List</a>
+        <a href="administration.html#adminGallery">Photo Gallery</a>
+        <a href="administration.html#adminGallery">News & Media</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Department <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="department.html">All Department</a>
+        <a href="department-detail.html">Department Detail</a>
+        <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+        <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Student Zone <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-zone.html">Student Zone</a>
+        <a href="student-zone.html#studentServices">Student Login</a>
+        <a href="student-zone.html#studentServices">Online Fee Payment</a>
+        <a href="https://admission.ppuponline.in/" target="_blank">Online Admission (PPU)</a>
+        <a href="reservation-policy.html">Reservation Policy</a>
+        <a href="student-zone.html#formsCertificates">Certificates / Forms</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Extension Activity <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="extension-activity.html">Extension Activity</a>
+        <a href="nss.html">NSS</a>
+        <a href="ncc.html">NCC</a>
+        <a href="startup-cell.html">Startup Cell</a>
+        <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+        <a href="debate-club.html">Debate Club</a>
+        <a href="dramatics-society.html">Dramatics Society</a>
+        <a href="literary-society.html">Literary Society</a>
+        <a href="health-center.html">Health Center</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        IQAC & SSR <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="iqac.html">IQAC Home</a>
+        <a href="iqac-reports.html#ssrReports">SSR</a>
+        <a href="iqac-members.html">Members</a>
+        <a href="iqac-policy.html">Policy Documents</a>
+        <a href="iqac-reports.html#meetingReports">Minutes of Meeting</a>
+        <a href="iqac-reports.html#bestPractices">Best Practices</a>
+        <a href="iqac-feedback.html">Satisfaction Surveys</a>
+        <a href="iqac-reports.html#aqarReports">AQAR</a>
+        <a href="iqac-reports.html">Yearly Reports</a>
+        <a href="iqac-reports.html#activities">Activities</a>
+        <a href="iqac-feedback.html#feedbackTypes">Student Feedback</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        NIRF <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="nirf.html">NIRF Home</a>
+        <a href="nirf-reports.html">NIRF Reports</a>
+        <a href="nirf-data.html">NIRF Data</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Notice <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="notice.html">Notice</a>
+        <a href="events.html">Events</a>
+        <a href="tenders.html">Tenders</a>
+        <a href="notice-detail.html">Notice Detail</a>
+        <a href="index.html#downloads">Downloads</a>
+        <a href="index.html#admission">Admission Merit List</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Feedback <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-feedback.html">Student's Feedback</a>
+        <a href="teacher-feedback.html">Teachers' Feedback</a>
+        <a href="contact-us.html">Parents Feedback</a>
+        <a href="feedback-statistics.html">Statistics of Feedback</a>
+      </div>
+    </div>
+
+    <a class="nav-link" href="contact-us.html">Contact Us</a>
+    <a class="nav-link login-link" href="student-zone.html#studentServices">Login</a>
+
+    <button class="search-trigger" id="searchTrigger" type="button" aria-label="Search website">
+      <i class="bi bi-search"></i>
+    </button>
+
+  </div>
+</nav>
+
+  <!-- Notice ticker: fast access to latest college/university updates -->
+  <section class="alert-strip" aria-label="Latest updates">
+    <div class="site-shell alert-inner">
+      <strong><i class="bi bi-megaphone-fill"></i> Latest Updates</strong>
+      <div class="ticker">
+        <span>Vocational Part-I Exam Schedule 2026 &nbsp; | &nbsp; UG Admission updates & merit list placeholder &nbsp; | &nbsp; Semester subject selection notices &nbsp; | &nbsp; NAAC / IQAC reports and statutory disclosures</span>
+      </div>
+      <a href="index.html#notices">View All</a>
+    </div>
+  </section>
+<main id="mainContent">
+
+  <!-- DEPARTMENT PAGE HERO START -->
+  <section class="department-page-hero">
+    <div class="department-hero-bg"></div>
+
+    <div class="site-shell department-hero-inner">
+      <div class="department-hero-content reveal">
+        <span class="eyebrow">
+          <i class="bi bi-building"></i>
+          Departments
+        </span>
+
+        <h1>Academic Departments</h1>
+
+        <p>
+          Explore science, social science, humanities, commerce, vocational,
+          professional and common departments of B.D. College, Patna.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#scienceDepartments" class="btn primary">
+            <i class="bi bi-flask"></i>
+            Science
+          </a>
+          <a href="#humanitiesDepartments" class="btn light">
+            <i class="bi bi-book"></i>
+            Humanities
+          </a>
+          <a href="#professionalDepartments" class="btn ghost">
+            <i class="bi bi-laptop"></i>
+            Professional Courses
+          </a>
+        </div>
+      </div>
+
+      <div class="department-hero-card reveal delay-1">
+        <div class="department-card-icon">
+          <i class="bi bi-diagram-3"></i>
+        </div>
+        <h3>Department Directory</h3>
+        <p>UG, PG, vocational and common academic units.</p>
+
+        <div class="department-hero-pills">
+          <span>Science</span>
+          <span>Commerce</span>
+          <span>Humanities</span>
+          <span>Vocational</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- DEPARTMENT PAGE HERO END -->
+
+
+  <!-- BREADCRUMB START -->
+  <section class="department-breadcrumb">
+    <div class="site-shell breadcrumb-inner">
+      <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+      <i class="bi bi-chevron-right"></i>
+      <span>Department</span>
+      <i class="bi bi-chevron-right"></i>
+      <strong>All Department</strong>
+    </div>
+  </section>
+  <!-- BREADCRUMB END -->
+
+
+  <!-- DEPARTMENT QUICK LINKS START -->
+  <section class="department-quick-section">
+    <div class="site-shell department-quick-grid">
+
+      <a href="#scienceDepartments" class="department-quick-card reveal">
+        <i class="bi bi-flask"></i>
+        <strong>Science</strong>
+        <span>Botany, Zoology, Chemistry, Physics, Math</span>
+      </a>
+
+      <a href="#socialScienceDepartments" class="department-quick-card reveal delay-1">
+        <i class="bi bi-globe-central-south-asia"></i>
+        <strong>Social Science</strong>
+        <span>History, Political Science, Economics and more</span>
+      </a>
+
+      <a href="#humanitiesDepartments" class="department-quick-card reveal delay-2">
+        <i class="bi bi-book"></i>
+        <strong>Humanities</strong>
+        <span>Hindi, English, Urdu, Sanskrit and more</span>
+      </a>
+
+      <a href="#professionalDepartments" class="department-quick-card reveal delay-3">
+        <i class="bi bi-laptop"></i>
+        <strong>Professional</strong>
+        <span>BCA, BBA, MBA, MCA and vocational courses</span>
+      </a>
+
+    </div>
+  </section>
+  <!-- DEPARTMENT QUICK LINKS END -->
+
+
+  <!-- DEPARTMENT OVERVIEW START -->
+  <section class="section department-overview-section">
+    <div class="site-shell two-col">
+
+      <div class="image-panel reveal">
+        <img src="assets/img/bdcpat_img_001.jpg" alt="B.D. College campus">
+      </div>
+
+      <div class="content-block reveal delay-1">
+        <span class="section-kicker">
+          <i class="bi bi-diagram-3"></i>
+          Department Overview
+        </span>
+
+        <h2>Department-wise academic information for students.</h2>
+
+        <p>
+          The Department section helps students access subject-wise information,
+          available classes, faculty details, syllabus, timetable, notices,
+          academic activities and departmental resources.
+        </p>
+
+        <p>
+          Each department detail page can include introduction, faculty list,
+          courses, syllabus, timetable, department notices, gallery and contact
+          information.
+        </p>
+
+        <div class="check-grid">
+          <span><i class="bi bi-check2-circle"></i> Department profile</span>
+          <span><i class="bi bi-check2-circle"></i> Faculty details</span>
+          <span><i class="bi bi-check2-circle"></i> UG / PG classes</span>
+          <span><i class="bi bi-check2-circle"></i> Syllabus access</span>
+          <span><i class="bi bi-check2-circle"></i> Time table</span>
+          <span><i class="bi bi-check2-circle"></i> Department notices</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- DEPARTMENT OVERVIEW END -->
+
+
+  <!-- SCIENCE DEPARTMENTS START -->
+  <section class="section department-list-section" id="scienceDepartments">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-flask"></i>
+          Science - UG and PG
+        </span>
+        <h2>Science Departments</h2>
+        <p>Science departments include UG and selected PG academic programmes.</p>
+      </div>
+
+      <div class="department-table-wrap reveal">
+        <div class="department-table-head">
+          <div>
+            <h3>Science Department List</h3>
+            <p>Subject, class and department detail access.</p>
+          </div>
+        </div>
+
+        <div class="department-table-scroll">
+          <table class="department-table">
+            <thead>
+              <tr>
+                <th>S.No.</th>
+                <th>Subject</th>
+                <th>Class</th>
+                <th>View</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>01</td><td>Botany</td><td><span class="dept-badge">UG</span></td><td><a href="department-detail.html">View</a></td></tr>
+              <tr><td>02</td><td>Zoology</td><td><span class="dept-badge pg">UG & PG</span></td><td><a href="department-detail.html">View</a></td></tr>
+              <tr><td>03</td><td>Chemistry</td><td><span class="dept-badge">UG</span></td><td><a href="department-detail.html">View</a></td></tr>
+              <tr><td>04</td><td>Physics</td><td><span class="dept-badge pg">UG & PG</span></td><td><a href="department-detail.html">View</a></td></tr>
+              <tr><td>05</td><td>Math</td><td><span class="dept-badge">UG</span></td><td><a href="department-detail.html">View</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- SCIENCE DEPARTMENTS END -->
+
+
+  <!-- SOCIAL SCIENCE DEPARTMENTS START -->
+  <section class="section department-list-section soft-bg" id="socialScienceDepartments">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-globe-central-south-asia"></i>
+          Arts & Social Science - UG and PG
+        </span>
+        <h2>Arts & Social Science Departments</h2>
+      </div>
+
+      <div class="department-card-grid">
+        <a href="department-detail.html" class="department-subject-card reveal"><span>UG & PG</span><strong>History</strong><small>Department profile and syllabus</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-1"><span>UG & PG</span><strong>Political Science</strong><small>Faculty and course details</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-2"><span>UG & PG</span><strong>Economics</strong><small>Academic resources</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-3"><span>UG & PG</span><strong>Sociology</strong><small>Department notices</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-4"><span>UG & PG</span><strong>Geography</strong><small>Subject resources</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-5"><span>UG</span><strong>Psychology</strong><small>Course information</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal"><span>UG</span><strong>Ancient History, Culture & Archaeology</strong><small>Department profile</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-1"><span>UG</span><strong>Rural Economics</strong><small>Subject details</small></a>
+      </div>
+
+    </div>
+  </section>
+  <!-- SOCIAL SCIENCE DEPARTMENTS END -->
+
+
+  <!-- HUMANITIES DEPARTMENTS START -->
+  <section class="section department-list-section" id="humanitiesDepartments">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-book"></i>
+          Humanities - UG and PG
+        </span>
+        <h2>Humanities Departments</h2>
+      </div>
+
+      <div class="department-card-grid">
+        <a href="department-detail.html" class="department-subject-card reveal"><span>UG</span><strong>Philosophy</strong><small>Department information</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-1"><span>UG</span><strong>Hindi</strong><small>Faculty and syllabus</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-2"><span>UG</span><strong>English</strong><small>Course resources</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-3"><span>UG</span><strong>Urdu</strong><small>Academic details</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-4"><span>UG & PG</span><strong>Sanskrit</strong><small>Department profile</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-5"><span>UG</span><strong>Maithili</strong><small>Subject details</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal"><span>UG & PG</span><strong>Pali</strong><small>Academic resources</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-1"><span>UG & PG</span><strong>Prakrit</strong><small>Department details</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-2"><span>UG</span><strong>Persian</strong><small>Course information</small></a>
+        <a href="department-detail.html" class="department-subject-card reveal delay-3"><span>UG & PG</span><strong>Bengali</strong><small>Faculty and syllabus</small></a>
+      </div>
+
+    </div>
+  </section>
+  <!-- HUMANITIES DEPARTMENTS END -->
+
+
+  <!-- COMMERCE START -->
+  <section class="section department-list-section soft-bg" id="commerceDepartments">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-cash-coin"></i>
+          Commerce - UG and PG
+        </span>
+        <h2>Commerce Department</h2>
+      </div>
+
+      <div class="department-feature-card reveal">
+        <div>
+          <span class="section-kicker">Commerce & Management</span>
+          <h2>Commerce and Management</h2>
+          <p>
+            Department page can show UG/PG programme details, syllabus, faculty,
+            notices, timetable, academic resources and department activities.
+          </p>
+
+          <div class="hero-actions">
+            <a href="department-detail.html" class="btn primary">
+              <i class="bi bi-arrow-right"></i>
+              View Department
+            </a>
+            <a href="#professionalDepartments" class="btn light">
+              <i class="bi bi-laptop"></i>
+              Professional Courses
+            </a>
+          </div>
+        </div>
+
+        <div class="department-feature-icon">
+          <i class="bi bi-graph-up-arrow"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- COMMERCE END -->
+
+
+  <!-- PROFESSIONAL COURSES START -->
+  <section class="section department-list-section" id="professionalDepartments">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-laptop"></i>
+          Professional Courses - UG and PG
+        </span>
+        <h2>Vocational & Professional Departments</h2>
+      </div>
+
+      <div class="professional-grid">
+        <a href="department-detail.html" class="professional-card reveal"><i class="bi bi-briefcase"></i><strong>Master of Business Administration</strong><span>PG</span></a>
+        <a href="department-detail.html" class="professional-card reveal delay-1"><i class="bi bi-pc-display"></i><strong>Master of Computer Applications</strong><span>PG</span></a>
+        <a href="department-detail.html" class="professional-card reveal delay-2"><i class="bi bi-bar-chart"></i><strong>Bachelor of Business Administration</strong><span>UG</span></a>
+        <a href="department-detail.html" class="professional-card reveal delay-3"><i class="bi bi-code-square"></i><strong>Bachelor of Computer Applications</strong><span>UG</span></a>
+        <a href="department-detail.html" class="professional-card reveal delay-4"><i class="bi bi-bacteria"></i><strong>B.I.M.B. Industrial Micro Biology</strong><span>UG</span></a>
+        <a href="department-detail.html" class="professional-card reveal delay-5"><i class="bi bi-virus"></i><strong>B.Sc. Biotechnology</strong><span>UG</span></a>
+        <a href="department-detail.html" class="professional-card reveal"><i class="bi bi-cpu"></i><strong>Information Technology B.Sc.IT</strong><span>UG</span></a>
+        <a href="department-detail.html" class="professional-card reveal delay-1"><i class="bi bi-journal-bookmark"></i><strong>Library Science BLIS</strong><span>UG</span></a>
+      </div>
+
+    </div>
+  </section>
+  <!-- PROFESSIONAL COURSES END -->
+
+
+  <!-- COMMON COURSES START -->
+  <section class="section common-course-section">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-grid-3x3-gap"></i>
+          Common Courses / Cells
+        </span>
+        <h2>Common departments, cells and activity units.</h2>
+      </div>
+
+      <div class="common-course-grid">
+        <a href="#" class="common-course-card reveal"><i class="bi bi-building-check"></i><strong>Administration</strong></a>
+        <a href="#" class="common-course-card reveal delay-1"><i class="bi bi-award"></i><strong>IQAC</strong></a>
+        <a href="#" class="common-course-card reveal delay-2"><i class="bi bi-people"></i><strong>NSS</strong></a>
+        <a href="#" class="common-course-card reveal delay-3"><i class="bi bi-trophy"></i><strong>Sports</strong></a>
+        <a href="#" class="common-course-card reveal delay-4"><i class="bi bi-book"></i><strong>Library</strong></a>
+        <a href="#" class="common-course-card reveal delay-5"><i class="bi bi-shield"></i><strong>NCC</strong></a>
+        <a href="#" class="common-course-card reveal"><i class="bi bi-lightbulb"></i><strong>Start-Up Cell</strong></a>
+        <a href="placement-guidance-cell.html" class="common-course-card reveal delay-1"><i class="bi bi-briefcase"></i><strong>Placement & Guidance Cell</strong></a>
+        <a href="students-grievance-redressal.html" class="common-course-card reveal delay-2"><i class="bi bi-person-raised-hand"></i><strong>Students Grievance Redressal</strong></a>
+        <a href="#" class="common-course-card reveal delay-3"><i class="bi bi-music-note-beamed"></i><strong>Cultural Committee</strong></a>
+        <a href="#" class="common-course-card reveal delay-4"><i class="bi bi-person-check"></i><strong>Proctorial Board</strong></a>
+        <a href="#" class="common-course-card reveal delay-5"><i class="bi bi-tree"></i><strong>Eco Club</strong></a>
+      </div>
+
+    </div>
+  </section>
+  <!-- COMMON COURSES END -->
+
+
+  <!-- DEPARTMENT HELP START -->
+  <section class="section department-help-section">
+    <div class="site-shell department-help-box reveal">
+
+      <div>
+        <span class="section-kicker light-kicker">
+          <i class="bi bi-headset"></i>
+          Department Help Desk
+        </span>
+
+        <h2>Need department related information?</h2>
+
+        <p>
+          Students can contact the college office for department, syllabus,
+          timetable, faculty and academic resource related support.
+        </p>
+      </div>
+
+      <div class="department-help-actions">
+        <a href="tel:06122209909" class="btn light">
+          <i class="bi bi-telephone"></i>
+          06122209909
+        </a>
+
+        <a href="mailto:principalbdcollegepatna@gmail.com" class="btn ghost">
+          <i class="bi bi-envelope"></i>
+          Email College
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- DEPARTMENT HELP END -->
+
+</main>
+
+
+
+  <!-- Footer: repeated important links and copyright -->
+<footer class="footer">
+  <div class="site-shell footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College Logo">
+        <div>
+          <h3>B.D. College, Patna</h3>
+          <span>A Constituent Unit of Patliputra University</span>
+        </div>
+      </a>
+
+      <p>
+        Official college website for academic information, admission updates,
+        notices, statutory disclosures, student support and institutional transparency.
+      </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#briefHistory">Introduction</a>
+      <a href="about.html#visionMission">Vision & Mission</a>
+      <a href="about.html#collegeGlance">Rules & Regulation</a>
+      <a href="administration.html#principalDesk">Principalâ€™s Message</a>
+      <a href="about.html#collegeGlance">College Magazine</a>
+    </div>
+
+    <!-- ACADEMIC -->
+    <div class="footer-col">
+      <h4>Academic</h4>
+      <a href="academics.html">Academic Overview</a>
+      <a href="department.html">Departments</a>
+      <a href="academics.html#holidayCalendar">List of Holidays</a>
+      <a href="academics.html#timeTable">Time Table</a>
+      <a href="academics.html#syllabus">Syllabus</a>
+      <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+    </div>
+
+    <!-- ADMINISTRATION -->
+    <div class="footer-col">
+      <h4>Administration</h4>
+      <a href="administration.html">Administration</a>
+      <a href="administration.html#formerPrincipals">Former Principals</a>
+      <a href="administration.html#adminStaff">Administrative Staff</a>
+      <a href="administration.html#staffList">Staff List</a>
+      <a href="administration.html#adminGallery">Photo Gallery</a>
+      <a href="administration.html#adminGallery">News & Media</a>
+    </div>
+
+    <!-- STUDENT ZONE -->
+    <div class="footer-col">
+      <h4>Student Zone</h4>
+      <a href="student-zone.html">Student Zone</a>
+      <a href="student-zone.html#studentServices">Student Login</a>
+      <a href="student-zone.html#studentServices">Online Fee Payment</a>
+      <a href="https://admission.ppuponline.in/" target="_blank">Online Admission</a>
+      <a href="reservation-policy.html">Reservation Policy</a>
+      <a href="student-zone.html#formsCertificates">Forms & Certificates</a>
+    </div>
+
+    <!-- DEPARTMENTS -->
+    <div class="footer-col">
+      <h4>Departments</h4>
+      <a href="department.html">All Departments</a>
+      <a href="department-detail.html">Department Detail</a>
+      <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+      <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      <a href="nirf.html">NIRF</a>
+      <a href="nirf-reports.html">NIRF Reports</a>
+    </div>
+
+    <!-- EXTENSION ACTIVITY -->
+    <div class="footer-col">
+      <h4>Extension Activity</h4>
+      <a href="extension-activity.html">Extension Activity</a>
+      <a href="nss.html">NSS</a>
+      <a href="ncc.html">NCC</a>
+      <a href="startup-cell.html">Startup Cell</a>
+      <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+      <a href="debate-club.html">Debate Club</a>
+      <a href="dramatics-society.html">Dramatics Society</a>
+      <a href="literary-society.html">Literary Society</a>
+      <a href="health-center.html">Health Center</a>
+    </div>
+
+    <!-- IQAC / PUBLIC INFO -->
+    <div class="footer-col">
+      <h4>IQAC / Public Info</h4>
+      <a href="iqac.html">IQAC & SSR</a>
+      <a href="iqac-members.html">IQAC Members</a>
+      <a href="iqac-policy.html">Policy Documents</a>
+      <a href="iqac-reports.html">SSR / AQAR Reports</a>
+      <a href="iqac-feedback.html">Feedback & Surveys</a>
+      <a href="nirf-data.html">NIRF Data</a>
+    </div>
+
+    <!-- NOTICE -->
+    <div class="footer-col">
+      <h4>Notice</h4>
+      <a href="notice.html">Notice Board</a>
+      <a href="notice-detail.html">Notice Detail</a>
+      <a href="events.html">Events</a>
+      <a href="tenders.html">Tenders</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="index.html#admission">Admission Merit List</a>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="footer-col">
+      <h4>Feedback</h4>
+      <a href="student-feedback.html">Student Feedback</a>
+      <a href="teacher-feedback.html">Teachers Feedback</a>
+      <a href="contact-us.html">Parents Feedback</a>
+      <a href="feedback-statistics.html">Statistics of Feedback</a>
+      <a href="certificate.html">Apply for Certificate</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <!-- CONTACT -->
+    <!-- FOOTER MAP + CONTACT START -->
+<div class="footer-map-contact">
+  <div class="footer-map-wrap">
+    
+    <!-- COL 8 MAP -->
+    <div class="footer-map-col">
+      <iframe
+        src="https://www.google.com/maps?q=B.D.%20College%2C%20Near%20Gauriamath%2C%20Mithapur%2C%20Patna%2C%20Bihar%20800001&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="B.D. College Patna Google Map">
+      </iframe>
+    </div>
+
+    <!-- COL 4 CONTACT DETAILS -->
+    <div class="footer-contact-col">
+      <h4>Contact</h4>
+
+      <a href="contact-us.html">
+        <i class="bi bi-geo-alt"></i>
+        <span>Near Gauriamath, Mithapur, Patna - 800001</span>
+      </a>
+
+      <a href="tel:06122209909">
+        <i class="bi bi-telephone"></i>
+        <span>06122209909</span>
+      </a>
+
+      <a href="tel:+917903912273">
+        <i class="bi bi-headset"></i>
+        <span>+91 7903912273</span>
+      </a>
+
+      <a href="mailto:principalbdcollegepatna@gmail.com">
+        <i class="bi bi-envelope"></i>
+        <span>principalbdcollegepatna@gmail.com</span>
+      </a>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=B.D.%20College%20Near%20Gauriamath%20Mithapur%20Patna%20Bihar%20800001"
+        target="_blank">
+        <i class="bi bi-map"></i>
+        <span>View Google Map</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+<!-- FOOTER MAP + CONTACT END -->
+
+  </div>
+
+  <div class="site-shell footer-bottom">
+    <span>&copy; 2026 B.D. College, Patna. All Rights Reserved.</span>
+
+    <div class="footer-bottom-links">
+      <a href="index.html">Home</a>
+      <a href="contact-us.html">Contact</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="#top">Back to top <i class="bi bi-arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Search modal: frontend-only search UI placeholder -->
+<div class="search-modal" id="searchModal" aria-hidden="true">
+  <div class="search-box">
+    <button class="close-search" id="closeSearch" type="button" aria-label="Close search">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <h3>Search Website</h3>
+
+    <div class="search-row">
+      <input type="search" placeholder="Search notices, admissions, departments, downloads...">
+      <button class="btn primary" type="button">
+        <i class="bi bi-search"></i>
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery: used for professional carousel/slider interactions -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

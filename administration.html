@@ -1,0 +1,1122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B.D. College, Patna | Official Website Redesign</title>
+  <meta name="description" content="Frontend redesign prototype for B.D. College, Patna covering notices, admissions, academics, departments, NAAC/IQAC, RTI, downloads and student support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Accessibility: keyboard users can jump directly to page content -->
+    <!-- Accessibility: keyboard users can jump directly to page content -->
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <!-- Top contact bar: affiliation, AISHE code, email and phone -->
+  <div class="topbar">
+    <div class="site-shell topbar-inner">
+      <div class="topbar-left">
+        <span><i class="bi bi-bank2"></i> A Constituent Unit of Patliputra University, Patna</span>
+        <span><i class="bi bi-patch-check-fill"></i> AISHE Code C-12847</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:principalbdcollegepatna@gmail.com"><i class="bi bi-envelope"></i> principalbdcollegepatna@gmail.com</a>
+        <a href="tel:06122209909"><i class="bi bi-telephone"></i> 06122209909</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand header: college logo, name, university logo and accreditation highlights -->
+  <header class="masthead" id="top">
+    <div class="site-shell masthead-inner">
+      <a href="#top" class="brand">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College logo">
+        <span>
+          <strong>B.D. College, Patna</strong>
+          <small>भुवनेश्वरी दयाल कॉलेज, पटना</small>
+        </span>
+      </a>
+
+      <div class="identity-strip">
+        <img src="assets/img/logo_ppupat.png" alt="Patliputra University logo">
+        <span>NAAC Accredited Grade B+ with CGPA 2.39/4</span>
+        <span>Near Gauriamath, Mithapur, Patna</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main menu: dropdown structure follows the current B.D. College website grouping -->
+<nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+  <div class="site-shell nav-inner">
+
+    <a class="nav-link" href="index.html">Home</a>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        About <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="about.html#briefHistory">Introduction</a>
+        <a href="about.html#visionMission">Vision & Mission</a>
+        <a href="about.html#collegeGlance">Rules & Regulation</a>
+        <a href="administration.html#principalDesk">Principal's Message</a>
+        <a href="about.html#collegeGlance">College Magazine</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Academic <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="academics.html">Academic Overview</a>
+        <a href="academics.html#coursesOffered">Courses Offered</a>
+        <a href="academics.html#holidayCalendar">List of Holidays</a>
+        <a href="academics.html#timeTable">Time Table</a>
+        <a href="academics.html#syllabus">Syllabus</a>
+        <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Administration <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="administration.html">Administration</a>
+        <a href="administration.html#formerPrincipals">Former Principals</a>
+        <a href="administration.html#adminStaff">Administrative Staff</a>
+        <a href="administration.html#staffList">Staff List</a>
+        <a href="administration.html#adminGallery">Photo Gallery</a>
+        <a href="administration.html#adminGallery">News & Media</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Department <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="department.html">All Department</a>
+        <a href="department-detail.html">Department Detail</a>
+        <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+        <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Student Zone <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-zone.html">Student Zone</a>
+        <a href="student-zone.html#studentServices">Student Login</a>
+        <a href="student-zone.html#studentServices">Online Fee Payment</a>
+        <a href="https://admission.ppuponline.in/" target="_blank">Online Admission (PPU)</a>
+        <a href="reservation-policy.html">Reservation Policy</a>
+        <a href="student-zone.html#formsCertificates">Certificates / Forms</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Extension Activity <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="extension-activity.html">Extension Activity</a>
+        <a href="nss.html">NSS</a>
+        <a href="ncc.html">NCC</a>
+        <a href="startup-cell.html">Startup Cell</a>
+        <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+        <a href="debate-club.html">Debate Club</a>
+        <a href="dramatics-society.html">Dramatics Society</a>
+        <a href="literary-society.html">Literary Society</a>
+        <a href="health-center.html">Health Center</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        IQAC & SSR <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="iqac.html">IQAC Home</a>
+        <a href="iqac-reports.html#ssrReports">SSR</a>
+        <a href="iqac-members.html">Members</a>
+        <a href="iqac-policy.html">Policy Documents</a>
+        <a href="iqac-reports.html#meetingReports">Minutes of Meeting</a>
+        <a href="iqac-reports.html#bestPractices">Best Practices</a>
+        <a href="iqac-feedback.html">Satisfaction Surveys</a>
+        <a href="iqac-reports.html#aqarReports">AQAR</a>
+        <a href="iqac-reports.html">Yearly Reports</a>
+        <a href="iqac-reports.html#activities">Activities</a>
+        <a href="iqac-feedback.html#feedbackTypes">Student Feedback</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        NIRF <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="nirf.html">NIRF Home</a>
+        <a href="nirf-reports.html">NIRF Reports</a>
+        <a href="nirf-data.html">NIRF Data</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Notice <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="notice.html">Notice</a>
+        <a href="events.html">Events</a>
+        <a href="tenders.html">Tenders</a>
+        <a href="notice-detail.html">Notice Detail</a>
+        <a href="index.html#downloads">Downloads</a>
+        <a href="index.html#admission">Admission Merit List</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Feedback <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-feedback.html">Student's Feedback</a>
+        <a href="teacher-feedback.html">Teachers' Feedback</a>
+        <a href="contact-us.html">Parents Feedback</a>
+        <a href="feedback-statistics.html">Statistics of Feedback</a>
+      </div>
+    </div>
+
+    <a class="nav-link" href="contact-us.html">Contact Us</a>
+    <a class="nav-link login-link" href="student-zone.html#studentServices">Login</a>
+
+    <button class="search-trigger" id="searchTrigger" type="button" aria-label="Search website">
+      <i class="bi bi-search"></i>
+    </button>
+
+  </div>
+</nav>
+
+  <!-- Notice ticker: fast access to latest college/university updates -->
+  <section class="alert-strip" aria-label="Latest updates">
+    <div class="site-shell alert-inner">
+      <strong><i class="bi bi-megaphone-fill"></i> Latest Updates</strong>
+      <div class="ticker">
+        <span>Vocational Part-I Exam Schedule 2026 &nbsp; | &nbsp; UG Admission updates & merit list placeholder &nbsp; | &nbsp; Semester subject selection notices &nbsp; | &nbsp; NAAC / IQAC reports and statutory disclosures</span>
+      </div>
+      <a href="index.html#notices">View All</a>
+    </div>
+  </section>
+<main id="mainContent">
+
+  <!-- ADMINISTRATION PAGE HERO START -->
+  <section class="admin-page-hero">
+    <div class="admin-hero-bg"></div>
+
+    <div class="site-shell admin-hero-inner">
+      <div class="admin-hero-content reveal">
+        <span class="eyebrow">
+          <i class="bi bi-person-workspace"></i>
+          Administration
+        </span>
+
+        <h1>College Administration</h1>
+
+        <p>
+          View principal information, former principals, administrative staff,
+          office structure, committees, staff records, photo gallery and official
+          media updates of B.D. College, Patna.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#principalDesk" class="btn primary">
+            <i class="bi bi-person-badge"></i>
+            Principal Desk
+          </a>
+          <a href="#formerPrincipals" class="btn light">
+            <i class="bi bi-clock-history"></i>
+            Former Principals
+          </a>
+          <a href="#adminStaff" class="btn ghost">
+            <i class="bi bi-people"></i>
+            Administrative Staff
+          </a>
+        </div>
+      </div>
+
+      <div class="admin-hero-card reveal delay-1">
+        <img src="assets/img/principal_bdcpat.jpg" alt="Principal of B.D. College">
+        <h3>Prof. (Dr.) Ratna Amrit</h3>
+        <p>Principal, B.D. College, Patna</p>
+
+        <div class="admin-hero-pills">
+          <span>Administration</span>
+          <span>Office</span>
+          <span>Staff</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ADMINISTRATION PAGE HERO END -->
+
+
+  <!-- BREADCRUMB START -->
+  <section class="admin-breadcrumb">
+    <div class="site-shell breadcrumb-inner">
+      <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+      <i class="bi bi-chevron-right"></i>
+      <span>Administration</span>
+      <i class="bi bi-chevron-right"></i>
+      <strong>Former Principals</strong>
+    </div>
+  </section>
+  <!-- BREADCRUMB END -->
+
+
+  <!-- ADMIN QUICK LINKS START -->
+  <section class="admin-quick-section">
+    <div class="site-shell admin-quick-grid">
+
+      <a href="#formerPrincipals" class="admin-quick-card reveal">
+        <i class="bi bi-clock-history"></i>
+        <strong>Former Principals</strong>
+        <span>Leadership history and tenure records</span>
+      </a>
+
+      <a href="#adminStaff" class="admin-quick-card reveal delay-1">
+        <i class="bi bi-person-lines-fill"></i>
+        <strong>Administrative Staff</strong>
+        <span>Office team and public dealing sections</span>
+      </a>
+
+      <a href="#staffList" class="admin-quick-card reveal delay-2">
+        <i class="bi bi-list-check"></i>
+        <strong>Staff List</strong>
+        <span>Teaching and non-teaching staff record</span>
+      </a>
+
+      <a href="#adminGallery" class="admin-quick-card reveal delay-3">
+        <i class="bi bi-images"></i>
+        <strong>Gallery & Media</strong>
+        <span>Administrative events and official coverage</span>
+      </a>
+
+    </div>
+  </section>
+  <!-- ADMIN QUICK LINKS END -->
+
+
+  <!-- PRINCIPAL DESK START -->
+  <section class="section principal-desk-section" id="principalDesk">
+    <div class="site-shell two-col">
+
+      <div class="image-panel portrait-panel reveal">
+        <img src="assets/img/principal_bdcpat.jpg" alt="Principal of B.D. College">
+      </div>
+
+      <div class="content-block reveal delay-1">
+        <span class="section-kicker">
+          <i class="bi bi-person-badge"></i>
+          Principal Desk
+        </span>
+
+        <h2>Academic leadership and transparent administration.</h2>
+
+        <p>
+          The Principal's Desk section represents the leadership of the institution.
+          It can include the principal's message, designation, official photo, office
+          contact details and institutional priorities.
+        </p>
+
+        <p>
+          Current official former principal record shows Prof. (Dr.) Ratna Amrit
+          as Principal from 11/08/2025 to till date.
+        </p>
+
+        <div class="check-grid">
+          <span><i class="bi bi-check2-circle"></i> Principal profile</span>
+          <span><i class="bi bi-check2-circle"></i> Principal message</span>
+          <span><i class="bi bi-check2-circle"></i> Office information</span>
+          <span><i class="bi bi-check2-circle"></i> Institutional leadership</span>
+          <span><i class="bi bi-check2-circle"></i> Student welfare</span>
+          <span><i class="bi bi-check2-circle"></i> Quality assurance</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- PRINCIPAL DESK END -->
+
+
+  <!-- ADMIN OVERVIEW START -->
+  <section class="section admin-overview-section">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-diagram-3"></i>
+          Administration Overview
+        </span>
+        <h2>Organized administration for academic and public service.</h2>
+        <p>
+          The administration section helps students, parents, staff and visitors
+          access important office information without confusion.
+        </p>
+      </div>
+
+      <div class="admin-overview-grid">
+
+        <article class="admin-overview-card reveal">
+          <i class="bi bi-building-check"></i>
+          <h3>Principal Office</h3>
+          <p>Leadership, official communication, institutional decisions and academic guidance.</p>
+        </article>
+
+        <article class="admin-overview-card reveal delay-1">
+          <i class="bi bi-person-lines-fill"></i>
+          <h3>Administrative Office</h3>
+          <p>Student records, certificates, fee-related support and public dealing.</p>
+        </article>
+
+        <article class="admin-overview-card reveal delay-2">
+          <i class="bi bi-pencil-square"></i>
+          <h3>Examination Section</h3>
+          <p>Exam forms, admit card information, practical schedule and result support.</p>
+        </article>
+
+        <article class="admin-overview-card reveal delay-3">
+          <i class="bi bi-journal-bookmark"></i>
+          <h3>Admission Section</h3>
+          <p>Admission notice, document verification, merit list and student helpdesk.</p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ADMIN OVERVIEW END -->
+
+
+  <!-- FORMER PRINCIPALS START -->
+  <section class="section former-principal-section" id="formerPrincipals">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-clock-history"></i>
+          Former Principals
+        </span>
+        <h2>Leadership journey of B.D. College, Patna.</h2>
+        <p>
+          Official record of former principals with designation and duration.
+        </p>
+      </div>
+
+      <div class="principal-table-wrap reveal">
+        <div class="principal-table-head">
+          <div>
+            <h3>Former Principal Record</h3>
+            <p>Principal name, designation and tenure duration.</p>
+          </div>
+          <a href="#" class="btn primary">
+            <i class="bi bi-download"></i>
+            Download PDF
+          </a>
+        </div>
+
+        <div class="principal-table-scroll">
+          <table class="principal-table">
+            <thead>
+              <tr>
+                <th>S.No.</th>
+                <th>Principal's Name</th>
+                <th>Designation</th>
+                <th>From Date</th>
+                <th>To Date</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Prof. (Dr.) Nirmal Kr. Srivastava</td>
+                <td><span class="status incharge">Principal-in-Charge</span></td>
+                <td>10/03/1970</td>
+                <td>07/05/1972</td>
+              </tr>
+
+              <tr>
+                <td>02</td>
+                <td>Dr. Baidyanath Pandey</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>08/05/1972</td>
+                <td>12/02/1993</td>
+              </tr>
+
+              <tr>
+                <td>03</td>
+                <td>Prof. (Dr.) Nirmal Kr. Srivastava</td>
+                <td><span class="status incharge">Principal-in-Charge</span></td>
+                <td>13/05/1993</td>
+                <td>18/06/1993</td>
+              </tr>
+
+              <tr>
+                <td>04</td>
+                <td>Dr. Baidyanath Pandey</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>19/06/1993</td>
+                <td>30/09/1994</td>
+              </tr>
+
+              <tr>
+                <td>05</td>
+                <td>Dr. Ramashankar Arya</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>01/10/1994</td>
+                <td>04/06/1995</td>
+              </tr>
+
+              <tr>
+                <td>06</td>
+                <td>Prof. (Dr.) Subhash Prasad Sinha</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>05/06/1995</td>
+                <td>24/01/1998</td>
+              </tr>
+
+              <tr>
+                <td>07</td>
+                <td>Prof. (Dr.) Nirmal Kr. Srivastava</td>
+                <td><span class="status incharge">Principal-in-Charge</span></td>
+                <td>25/01/1998</td>
+                <td>25/11/1998</td>
+              </tr>
+
+              <tr>
+                <td>08</td>
+                <td>Dr. Basuki Nath Jha</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>26/11/1998</td>
+                <td>31/07/2000</td>
+              </tr>
+
+              <tr>
+                <td>09</td>
+                <td>Prof. (Dr.) Nirmal Kr. Srivastava</td>
+                <td><span class="status incharge">Principal-in-Charge</span></td>
+                <td>01/08/2000</td>
+                <td>01/09/2002</td>
+              </tr>
+
+              <tr>
+                <td>10</td>
+                <td>Prof. (Dr.) Subhash Prasad Sinha</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>02/09/2002</td>
+                <td>20/11/2008</td>
+              </tr>
+
+              <tr>
+                <td>11</td>
+                <td>Prof. (Dr.) Sita Ram Singh</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>21/11/2008</td>
+                <td>23/06/2011</td>
+              </tr>
+
+              <tr>
+                <td>12</td>
+                <td>Dr. B. N. Ojha</td>
+                <td><span class="status incharge">Principal-in-Charge</span></td>
+                <td>24/06/2011</td>
+                <td>31/01/2015</td>
+              </tr>
+
+              <tr>
+                <td>13</td>
+                <td>Prof. (Dr.) Satyanarayan Singh</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>01/02/2015</td>
+                <td>31/01/2016</td>
+              </tr>
+
+              <tr>
+                <td>14</td>
+                <td>Dr. Pushpendra Kr. Verma</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>01/02/2016</td>
+                <td>15/09/2020</td>
+              </tr>
+
+              <tr>
+                <td>15</td>
+                <td>Prof. (Dr.) Sanjoy Kumar</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>17/10/2016</td>
+                <td>15/09/2020</td>
+              </tr>
+
+              <tr>
+                <td>16</td>
+                <td>Prof. (Dr.) Pravin Kumar</td>
+                <td><span class="status principal">Principal</span></td>
+                <td>16/09/2020</td>
+                <td>14/02/2023</td>
+              </tr>
+
+              <tr>
+                <td>17</td>
+                <td>Prof. (Dr.) Sita Sinha</td>
+                <td><span class="status incharge">Principal-in-Charge</span></td>
+                <td>17/02/2023</td>
+                <td>17/10/2023</td>
+              </tr>
+
+              <tr>
+                <td>18</td>
+                <td>Prof. (Dr.) Lok Bardhan Gupta</td>
+                <td><span class="status incharge">Principal-in-Charge</span></td>
+                <td>18/10/2023</td>
+                <td>31/12/2023</td>
+              </tr>
+
+              <tr>
+                <td>19</td>
+                <td>Prof. (Dr.) Viveka Nand Singh</td>
+                <td><span class="status incharge">Principal-in-Charge</span></td>
+                <td>01/01/2024</td>
+                <td>10/08/2025</td>
+              </tr>
+
+              <tr class="current-principal-row">
+                <td>20</td>
+                <td>Prof. (Dr.) Ratna Amrit</td>
+                <td><span class="status current">Principal</span></td>
+                <td>11/08/2025</td>
+                <td>Till Date</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- FORMER PRINCIPALS END -->
+
+
+  <!-- ADMINISTRATIVE STAFF START -->
+  <section class="section admin-staff-section" id="adminStaff">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-person-lines-fill"></i>
+          Administrative Staff
+        </span>
+        <h2>Office sections and administrative responsibilities.</h2>
+        <p>
+          This area can show staff name, designation, section, contact information
+          and responsibilities after verification by the college.
+        </p>
+      </div>
+
+      <div class="staff-section-grid">
+
+        <article class="staff-section-card reveal">
+          <i class="bi bi-file-person"></i>
+          <h3>General Office</h3>
+          <p>Student records, applications, certificates and official correspondence.</p>
+        </article>
+
+        <article class="staff-section-card reveal delay-1">
+          <i class="bi bi-journal-check"></i>
+          <h3>Admission Section</h3>
+          <p>Admission forms, verification, merit list support and reporting process.</p>
+        </article>
+
+        <article class="staff-section-card reveal delay-2">
+          <i class="bi bi-pencil-square"></i>
+          <h3>Examination Section</h3>
+          <p>Exam forms, admit card, practical schedule and university coordination.</p>
+        </article>
+
+        <article class="staff-section-card reveal delay-3">
+          <i class="bi bi-cash-stack"></i>
+          <h3>Accounts Section</h3>
+          <p>Fee records, receipts, expenditure records and financial documentation.</p>
+        </article>
+
+        <article class="staff-section-card reveal delay-4">
+          <i class="bi bi-book"></i>
+          <h3>Library Section</h3>
+          <p>Library membership, book issue, reading resources and records.</p>
+        </article>
+
+        <article class="staff-section-card reveal delay-5">
+          <i class="bi bi-headset"></i>
+          <h3>Helpdesk</h3>
+          <p>Student support, public enquiry and basic information assistance.</p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ADMINISTRATIVE STAFF END -->
+
+
+  <!-- STAFF LIST START -->
+  <section class="section staff-list-section" id="staffList">
+    <div class="site-shell split-section">
+
+      <div class="content-block reveal">
+        <span class="section-kicker">
+          <i class="bi bi-list-check"></i>
+          Staff List
+        </span>
+
+        <h2>Teaching and non-teaching staff record section.</h2>
+
+        <p>
+          Staff List page can be used to manage verified staff information including
+          name, designation, department, qualification, email, mobile number and
+          profile photo.
+        </p>
+
+        <div class="timeline">
+          <div>
+            <span>01</span>
+            <b>Teaching Staff</b>
+            <small>Department-wise faculty profiles</small>
+          </div>
+
+          <div>
+            <span>02</span>
+            <b>Non-Teaching Staff</b>
+            <small>Office and support staff records</small>
+          </div>
+
+          <div>
+            <span>03</span>
+            <b>Department Staff</b>
+            <small>Subject-wise faculty listing</small>
+          </div>
+
+          <div>
+            <span>04</span>
+            <b>Verified Profiles</b>
+            <small>Photo, designation and contact details</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="staff-download-card reveal delay-1">
+        <h3>Staff Directory</h3>
+        <p>Upload official staff list PDFs and profile records from admin panel.</p>
+
+        <div class="staff-download-list">
+          <a href="#">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>
+              <b>Teaching Staff List</b>
+              <small>Department-wise faculty list</small>
+            </span>
+            <em>PDF</em>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>
+              <b>Administrative Staff List</b>
+              <small>Office and support staff</small>
+            </span>
+            <em>PDF</em>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>
+              <b>Committee Staff List</b>
+              <small>Committee-wise responsibility</small>
+            </span>
+            <em>PDF</em>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- STAFF LIST END -->
+
+
+  <!-- COMMITTEE AND OFFICE STRUCTURE START -->
+  <section class="section admin-committee-section">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-diagram-2"></i>
+          Committees & Office Structure
+        </span>
+        <h2>Administrative committees and institutional responsibility areas.</h2>
+      </div>
+
+      <div class="committee-grid">
+
+        <article class="committee-card reveal">
+          <i class="bi bi-award"></i>
+          <h3>IQAC / NAAC</h3>
+          <p>Quality assurance, academic improvement and institutional documentation.</p>
+        </article>
+
+        <article class="committee-card reveal delay-1">
+          <i class="bi bi-person-plus"></i>
+          <h3>Admission Committee</h3>
+          <p>Admission process, verification, merit list and student guidance.</p>
+        </article>
+
+        <article class="committee-card reveal delay-2">
+          <i class="bi bi-pencil-square"></i>
+          <h3>Examination Committee</h3>
+          <p>Examination coordination, practical schedule and form submission support.</p>
+        </article>
+
+        <article class="committee-card reveal delay-3">
+          <i class="bi bi-shield-check"></i>
+          <h3>Anti-Ragging Cell</h3>
+          <p>Student safety, discipline and anti-ragging awareness.</p>
+        </article>
+
+        <article class="committee-card reveal delay-4">
+          <i class="bi bi-person-raised-hand"></i>
+          <h3>Grievance Cell</h3>
+          <p>Student grievance redressal and public support mechanism.</p>
+        </article>
+
+        <article class="committee-card reveal delay-5">
+          <i class="bi bi-gender-female"></i>
+          <h3>ICC / Women Cell</h3>
+          <p>Internal complaint, gender sensitization and support services.</p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- COMMITTEE AND OFFICE STRUCTURE END -->
+
+
+  <!-- PHOTO GALLERY AND MEDIA START -->
+  <section class="section admin-gallery-section" id="adminGallery">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-images"></i>
+          Photo Gallery & News Media
+        </span>
+        <h2>Administrative events, institutional activities and media updates.</h2>
+        <p>
+          The current Administration menu also includes Photo Gallery and News & Media
+          links for public visibility.
+        </p>
+      </div>
+
+      <div class="admin-gallery-grid">
+
+        <a href="#" class="admin-gallery-item big reveal">
+          <img src="assets/img/bdcpat_img_001.jpg" alt="B.D. College campus">
+          <span>Campus & Administration</span>
+        </a>
+
+        <a href="#" class="admin-gallery-item reveal delay-1">
+          <img src="assets/img/bdcpat_202605201518.jpg" alt="B.D. College activity">
+          <span>Official Programme</span>
+        </a>
+
+        <a href="#" class="admin-gallery-item reveal delay-2">
+          <img src="assets/img/bdcpat_202604212319.jpg" alt="B.D. College institutional event">
+          <span>Institutional Activity</span>
+        </a>
+
+        <a href="#" class="admin-gallery-item reveal delay-3">
+          <img src="assets/img/Media_bdcpat_202605261137.jpg" alt="B.D. College media coverage">
+          <span>News & Media</span>
+        </a>
+
+        <a href="#" class="admin-gallery-item reveal delay-4">
+          <img src="assets/img/Media_bdcpat_202605261148.jpg" alt="B.D. College media update">
+          <span>Press Coverage</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- PHOTO GALLERY AND MEDIA END -->
+
+
+  <!-- ADMIN CONTACT START -->
+  <section class="section admin-contact-section">
+    <div class="site-shell admin-contact-box reveal">
+
+      <div>
+        <span class="section-kicker light-kicker">
+          <i class="bi bi-headset"></i>
+          Administration Help Desk
+        </span>
+
+        <h2>Need official administrative support?</h2>
+
+        <p>
+          Contact the college office for certificates, examination, admission,
+          staff records, office communication and public information support.
+        </p>
+      </div>
+
+      <div class="admin-contact-actions">
+        <a href="tel:06122209909" class="btn light">
+          <i class="bi bi-telephone"></i>
+          06122209909
+        </a>
+
+        <a href="mailto:principalbdcollegepatna@gmail.com" class="btn ghost">
+          <i class="bi bi-envelope"></i>
+          Email College
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ADMIN CONTACT END -->
+
+</main>
+
+
+
+  <!-- Footer: repeated important links and copyright -->
+<footer class="footer">
+  <div class="site-shell footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College Logo">
+        <div>
+          <h3>B.D. College, Patna</h3>
+          <span>A Constituent Unit of Patliputra University</span>
+        </div>
+      </a>
+
+      <p>
+        Official college website for academic information, admission updates,
+        notices, statutory disclosures, student support and institutional transparency.
+      </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#briefHistory">Introduction</a>
+      <a href="about.html#visionMission">Vision & Mission</a>
+      <a href="about.html#collegeGlance">Rules & Regulation</a>
+      <a href="administration.html#principalDesk">Principalâ€™s Message</a>
+      <a href="about.html#collegeGlance">College Magazine</a>
+    </div>
+
+    <!-- ACADEMIC -->
+    <div class="footer-col">
+      <h4>Academic</h4>
+      <a href="academics.html">Academic Overview</a>
+      <a href="department.html">Departments</a>
+      <a href="academics.html#holidayCalendar">List of Holidays</a>
+      <a href="academics.html#timeTable">Time Table</a>
+      <a href="academics.html#syllabus">Syllabus</a>
+      <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+    </div>
+
+    <!-- ADMINISTRATION -->
+    <div class="footer-col">
+      <h4>Administration</h4>
+      <a href="administration.html">Administration</a>
+      <a href="administration.html#formerPrincipals">Former Principals</a>
+      <a href="administration.html#adminStaff">Administrative Staff</a>
+      <a href="administration.html#staffList">Staff List</a>
+      <a href="administration.html#adminGallery">Photo Gallery</a>
+      <a href="administration.html#adminGallery">News & Media</a>
+    </div>
+
+    <!-- STUDENT ZONE -->
+    <div class="footer-col">
+      <h4>Student Zone</h4>
+      <a href="student-zone.html">Student Zone</a>
+      <a href="student-zone.html#studentServices">Student Login</a>
+      <a href="student-zone.html#studentServices">Online Fee Payment</a>
+      <a href="https://admission.ppuponline.in/" target="_blank">Online Admission</a>
+      <a href="reservation-policy.html">Reservation Policy</a>
+      <a href="student-zone.html#formsCertificates">Forms & Certificates</a>
+    </div>
+
+    <!-- DEPARTMENTS -->
+    <div class="footer-col">
+      <h4>Departments</h4>
+      <a href="department.html">All Departments</a>
+      <a href="department-detail.html">Department Detail</a>
+      <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+      <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      <a href="nirf.html">NIRF</a>
+      <a href="nirf-reports.html">NIRF Reports</a>
+    </div>
+
+    <!-- EXTENSION ACTIVITY -->
+    <div class="footer-col">
+      <h4>Extension Activity</h4>
+      <a href="extension-activity.html">Extension Activity</a>
+      <a href="nss.html">NSS</a>
+      <a href="ncc.html">NCC</a>
+      <a href="startup-cell.html">Startup Cell</a>
+      <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+      <a href="debate-club.html">Debate Club</a>
+      <a href="dramatics-society.html">Dramatics Society</a>
+      <a href="literary-society.html">Literary Society</a>
+      <a href="health-center.html">Health Center</a>
+    </div>
+
+    <!-- IQAC / PUBLIC INFO -->
+    <div class="footer-col">
+      <h4>IQAC / Public Info</h4>
+      <a href="iqac.html">IQAC & SSR</a>
+      <a href="iqac-members.html">IQAC Members</a>
+      <a href="iqac-policy.html">Policy Documents</a>
+      <a href="iqac-reports.html">SSR / AQAR Reports</a>
+      <a href="iqac-feedback.html">Feedback & Surveys</a>
+      <a href="nirf-data.html">NIRF Data</a>
+    </div>
+
+    <!-- NOTICE -->
+    <div class="footer-col">
+      <h4>Notice</h4>
+      <a href="notice.html">Notice Board</a>
+      <a href="notice-detail.html">Notice Detail</a>
+      <a href="events.html">Events</a>
+      <a href="tenders.html">Tenders</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="index.html#admission">Admission Merit List</a>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="footer-col">
+      <h4>Feedback</h4>
+      <a href="student-feedback.html">Student Feedback</a>
+      <a href="teacher-feedback.html">Teachers Feedback</a>
+      <a href="contact-us.html">Parents Feedback</a>
+      <a href="feedback-statistics.html">Statistics of Feedback</a>
+      <a href="certificate.html">Apply for Certificate</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <!-- CONTACT -->
+    <!-- FOOTER MAP + CONTACT START -->
+<div class="footer-map-contact">
+  <div class="footer-map-wrap">
+    
+    <!-- COL 8 MAP -->
+    <div class="footer-map-col">
+      <iframe
+        src="https://www.google.com/maps?q=B.D.%20College%2C%20Near%20Gauriamath%2C%20Mithapur%2C%20Patna%2C%20Bihar%20800001&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="B.D. College Patna Google Map">
+      </iframe>
+    </div>
+
+    <!-- COL 4 CONTACT DETAILS -->
+    <div class="footer-contact-col">
+      <h4>Contact</h4>
+
+      <a href="contact-us.html">
+        <i class="bi bi-geo-alt"></i>
+        <span>Near Gauriamath, Mithapur, Patna - 800001</span>
+      </a>
+
+      <a href="tel:06122209909">
+        <i class="bi bi-telephone"></i>
+        <span>06122209909</span>
+      </a>
+
+      <a href="tel:+917903912273">
+        <i class="bi bi-headset"></i>
+        <span>+91 7903912273</span>
+      </a>
+
+      <a href="mailto:principalbdcollegepatna@gmail.com">
+        <i class="bi bi-envelope"></i>
+        <span>principalbdcollegepatna@gmail.com</span>
+      </a>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=B.D.%20College%20Near%20Gauriamath%20Mithapur%20Patna%20Bihar%20800001"
+        target="_blank">
+        <i class="bi bi-map"></i>
+        <span>View Google Map</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+<!-- FOOTER MAP + CONTACT END -->
+
+  </div>
+
+  <div class="site-shell footer-bottom">
+    <span>&copy; 2026 B.D. College, Patna. All Rights Reserved.</span>
+
+    <div class="footer-bottom-links">
+      <a href="index.html">Home</a>
+      <a href="contact-us.html">Contact</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="#top">Back to top <i class="bi bi-arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Search modal: frontend-only search UI placeholder -->
+<div class="search-modal" id="searchModal" aria-hidden="true">
+  <div class="search-box">
+    <button class="close-search" id="closeSearch" type="button" aria-label="Close search">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <h3>Search Website</h3>
+
+    <div class="search-row">
+      <input type="search" placeholder="Search notices, admissions, departments, downloads...">
+      <button class="btn primary" type="button">
+        <i class="bi bi-search"></i>
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery: used for professional carousel/slider interactions -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

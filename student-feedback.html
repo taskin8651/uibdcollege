@@ -1,0 +1,1190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B.D. College, Patna | Official Website Redesign</title>
+  <meta name="description" content="Frontend redesign prototype for B.D. College, Patna covering notices, admissions, academics, departments, NAAC/IQAC, RTI, downloads and student support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Accessibility: keyboard users can jump directly to page content -->
+    <!-- Accessibility: keyboard users can jump directly to page content -->
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <!-- Top contact bar: affiliation, AISHE code, email and phone -->
+  <div class="topbar">
+    <div class="site-shell topbar-inner">
+      <div class="topbar-left">
+        <span><i class="bi bi-bank2"></i> A Constituent Unit of Patliputra University, Patna</span>
+        <span><i class="bi bi-patch-check-fill"></i> AISHE Code C-12847</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:principalbdcollegepatna@gmail.com"><i class="bi bi-envelope"></i> principalbdcollegepatna@gmail.com</a>
+        <a href="tel:06122209909"><i class="bi bi-telephone"></i> 06122209909</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand header: college logo, name, university logo and accreditation highlights -->
+  <header class="masthead" id="top">
+    <div class="site-shell masthead-inner">
+      <a href="#top" class="brand">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College logo">
+        <span>
+          <strong>B.D. College, Patna</strong>
+          <small>भुवनेश्वरी दयाल कॉलेज, पटना</small>
+        </span>
+      </a>
+
+      <div class="identity-strip">
+        <img src="assets/img/logo_ppupat.png" alt="Patliputra University logo">
+        <span>NAAC Accredited Grade B+ with CGPA 2.39/4</span>
+        <span>Near Gauriamath, Mithapur, Patna</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main menu: dropdown structure follows the current B.D. College website grouping -->
+<nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+  <div class="site-shell nav-inner">
+
+    <a class="nav-link" href="index.html">Home</a>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        About <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="about.html#briefHistory">Introduction</a>
+        <a href="about.html#visionMission">Vision & Mission</a>
+        <a href="about.html#collegeGlance">Rules & Regulation</a>
+        <a href="administration.html#principalDesk">Principal's Message</a>
+        <a href="about.html#collegeGlance">College Magazine</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Academic <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="academics.html">Academic Overview</a>
+        <a href="academics.html#coursesOffered">Courses Offered</a>
+        <a href="academics.html#holidayCalendar">List of Holidays</a>
+        <a href="academics.html#timeTable">Time Table</a>
+        <a href="academics.html#syllabus">Syllabus</a>
+        <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Administration <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="administration.html">Administration</a>
+        <a href="administration.html#formerPrincipals">Former Principals</a>
+        <a href="administration.html#adminStaff">Administrative Staff</a>
+        <a href="administration.html#staffList">Staff List</a>
+        <a href="administration.html#adminGallery">Photo Gallery</a>
+        <a href="administration.html#adminGallery">News & Media</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Department <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="department.html">All Department</a>
+        <a href="department-detail.html">Department Detail</a>
+        <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+        <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Student Zone <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-zone.html">Student Zone</a>
+        <a href="student-zone.html#studentServices">Student Login</a>
+        <a href="student-zone.html#studentServices">Online Fee Payment</a>
+        <a href="https://admission.ppuponline.in/" target="_blank">Online Admission (PPU)</a>
+        <a href="reservation-policy.html">Reservation Policy</a>
+        <a href="student-zone.html#formsCertificates">Certificates / Forms</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Extension Activity <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="extension-activity.html">Extension Activity</a>
+        <a href="nss.html">NSS</a>
+        <a href="ncc.html">NCC</a>
+        <a href="startup-cell.html">Startup Cell</a>
+        <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+        <a href="debate-club.html">Debate Club</a>
+        <a href="dramatics-society.html">Dramatics Society</a>
+        <a href="literary-society.html">Literary Society</a>
+        <a href="health-center.html">Health Center</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        IQAC & SSR <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="iqac.html">IQAC Home</a>
+        <a href="iqac-reports.html#ssrReports">SSR</a>
+        <a href="iqac-members.html">Members</a>
+        <a href="iqac-policy.html">Policy Documents</a>
+        <a href="iqac-reports.html#meetingReports">Minutes of Meeting</a>
+        <a href="iqac-reports.html#bestPractices">Best Practices</a>
+        <a href="iqac-feedback.html">Satisfaction Surveys</a>
+        <a href="iqac-reports.html#aqarReports">AQAR</a>
+        <a href="iqac-reports.html">Yearly Reports</a>
+        <a href="iqac-reports.html#activities">Activities</a>
+        <a href="iqac-feedback.html#feedbackTypes">Student Feedback</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        NIRF <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="nirf.html">NIRF Home</a>
+        <a href="nirf-reports.html">NIRF Reports</a>
+        <a href="nirf-data.html">NIRF Data</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Notice <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="notice.html">Notice</a>
+        <a href="events.html">Events</a>
+        <a href="tenders.html">Tenders</a>
+        <a href="notice-detail.html">Notice Detail</a>
+        <a href="index.html#downloads">Downloads</a>
+        <a href="index.html#admission">Admission Merit List</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Feedback <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-feedback.html">Student's Feedback</a>
+        <a href="teacher-feedback.html">Teachers' Feedback</a>
+        <a href="contact-us.html">Parents Feedback</a>
+        <a href="feedback-statistics.html">Statistics of Feedback</a>
+      </div>
+    </div>
+
+    <a class="nav-link" href="contact-us.html">Contact Us</a>
+    <a class="nav-link login-link" href="student-zone.html#studentServices">Login</a>
+
+    <button class="search-trigger" id="searchTrigger" type="button" aria-label="Search website">
+      <i class="bi bi-search"></i>
+    </button>
+
+  </div>
+</nav>
+
+  <!-- Notice ticker: fast access to latest college/university updates -->
+  <section class="alert-strip" aria-label="Latest updates">
+    <div class="site-shell alert-inner">
+      <strong><i class="bi bi-megaphone-fill"></i> Latest Updates</strong>
+      <div class="ticker">
+        <span>Vocational Part-I Exam Schedule 2026 &nbsp; | &nbsp; UG Admission updates & merit list placeholder &nbsp; | &nbsp; Semester subject selection notices &nbsp; | &nbsp; NAAC / IQAC reports and statutory disclosures</span>
+      </div>
+      <a href="index.html#notices">View All</a>
+    </div>
+  </section>
+<main id="mainContent">
+
+  <!-- FEEDBACK HERO START -->
+  <section class="feedback-page-hero">
+    <div class="feedback-hero-bg"></div>
+
+    <div class="site-shell feedback-hero-inner">
+      <div class="feedback-hero-content reveal">
+        <span class="eyebrow">
+          <i class="bi bi-chat-square-text"></i>
+          Student Feedback
+        </span>
+
+        <h1>Student Feedback Form</h1>
+
+        <p>
+          Share your academic, teaching-learning, evaluation, library, internet centre
+          and administration related feedback to support continuous institutional improvement.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#feedbackForm" class="btn primary">
+            <i class="bi bi-pencil-square"></i>
+            Fill Feedback
+          </a>
+          <a href="#feedbackSections" class="btn light">
+            <i class="bi bi-list-check"></i>
+            Feedback Areas
+          </a>
+          <a href="feedback-statistics.html" class="btn ghost">
+            <i class="bi bi-bar-chart"></i>
+            Statistics
+          </a>
+        </div>
+      </div>
+
+      <div class="feedback-hero-card reveal delay-1">
+        <div class="feedback-card-icon">
+          <i class="bi bi-person-check"></i>
+        </div>
+        <h3>Student Voice</h3>
+        <p>Your feedback helps improve academic and campus services.</p>
+
+        <div class="feedback-hero-pills">
+          <span>Course</span>
+          <span>Teaching</span>
+          <span>Library</span>
+          <span>Admin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEEDBACK HERO END -->
+
+
+  <!-- BREADCRUMB START -->
+  <section class="feedback-breadcrumb">
+    <div class="site-shell breadcrumb-inner">
+      <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+      <i class="bi bi-chevron-right"></i>
+      <span>Feedback</span>
+      <i class="bi bi-chevron-right"></i>
+      <strong>Student Feedback</strong>
+    </div>
+  </section>
+  <!-- BREADCRUMB END -->
+
+
+  <!-- QUICK LINKS START -->
+  <section class="feedback-quick-section">
+    <div class="site-shell feedback-quick-grid">
+
+      <a href="student-feedback.html" class="feedback-quick-card reveal">
+        <i class="bi bi-person"></i>
+        <strong>Student Feedback</strong>
+        <span>Course, teaching and campus feedback</span>
+      </a>
+
+      <a href="teacher-feedback.html" class="feedback-quick-card reveal delay-1">
+        <i class="bi bi-person-video3"></i>
+        <strong>Teachers' Feedback</strong>
+        <span>Faculty feedback and academic suggestions</span>
+      </a>
+
+      <a href="parents-feedback.html" class="feedback-quick-card reveal delay-2">
+        <i class="bi bi-people"></i>
+        <strong>Parents Feedback</strong>
+        <span>Parent satisfaction and support response</span>
+      </a>
+
+      <a href="feedback-statistics.html" class="feedback-quick-card reveal delay-3">
+        <i class="bi bi-bar-chart"></i>
+        <strong>Statistics of Feedback</strong>
+        <span>Feedback report and analysis</span>
+      </a>
+
+    </div>
+  </section>
+  <!-- QUICK LINKS END -->
+
+
+  <!-- OVERVIEW START -->
+  <section class="section feedback-overview-section">
+    <div class="site-shell two-col">
+
+      <div class="image-panel reveal">
+        <img src="assets/img/bdcpat_img_001.jpg" alt="B.D. College Student Feedback">
+      </div>
+
+      <div class="content-block reveal delay-1">
+        <span class="section-kicker">
+          <i class="bi bi-info-circle"></i>
+          Feedback Overview
+        </span>
+
+        <h2>Student feedback supports quality improvement and academic development.</h2>
+
+        <p>
+          Student Feedback form collects responses from UG/PG students for course
+          content, teaching-learning process, evaluation, library facilities, internet
+          centre and administration services.
+        </p>
+
+        <p>
+          Each question uses a four-point response scale: Strongly Agree, Agree,
+          Disagree and Strongly Disagree.
+        </p>
+
+        <div class="check-grid">
+          <span><i class="bi bi-check2-circle"></i> Course content</span>
+          <span><i class="bi bi-check2-circle"></i> Teaching-learning process</span>
+          <span><i class="bi bi-check2-circle"></i> Evaluation process</span>
+          <span><i class="bi bi-check2-circle"></i> Library facilities</span>
+          <span><i class="bi bi-check2-circle"></i> Internet centre</span>
+          <span><i class="bi bi-check2-circle"></i> Administration</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- OVERVIEW END -->
+
+
+  <!-- FEEDBACK SECTIONS START -->
+  <section class="section feedback-section-overview" id="feedbackSections">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-grid-3x3-gap"></i>
+          Feedback Areas
+        </span>
+        <h2>Student feedback is divided into six sections.</h2>
+      </div>
+
+      <div class="feedback-area-grid">
+
+        <article class="feedback-area-card reveal">
+          <i class="bi bi-journal-bookmark"></i>
+          <h3>A - Course Content</h3>
+          <p>Syllabus coverage, topic explanation, communication and motivation.</p>
+        </article>
+
+        <article class="feedback-area-card reveal delay-1">
+          <i class="bi bi-person-video3"></i>
+          <h3>B - Teaching-Learning Process</h3>
+          <p>Guidance, participation, discussion and attention to weaker students.</p>
+        </article>
+
+        <article class="feedback-area-card reveal delay-2">
+          <i class="bi bi-clipboard-check"></i>
+          <h3>C - Evaluation Process</h3>
+          <p>Periodic assessments, curriculum coverage and fair evaluation.</p>
+        </article>
+
+        <article class="feedback-area-card reveal delay-3">
+          <i class="bi bi-book"></i>
+          <h3>D - Library</h3>
+          <p>Library visit, book arrangement, reading space, staff and Xerox facility.</p>
+        </article>
+
+        <article class="feedback-area-card reveal delay-4">
+          <i class="bi bi-wifi"></i>
+          <h3>E - Internet Centre</h3>
+          <p>Online resources, terminals availability and staff cooperation.</p>
+        </article>
+
+        <article class="feedback-area-card reveal delay-5">
+          <i class="bi bi-building-check"></i>
+          <h3>F - Administration</h3>
+          <p>Office support, classrooms, toilets, drinking water, canteen and scholarships.</p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- FEEDBACK SECTIONS END -->
+
+
+  <!-- FORM START -->
+  <section class="section student-feedback-form-section" id="feedbackForm">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-pencil-square"></i>
+          Feedback Form
+        </span>
+        <h2>Submit Student Feedback</h2>
+        <p>Fill student details and select response for every question.</p>
+      </div>
+
+      <form class="student-feedback-form reveal" action="#" method="post">
+
+        <!-- STUDENT DETAILS -->
+        <div class="feedback-form-card">
+          <div class="feedback-form-head">
+            <i class="bi bi-person-lines-fill"></i>
+            <div>
+              <h3>Student Details</h3>
+              <p>Class, department, semester, session and contact details.</p>
+            </div>
+          </div>
+
+          <div class="feedback-form-grid">
+            <label>
+              Class [UG or PG]
+              <select name="class_type" required>
+                <option value="">Select Class</option>
+                <option>UG</option>
+                <option>PG</option>
+              </select>
+            </label>
+
+            <label>
+              Subject / Department
+              <select name="department" required>
+                <option value="">Select Subject</option>
+                <option>ANCIENT HISTORY, CULTURE & ARCHAEOLOGY</option>
+                <option>B.I.M.B. INDUSTRIAL MICRO BIOLOGY</option>
+                <option>B.SC. BIOTECHNOLOGY</option>
+                <option>BACHELOR OF BUSINESS ADMINISTRATION (BBA)</option>
+                <option>BACHELOR OF COMPUTER APPLICATIONS (BCA)</option>
+                <option>BENGALI</option>
+                <option>BOTANY</option>
+                <option>CHEMISTRY</option>
+                <option>COMMERCE AND MANAGEMENT</option>
+                <option>ECONOMICS</option>
+                <option>ENGLISH</option>
+                <option>GEOGRAPHY</option>
+                <option>HINDI</option>
+                <option>HISTORY</option>
+                <option>INFORMATION TECHNOLOGY (B.SC.IT)</option>
+                <option>LIBRARY SCIENCE (BLIS)</option>
+                <option>MAITHILI</option>
+                <option>MASTER OF BUSINESS ADMINISTRATION</option>
+                <option>MASTER OF COMPUTER APPLICATIONS</option>
+                <option>MATH</option>
+                <option>PALI</option>
+                <option>PERSION</option>
+                <option>PHILOSOPHY</option>
+                <option>PHYSICS</option>
+                <option>POLITICAL SCIENCE</option>
+                <option>PRAKRIT</option>
+                <option>PSYCHOLOGY</option>
+                <option>RURAL ECONOMICS</option>
+                <option>SANSKRIT</option>
+                <option>SOCIOLOGY</option>
+                <option>URDU</option>
+                <option>ZOOLOGY</option>
+              </select>
+            </label>
+
+            <label>
+              Semester
+              <select name="semester" required>
+                <option value="">Select Semester</option>
+                <option>SEM-1</option>
+                <option>SEM-2</option>
+                <option>SEM-3</option>
+                <option>SEM-4</option>
+                <option>SEM-5</option>
+                <option>SEM-6</option>
+                <option>SEM-7</option>
+                <option>SEM-8</option>
+              </select>
+            </label>
+
+            <label>
+              Session
+              <select name="session" required>
+                <option value="">Select Session</option>
+                <option>2020-2023</option>
+                <option>2021-2023</option>
+                <option>2021-2024</option>
+                <option>2022-2023</option>
+                <option>2022-2024</option>
+                <option>2022-2025</option>
+                <option>2023-2024</option>
+                <option>2023-2025</option>
+                <option>2023-2026</option>
+                <option>2024-2025</option>
+                <option>2024-2026</option>
+                <option>2024-2027</option>
+                <option>2025-2026</option>
+                <option>2025-2027</option>
+                <option>2025-2028</option>
+                <option>2025-2029</option>
+                <option>2026-2027</option>
+                <option>2026-2028</option>
+                <option>2026-2029</option>
+                <option>2026-2030</option>
+              </select>
+            </label>
+
+            <label>
+              Class Roll No.
+              <input type="text" name="roll_no" placeholder="Enter class roll no." required>
+            </label>
+
+            <label>
+              Student's Name
+              <input type="text" name="student_name" placeholder="Enter student's name" required>
+            </label>
+
+            <label>
+              Mobile No.
+              <input type="tel" name="mobile" placeholder="Enter mobile number" required>
+            </label>
+
+            <label>
+              Email Id
+              <input type="email" name="email" placeholder="Enter email id">
+            </label>
+
+            <label class="wide">
+              Feedback Purpose
+              <input type="text" name="feedback_purpose" placeholder="Enter feedback purpose">
+            </label>
+          </div>
+        </div>
+
+
+        <!-- A COURSE CONTENT -->
+        <div class="feedback-form-card">
+          <div class="feedback-form-head">
+            <i class="bi bi-journal-bookmark"></i>
+            <div>
+              <h3>A - Course Content</h3>
+              <p>Questions related to syllabus, communication and motivation.</p>
+            </div>
+          </div>
+
+          <div class="feedback-question-list">
+            <div class="feedback-question">
+              <label>Q-A-1. The teacher discusses topics in detail & covers the entire syllabus.</label>
+              <select name="qa1" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-A-2. The teacher communicates clearly.</label>
+              <select name="qa2" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-A-3. The teacher motivates the students to study.</label>
+              <select name="qa3" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- B TEACHING LEARNING -->
+        <div class="feedback-form-card">
+          <div class="feedback-form-head">
+            <i class="bi bi-person-video3"></i>
+            <div>
+              <h3>B - Teaching-Learning Process</h3>
+              <p>Guidance, participation and student support.</p>
+            </div>
+          </div>
+
+          <div class="feedback-question-list">
+            <div class="feedback-question">
+              <label>Q-B-1. The teacher provides guidance counselling in academic nonacademic matters in/out-side the class.</label>
+              <select name="qb1" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-B-2. The teacher encourages participation & discussion in class (Teacher-Student, Student-Student).</label>
+              <select name="qb2" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-B-3. The teacher pays attention to academically weaker students as well.</label>
+              <select name="qb3" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- C EVALUATION -->
+        <div class="feedback-form-card">
+          <div class="feedback-form-head">
+            <i class="bi bi-clipboard-check"></i>
+            <div>
+              <h3>C - Evaluation Process</h3>
+              <p>Assessment process and fairness in evaluation.</p>
+            </div>
+          </div>
+
+          <div class="feedback-question-list">
+            <div class="feedback-question">
+              <label>Q-C-1. Assessments are conducted periodically.</label>
+              <select name="qc1" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-C-2. Question paper covers all the topics in the Curriculum.</label>
+              <select name="qc2" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-C-3. Teachers are fair & unbiased in the evaluation Process.</label>
+              <select name="qc3" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- D LIBRARY -->
+        <div class="feedback-form-card">
+          <div class="feedback-form-head">
+            <i class="bi bi-book"></i>
+            <div>
+              <h3>D - Library</h3>
+              <p>Library usage, arrangement, space, staff and Xerox facility.</p>
+            </div>
+          </div>
+
+          <div class="feedback-question-list">
+            <div class="feedback-question">
+              <label>Q-D-1. Do you visit the Library?</label>
+              <select name="qd1" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-D-2. Are you satisfied with the cataloging and arrangement of books in the Library?</label>
+              <select name="qd2" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-D-3. Are you satisfied with the Reading space available in the Library?</label>
+              <select name="qd3" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-D-4. Are the Library Staffs co-operative and helpful?</label>
+              <select name="qd4" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-D-5. Are you able to make use of Xerox facility in the Library?</label>
+              <select name="qd5" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- E INTERNET CENTRE -->
+        <div class="feedback-form-card">
+          <div class="feedback-form-head">
+            <i class="bi bi-wifi"></i>
+            <div>
+              <h3>E - Internet Centre</h3>
+              <p>Educational resources, terminals and staff support.</p>
+            </div>
+          </div>
+
+          <div class="feedback-question-list">
+            <div class="feedback-question">
+              <label>Q-E-1. Are you making use of educational online resources?</label>
+              <select name="qe1" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-E-2. Are nodes/terminals available in the Internet Centre in the Library?</label>
+              <select name="qe2" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-E-3. Are the internet center staffs co-operative and helpful?</label>
+              <select name="qe3" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- F ADMINISTRATION -->
+        <div class="feedback-form-card">
+          <div class="feedback-form-head">
+            <i class="bi bi-building-check"></i>
+            <div>
+              <h3>F - Administration</h3>
+              <p>Department office, classrooms, facilities, placement and scholarship.</p>
+            </div>
+          </div>
+
+          <div class="feedback-question-list">
+            <div class="feedback-question">
+              <label>Q-F-1. Is the Departmental office helpful in administrative matters?</label>
+              <select name="qf1" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-2. Do you receive the Mark statements in time?</label>
+              <select name="qf2" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-3. Are there enough classrooms available in the Department?</label>
+              <select name="qf3" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-4. Are the toilets clean?</label>
+              <select name="qf4" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-5. Are you provided with drinking water?</label>
+              <select name="qf5" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-6. Are you happy with the food served in the present canteen?</label>
+              <select name="qf6" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-7. Is there a Student Amenity Centre in your Campus?</label>
+              <select name="qf7" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-8. Are you aware of the functioning of a placement cell in College?</label>
+              <select name="qf8" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-9. Are the Lab. Equipmentâ€™s in proper working conditions?</label>
+              <select name="qf9" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-10. Are you aware of the 'Earn While you Learn' Scheme in our College?</label>
+              <select name="qf10" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+
+            <div class="feedback-question">
+              <label>Q-F-11. Do you avail any Scholarship?</label>
+              <select name="qf11" required>
+                <option value="">Select Response</option>
+                <option>1 - Strongly Agree</option>
+                <option>2 - Agree</option>
+                <option>3 - Disagree</option>
+                <option>4 - Strongly Disagree</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- SUBMIT -->
+        <div class="feedback-submit-box">
+          <div>
+            <h3>Submit Your Feedback</h3>
+            <p>Please review your responses before submitting the form.</p>
+          </div>
+
+          <button type="submit" class="btn primary">
+            <i class="bi bi-send"></i>
+            Submit Feedback
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+  <!-- FORM END -->
+
+</main>
+
+  <!-- Footer: repeated important links and copyright -->
+<footer class="footer">
+  <div class="site-shell footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College Logo">
+        <div>
+          <h3>B.D. College, Patna</h3>
+          <span>A Constituent Unit of Patliputra University</span>
+        </div>
+      </a>
+
+      <p>
+        Official college website for academic information, admission updates,
+        notices, statutory disclosures, student support and institutional transparency.
+      </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#briefHistory">Introduction</a>
+      <a href="about.html#visionMission">Vision & Mission</a>
+      <a href="about.html#collegeGlance">Rules & Regulation</a>
+      <a href="administration.html#principalDesk">Principalâ€™s Message</a>
+      <a href="about.html#collegeGlance">College Magazine</a>
+    </div>
+
+    <!-- ACADEMIC -->
+    <div class="footer-col">
+      <h4>Academic</h4>
+      <a href="academics.html">Academic Overview</a>
+      <a href="department.html">Departments</a>
+      <a href="academics.html#holidayCalendar">List of Holidays</a>
+      <a href="academics.html#timeTable">Time Table</a>
+      <a href="academics.html#syllabus">Syllabus</a>
+      <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+    </div>
+
+    <!-- ADMINISTRATION -->
+    <div class="footer-col">
+      <h4>Administration</h4>
+      <a href="administration.html">Administration</a>
+      <a href="administration.html#formerPrincipals">Former Principals</a>
+      <a href="administration.html#adminStaff">Administrative Staff</a>
+      <a href="administration.html#staffList">Staff List</a>
+      <a href="administration.html#adminGallery">Photo Gallery</a>
+      <a href="administration.html#adminGallery">News & Media</a>
+    </div>
+
+    <!-- STUDENT ZONE -->
+    <div class="footer-col">
+      <h4>Student Zone</h4>
+      <a href="student-zone.html">Student Zone</a>
+      <a href="student-zone.html#studentServices">Student Login</a>
+      <a href="student-zone.html#studentServices">Online Fee Payment</a>
+      <a href="https://admission.ppuponline.in/" target="_blank">Online Admission</a>
+      <a href="reservation-policy.html">Reservation Policy</a>
+      <a href="student-zone.html#formsCertificates">Forms & Certificates</a>
+    </div>
+
+    <!-- DEPARTMENTS -->
+    <div class="footer-col">
+      <h4>Departments</h4>
+      <a href="department.html">All Departments</a>
+      <a href="department-detail.html">Department Detail</a>
+      <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+      <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      <a href="nirf.html">NIRF</a>
+      <a href="nirf-reports.html">NIRF Reports</a>
+    </div>
+
+    <!-- EXTENSION ACTIVITY -->
+    <div class="footer-col">
+      <h4>Extension Activity</h4>
+      <a href="extension-activity.html">Extension Activity</a>
+      <a href="nss.html">NSS</a>
+      <a href="ncc.html">NCC</a>
+      <a href="startup-cell.html">Startup Cell</a>
+      <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+      <a href="debate-club.html">Debate Club</a>
+      <a href="dramatics-society.html">Dramatics Society</a>
+      <a href="literary-society.html">Literary Society</a>
+      <a href="health-center.html">Health Center</a>
+    </div>
+
+    <!-- IQAC / PUBLIC INFO -->
+    <div class="footer-col">
+      <h4>IQAC / Public Info</h4>
+      <a href="iqac.html">IQAC & SSR</a>
+      <a href="iqac-members.html">IQAC Members</a>
+      <a href="iqac-policy.html">Policy Documents</a>
+      <a href="iqac-reports.html">SSR / AQAR Reports</a>
+      <a href="iqac-feedback.html">Feedback & Surveys</a>
+      <a href="nirf-data.html">NIRF Data</a>
+    </div>
+
+    <!-- NOTICE -->
+    <div class="footer-col">
+      <h4>Notice</h4>
+      <a href="notice.html">Notice Board</a>
+      <a href="notice-detail.html">Notice Detail</a>
+      <a href="events.html">Events</a>
+      <a href="tenders.html">Tenders</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="index.html#admission">Admission Merit List</a>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="footer-col">
+      <h4>Feedback</h4>
+      <a href="student-feedback.html">Student Feedback</a>
+      <a href="teacher-feedback.html">Teachers Feedback</a>
+      <a href="contact-us.html">Parents Feedback</a>
+      <a href="feedback-statistics.html">Statistics of Feedback</a>
+      <a href="certificate.html">Apply for Certificate</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <!-- CONTACT -->
+    <!-- FOOTER MAP + CONTACT START -->
+<div class="footer-map-contact">
+  <div class="footer-map-wrap">
+    
+    <!-- COL 8 MAP -->
+    <div class="footer-map-col">
+      <iframe
+        src="https://www.google.com/maps?q=B.D.%20College%2C%20Near%20Gauriamath%2C%20Mithapur%2C%20Patna%2C%20Bihar%20800001&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="B.D. College Patna Google Map">
+      </iframe>
+    </div>
+
+    <!-- COL 4 CONTACT DETAILS -->
+    <div class="footer-contact-col">
+      <h4>Contact</h4>
+
+      <a href="contact-us.html">
+        <i class="bi bi-geo-alt"></i>
+        <span>Near Gauriamath, Mithapur, Patna - 800001</span>
+      </a>
+
+      <a href="tel:06122209909">
+        <i class="bi bi-telephone"></i>
+        <span>06122209909</span>
+      </a>
+
+      <a href="tel:+917903912273">
+        <i class="bi bi-headset"></i>
+        <span>+91 7903912273</span>
+      </a>
+
+      <a href="mailto:principalbdcollegepatna@gmail.com">
+        <i class="bi bi-envelope"></i>
+        <span>principalbdcollegepatna@gmail.com</span>
+      </a>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=B.D.%20College%20Near%20Gauriamath%20Mithapur%20Patna%20Bihar%20800001"
+        target="_blank">
+        <i class="bi bi-map"></i>
+        <span>View Google Map</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+<!-- FOOTER MAP + CONTACT END -->
+
+  </div>
+
+  <div class="site-shell footer-bottom">
+    <span>&copy; 2026 B.D. College, Patna. All Rights Reserved.</span>
+
+    <div class="footer-bottom-links">
+      <a href="index.html">Home</a>
+      <a href="contact-us.html">Contact</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="#top">Back to top <i class="bi bi-arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Search modal: frontend-only search UI placeholder -->
+<div class="search-modal" id="searchModal" aria-hidden="true">
+  <div class="search-box">
+    <button class="close-search" id="closeSearch" type="button" aria-label="Close search">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <h3>Search Website</h3>
+
+    <div class="search-row">
+      <input type="search" placeholder="Search notices, admissions, departments, downloads...">
+      <button class="btn primary" type="button">
+        <i class="bi bi-search"></i>
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery: used for professional carousel/slider interactions -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

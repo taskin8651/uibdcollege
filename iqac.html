@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B.D. College, Patna | Official Website Redesign</title>
+  <meta name="description" content="Frontend redesign prototype for B.D. College, Patna covering notices, admissions, academics, departments, NAAC/IQAC, RTI, downloads and student support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Accessibility: keyboard users can jump directly to page content -->
+    <!-- Accessibility: keyboard users can jump directly to page content -->
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <!-- Top contact bar: affiliation, AISHE code, email and phone -->
+  <div class="topbar">
+    <div class="site-shell topbar-inner">
+      <div class="topbar-left">
+        <span><i class="bi bi-bank2"></i> A Constituent Unit of Patliputra University, Patna</span>
+        <span><i class="bi bi-patch-check-fill"></i> AISHE Code C-12847</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:principalbdcollegepatna@gmail.com"><i class="bi bi-envelope"></i> principalbdcollegepatna@gmail.com</a>
+        <a href="tel:06122209909"><i class="bi bi-telephone"></i> 06122209909</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand header: college logo, name, university logo and accreditation highlights -->
+  <header class="masthead" id="top">
+    <div class="site-shell masthead-inner">
+      <a href="#top" class="brand">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College logo">
+        <span>
+          <strong>B.D. College, Patna</strong>
+          <small>भुवनेश्वरी दयाल कॉलेज, पटना</small>
+        </span>
+      </a>
+
+      <div class="identity-strip">
+        <img src="assets/img/logo_ppupat.png" alt="Patliputra University logo">
+        <span>NAAC Accredited Grade B+ with CGPA 2.39/4</span>
+        <span>Near Gauriamath, Mithapur, Patna</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main menu: dropdown structure follows the current B.D. College website grouping -->
+<nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+  <div class="site-shell nav-inner">
+
+    <a class="nav-link" href="index.html">Home</a>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        About <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="about.html#briefHistory">Introduction</a>
+        <a href="about.html#visionMission">Vision & Mission</a>
+        <a href="about.html#collegeGlance">Rules & Regulation</a>
+        <a href="administration.html#principalDesk">Principal's Message</a>
+        <a href="about.html#collegeGlance">College Magazine</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Academic <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="academics.html">Academic Overview</a>
+        <a href="academics.html#coursesOffered">Courses Offered</a>
+        <a href="academics.html#holidayCalendar">List of Holidays</a>
+        <a href="academics.html#timeTable">Time Table</a>
+        <a href="academics.html#syllabus">Syllabus</a>
+        <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Administration <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="administration.html">Administration</a>
+        <a href="administration.html#formerPrincipals">Former Principals</a>
+        <a href="administration.html#adminStaff">Administrative Staff</a>
+        <a href="administration.html#staffList">Staff List</a>
+        <a href="administration.html#adminGallery">Photo Gallery</a>
+        <a href="administration.html#adminGallery">News & Media</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Department <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="department.html">All Department</a>
+        <a href="department-detail.html">Department Detail</a>
+        <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+        <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Student Zone <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-zone.html">Student Zone</a>
+        <a href="student-zone.html#studentServices">Student Login</a>
+        <a href="student-zone.html#studentServices">Online Fee Payment</a>
+        <a href="https://admission.ppuponline.in/" target="_blank">Online Admission (PPU)</a>
+        <a href="reservation-policy.html">Reservation Policy</a>
+        <a href="student-zone.html#formsCertificates">Certificates / Forms</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Extension Activity <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="extension-activity.html">Extension Activity</a>
+        <a href="nss.html">NSS</a>
+        <a href="ncc.html">NCC</a>
+        <a href="startup-cell.html">Startup Cell</a>
+        <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+        <a href="debate-club.html">Debate Club</a>
+        <a href="dramatics-society.html">Dramatics Society</a>
+        <a href="literary-society.html">Literary Society</a>
+        <a href="health-center.html">Health Center</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        IQAC & SSR <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="iqac.html">IQAC Home</a>
+        <a href="iqac-reports.html#ssrReports">SSR</a>
+        <a href="iqac-members.html">Members</a>
+        <a href="iqac-policy.html">Policy Documents</a>
+        <a href="iqac-reports.html#meetingReports">Minutes of Meeting</a>
+        <a href="iqac-reports.html#bestPractices">Best Practices</a>
+        <a href="iqac-feedback.html">Satisfaction Surveys</a>
+        <a href="iqac-reports.html#aqarReports">AQAR</a>
+        <a href="iqac-reports.html">Yearly Reports</a>
+        <a href="iqac-reports.html#activities">Activities</a>
+        <a href="iqac-feedback.html#feedbackTypes">Student Feedback</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        NIRF <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="nirf.html">NIRF Home</a>
+        <a href="nirf-reports.html">NIRF Reports</a>
+        <a href="nirf-data.html">NIRF Data</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Notice <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="notice.html">Notice</a>
+        <a href="events.html">Events</a>
+        <a href="tenders.html">Tenders</a>
+        <a href="notice-detail.html">Notice Detail</a>
+        <a href="index.html#downloads">Downloads</a>
+        <a href="index.html#admission">Admission Merit List</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Feedback <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-feedback.html">Student's Feedback</a>
+        <a href="teacher-feedback.html">Teachers' Feedback</a>
+        <a href="contact-us.html">Parents Feedback</a>
+        <a href="feedback-statistics.html">Statistics of Feedback</a>
+      </div>
+    </div>
+
+    <a class="nav-link" href="contact-us.html">Contact Us</a>
+    <a class="nav-link login-link" href="student-zone.html#studentServices">Login</a>
+
+    <button class="search-trigger" id="searchTrigger" type="button" aria-label="Search website">
+      <i class="bi bi-search"></i>
+    </button>
+
+  </div>
+</nav>
+
+  <!-- Notice ticker: fast access to latest college/university updates -->
+  <section class="alert-strip" aria-label="Latest updates">
+    <div class="site-shell alert-inner">
+      <strong><i class="bi bi-megaphone-fill"></i> Latest Updates</strong>
+      <div class="ticker">
+        <span>Vocational Part-I Exam Schedule 2026 &nbsp; | &nbsp; UG Admission updates & merit list placeholder &nbsp; | &nbsp; Semester subject selection notices &nbsp; | &nbsp; NAAC / IQAC reports and statutory disclosures</span>
+      </div>
+      <a href="index.html#notices">View All</a>
+    </div>
+  </section>
+<main id="mainContent">
+
+  <!-- IQAC HERO START -->
+  <section class="iqac-page-hero">
+    <div class="iqac-hero-bg"></div>
+
+    <div class="site-shell iqac-hero-inner">
+      <div class="iqac-hero-content reveal">
+        <span class="eyebrow">
+          <i class="bi bi-award"></i>
+          IQAC & SSR
+        </span>
+
+        <h1>Internal Quality Assurance Cell</h1>
+
+        <p>
+          IQAC works towards quality enhancement, academic excellence, institutional
+          improvement, stakeholder participation and continuous quality sustenance.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#iqacIntroduction" class="btn primary">
+            <i class="bi bi-info-circle"></i>
+            Introduction
+          </a>
+          <a href="#iqacMembers" class="btn light">
+            <i class="bi bi-people"></i>
+            Members
+          </a>
+          <a href="#iqacPolicy" class="btn ghost">
+            <i class="bi bi-file-earmark-text"></i>
+            Policy
+          </a>
+        </div>
+      </div>
+
+      <div class="iqac-hero-card reveal delay-1">
+        <div class="iqac-card-icon">
+          <i class="bi bi-patch-check"></i>
+        </div>
+        <h3>Quality Assurance</h3>
+        <p>Academic quality, performance evaluation and continuous improvement.</p>
+
+        <div class="iqac-hero-pills">
+          <span>SSR</span>
+          <span>AQAR</span>
+          <span>NAAC</span>
+          <span>Feedback</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- IQAC HERO END -->
+
+
+  <!-- BREADCRUMB START -->
+  <section class="iqac-breadcrumb">
+    <div class="site-shell breadcrumb-inner">
+      <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+      <i class="bi bi-chevron-right"></i>
+      <span>IQAC & SSR</span>
+      <i class="bi bi-chevron-right"></i>
+      <strong>IQAC Home</strong>
+    </div>
+  </section>
+  <!-- BREADCRUMB END -->
+
+
+  <!-- IQAC QUICK LINKS START -->
+  <section class="iqac-quick-section">
+    <div class="site-shell iqac-quick-grid">
+
+      <a href="#iqacIntroduction" class="iqac-quick-card reveal">
+        <i class="bi bi-info-circle"></i>
+        <strong>Introduction</strong>
+        <span>Quality enhancement and sustenance</span>
+      </a>
+
+      <a href="iqac-members.html" class="iqac-quick-card reveal delay-1">
+        <i class="bi bi-people"></i>
+        <strong>Members</strong>
+        <span>IQAC chairman, coordinator and representatives</span>
+      </a>
+
+      <a href="iqac-policy.html" class="iqac-quick-card reveal delay-2">
+        <i class="bi bi-file-earmark-text"></i>
+        <strong>Policy Documents</strong>
+        <span>Vision, mission, objectives and QA mechanism</span>
+      </a>
+
+      <a href="iqac-reports.html" class="iqac-quick-card reveal delay-3">
+        <i class="bi bi-folder2-open"></i>
+        <strong>SSR / AQAR</strong>
+        <span>Reports, yearly records and accreditation documents</span>
+      </a>
+
+    </div>
+  </section>
+  <!-- IQAC QUICK LINKS END -->
+
+
+  <!-- INTRODUCTION START -->
+  <section class="section iqac-intro-section" id="iqacIntroduction">
+    <div class="site-shell two-col">
+
+      <div class="image-panel reveal">
+        <img src="assets/img/bdcpat_img_001.jpg" alt="B.D. College IQAC">
+      </div>
+
+      <div class="content-block reveal delay-1">
+        <span class="section-kicker">
+          <i class="bi bi-award"></i>
+          Introduction
+        </span>
+
+        <h2>IQAC is a quality sustenance measure for institutional excellence.</h2>
+
+        <p>
+          In pursuance of NAAC action plan for performance evaluation, assessment,
+          accreditation and quality up-gradation of higher education institutions,
+          every accredited institution establishes an Internal Quality Assurance Cell
+          as a post-accreditation quality sustenance measure.
+        </p>
+
+        <p>
+          IQAC becomes a part of the institution's system and works towards conscious,
+          consistent and catalytic improvement in the overall academic and administrative
+          performance of the institution.
+        </p>
+
+        <div class="check-grid">
+          <span><i class="bi bi-check2-circle"></i> Quality enhancement</span>
+          <span><i class="bi bi-check2-circle"></i> Academic excellence</span>
+          <span><i class="bi bi-check2-circle"></i> Institutional improvement</span>
+          <span><i class="bi bi-check2-circle"></i> Stakeholder participation</span>
+          <span><i class="bi bi-check2-circle"></i> Feedback system</span>
+          <span><i class="bi bi-check2-circle"></i> Continuous monitoring</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- INTRODUCTION END -->
+
+
+  <!-- IQAC PURPOSE START -->
+  <section class="section iqac-purpose-section">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-bullseye"></i>
+          Role of IQAC
+        </span>
+        <h2>Conscious, consistent and catalytic improvement.</h2>
+        <p>
+          The prime task of IQAC is to develop a quality system for overall institutional
+          performance and promote holistic academic excellence.
+        </p>
+      </div>
+
+      <div class="iqac-purpose-grid">
+
+        <article class="iqac-purpose-card reveal">
+          <i class="bi bi-graph-up-arrow"></i>
+          <h3>Performance Evaluation</h3>
+          <p>Support academic and administrative performance assessment.</p>
+        </article>
+
+        <article class="iqac-purpose-card reveal delay-1">
+          <i class="bi bi-patch-check"></i>
+          <h3>Quality Sustenance</h3>
+          <p>Institutionalize continuous quality improvement practices.</p>
+        </article>
+
+        <article class="iqac-purpose-card reveal delay-2">
+          <i class="bi bi-people"></i>
+          <h3>Stakeholder Participation</h3>
+          <p>Encourage participation of students, faculty, alumni and management.</p>
+        </article>
+
+        <article class="iqac-purpose-card reveal delay-3">
+          <i class="bi bi-journal-check"></i>
+          <h3>Documentation</h3>
+          <p>Maintain records, reports, minutes, action taken reports and quality documents.</p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- IQAC PURPOSE END -->
+
+
+  <!-- MEMBERS PREVIEW START -->
+  <section class="section iqac-members-preview-section" id="iqacMembers">
+    <div class="site-shell split-section">
+
+      <div class="content-block reveal">
+        <span class="section-kicker">
+          <i class="bi bi-people"></i>
+          IQAC Members
+        </span>
+
+        <h2>IQAC committee includes academic, administrative and stakeholder representatives.</h2>
+
+        <p>
+          Official members list includes Principal as Chairman, IQAC Coordinator,
+          advisors, teacher representatives, administrative officials, university
+          representative, society representative, alumni representative and student
+          representatives.
+        </p>
+
+        <div class="timeline">
+          <div><span>01</span><b>Chairman</b><small>Principal of the college</small></div>
+          <div><span>02</span><b>Coordinator</b><small>IQAC academic coordinator</small></div>
+          <div><span>03</span><b>Faculty Representatives</b><small>Teacher members from departments</small></div>
+          <div><span>04</span><b>Stakeholders</b><small>Administrative, alumni, society and student representatives</small></div>
+        </div>
+      </div>
+
+      <div class="iqac-feature-card reveal delay-1">
+        <h3>Key Members</h3>
+
+        <div class="iqac-person-list">
+          <div>
+            <i class="bi bi-person-badge"></i>
+            <span>
+              <b>Prof. (Dr.) Ratna Amrit</b>
+              <small>Principal / Chairman</small>
+            </span>
+          </div>
+
+          <div>
+            <i class="bi bi-person-check"></i>
+            <span>
+              <b>Dr. Diwakar Kumar Pandey</b>
+              <small>Assistant Professor / Coordinator</small>
+            </span>
+          </div>
+
+          <div>
+            <i class="bi bi-people"></i>
+            <span>
+              <b>Teacher Representatives</b>
+              <small>Faculty members and stakeholders</small>
+            </span>
+          </div>
+        </div>
+
+        <a href="iqac-members.html" class="btn primary">
+          <i class="bi bi-arrow-right"></i>
+          View All Members
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- MEMBERS PREVIEW END -->
+
+
+  <!-- POLICY PREVIEW START -->
+  <section class="section iqac-policy-preview-section" id="iqacPolicy">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-file-earmark-text"></i>
+          IQAC Policy
+        </span>
+        <h2>Vision, mission, quality policy and objectives.</h2>
+      </div>
+
+      <div class="iqac-policy-grid">
+
+        <article class="iqac-policy-card reveal">
+          <i class="bi bi-eye"></i>
+          <h3>Vision of IQAC</h3>
+          <p>
+            To ensure a quality culture as the prime concern of the institution through
+            institutionalization and internalization of all quality initiatives.
+          </p>
+        </article>
+
+        <article class="iqac-policy-card reveal delay-1">
+          <i class="bi bi-bullseye"></i>
+          <h3>Mission of IQAC</h3>
+          <p>
+            To develop a conscious, consistent and catalytic system to improve academic
+            and administrative performance.
+          </p>
+        </article>
+
+        <article class="iqac-policy-card reveal delay-2">
+          <i class="bi bi-stars"></i>
+          <h3>Quality Policy</h3>
+          <p>
+            To channelize and systematize best practices and measures of the institution
+            towards excellence.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- POLICY PREVIEW END -->
+
+
+  <!-- REPORTS PREVIEW START -->
+  <section class="section iqac-reports-preview-section">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-folder2-open"></i>
+          Reports & Documents
+        </span>
+        <h2>SSR, AQAR, minutes, best practices and yearly reports.</h2>
+      </div>
+
+      <div class="iqac-document-grid">
+
+        <a href="iqac-reports.html" class="iqac-document-card reveal">
+          <i class="bi bi-file-earmark-pdf"></i>
+          <strong>Self Study Report</strong>
+          <span>SSR document and accreditation reports</span>
+        </a>
+
+        <a href="iqac-reports.html" class="iqac-document-card reveal delay-1">
+          <i class="bi bi-file-bar-graph"></i>
+          <strong>AQAR</strong>
+          <span>Annual Quality Assurance Report</span>
+        </a>
+
+        <a href="iqac-reports.html" class="iqac-document-card reveal delay-2">
+          <i class="bi bi-journal-check"></i>
+          <strong>Minutes of Meeting</strong>
+          <span>IQAC meeting records and action taken reports</span>
+        </a>
+
+        <a href="iqac-feedback.html" class="iqac-document-card reveal delay-3">
+          <i class="bi bi-chat-square-text"></i>
+          <strong>Satisfaction Surveys</strong>
+          <span>Student, teacher and stakeholder feedback</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- REPORTS PREVIEW END -->
+
+
+  <!-- IQAC HELP START -->
+  <section class="section iqac-help-section">
+    <div class="site-shell iqac-help-box reveal">
+
+      <div>
+        <span class="section-kicker light-kicker">
+          <i class="bi bi-headset"></i>
+          IQAC Help Desk
+        </span>
+
+        <h2>For IQAC documents and website-related queries.</h2>
+
+        <p>
+          For queries and problems related to IQAC documents or website, share
+          screenshots on the official IQAC email.
+        </p>
+      </div>
+
+      <div class="iqac-help-actions">
+        <a href="mailto:iqacbdcpatna@gmail.com" class="btn light">
+          <i class="bi bi-envelope"></i>
+          iqacbdcpatna@gmail.com
+        </a>
+
+        <a href="tel:06122209909" class="btn ghost">
+          <i class="bi bi-telephone"></i>
+          06122209909
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- IQAC HELP END -->
+
+</main>
+
+
+  <!-- Footer: repeated important links and copyright -->
+<footer class="footer">
+  <div class="site-shell footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College Logo">
+        <div>
+          <h3>B.D. College, Patna</h3>
+          <span>A Constituent Unit of Patliputra University</span>
+        </div>
+      </a>
+
+      <p>
+        Official college website for academic information, admission updates,
+        notices, statutory disclosures, student support and institutional transparency.
+      </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#briefHistory">Introduction</a>
+      <a href="about.html#visionMission">Vision & Mission</a>
+      <a href="about.html#collegeGlance">Rules & Regulation</a>
+      <a href="administration.html#principalDesk">Principalâ€™s Message</a>
+      <a href="about.html#collegeGlance">College Magazine</a>
+    </div>
+
+    <!-- ACADEMIC -->
+    <div class="footer-col">
+      <h4>Academic</h4>
+      <a href="academics.html">Academic Overview</a>
+      <a href="department.html">Departments</a>
+      <a href="academics.html#holidayCalendar">List of Holidays</a>
+      <a href="academics.html#timeTable">Time Table</a>
+      <a href="academics.html#syllabus">Syllabus</a>
+      <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+    </div>
+
+    <!-- ADMINISTRATION -->
+    <div class="footer-col">
+      <h4>Administration</h4>
+      <a href="administration.html">Administration</a>
+      <a href="administration.html#formerPrincipals">Former Principals</a>
+      <a href="administration.html#adminStaff">Administrative Staff</a>
+      <a href="administration.html#staffList">Staff List</a>
+      <a href="administration.html#adminGallery">Photo Gallery</a>
+      <a href="administration.html#adminGallery">News & Media</a>
+    </div>
+
+    <!-- STUDENT ZONE -->
+    <div class="footer-col">
+      <h4>Student Zone</h4>
+      <a href="student-zone.html">Student Zone</a>
+      <a href="student-zone.html#studentServices">Student Login</a>
+      <a href="student-zone.html#studentServices">Online Fee Payment</a>
+      <a href="https://admission.ppuponline.in/" target="_blank">Online Admission</a>
+      <a href="reservation-policy.html">Reservation Policy</a>
+      <a href="student-zone.html#formsCertificates">Forms & Certificates</a>
+    </div>
+
+    <!-- DEPARTMENTS -->
+    <div class="footer-col">
+      <h4>Departments</h4>
+      <a href="department.html">All Departments</a>
+      <a href="department-detail.html">Department Detail</a>
+      <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+      <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      <a href="nirf.html">NIRF</a>
+      <a href="nirf-reports.html">NIRF Reports</a>
+    </div>
+
+    <!-- EXTENSION ACTIVITY -->
+    <div class="footer-col">
+      <h4>Extension Activity</h4>
+      <a href="extension-activity.html">Extension Activity</a>
+      <a href="nss.html">NSS</a>
+      <a href="ncc.html">NCC</a>
+      <a href="startup-cell.html">Startup Cell</a>
+      <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+      <a href="debate-club.html">Debate Club</a>
+      <a href="dramatics-society.html">Dramatics Society</a>
+      <a href="literary-society.html">Literary Society</a>
+      <a href="health-center.html">Health Center</a>
+    </div>
+
+    <!-- IQAC / PUBLIC INFO -->
+    <div class="footer-col">
+      <h4>IQAC / Public Info</h4>
+      <a href="iqac.html">IQAC & SSR</a>
+      <a href="iqac-members.html">IQAC Members</a>
+      <a href="iqac-policy.html">Policy Documents</a>
+      <a href="iqac-reports.html">SSR / AQAR Reports</a>
+      <a href="iqac-feedback.html">Feedback & Surveys</a>
+      <a href="nirf-data.html">NIRF Data</a>
+    </div>
+
+    <!-- NOTICE -->
+    <div class="footer-col">
+      <h4>Notice</h4>
+      <a href="notice.html">Notice Board</a>
+      <a href="notice-detail.html">Notice Detail</a>
+      <a href="events.html">Events</a>
+      <a href="tenders.html">Tenders</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="index.html#admission">Admission Merit List</a>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="footer-col">
+      <h4>Feedback</h4>
+      <a href="student-feedback.html">Student Feedback</a>
+      <a href="teacher-feedback.html">Teachers Feedback</a>
+      <a href="contact-us.html">Parents Feedback</a>
+      <a href="feedback-statistics.html">Statistics of Feedback</a>
+      <a href="certificate.html">Apply for Certificate</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <!-- CONTACT -->
+    <!-- FOOTER MAP + CONTACT START -->
+<div class="footer-map-contact">
+  <div class="footer-map-wrap">
+    
+    <!-- COL 8 MAP -->
+    <div class="footer-map-col">
+      <iframe
+        src="https://www.google.com/maps?q=B.D.%20College%2C%20Near%20Gauriamath%2C%20Mithapur%2C%20Patna%2C%20Bihar%20800001&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="B.D. College Patna Google Map">
+      </iframe>
+    </div>
+
+    <!-- COL 4 CONTACT DETAILS -->
+    <div class="footer-contact-col">
+      <h4>Contact</h4>
+
+      <a href="contact-us.html">
+        <i class="bi bi-geo-alt"></i>
+        <span>Near Gauriamath, Mithapur, Patna - 800001</span>
+      </a>
+
+      <a href="tel:06122209909">
+        <i class="bi bi-telephone"></i>
+        <span>06122209909</span>
+      </a>
+
+      <a href="tel:+917903912273">
+        <i class="bi bi-headset"></i>
+        <span>+91 7903912273</span>
+      </a>
+
+      <a href="mailto:principalbdcollegepatna@gmail.com">
+        <i class="bi bi-envelope"></i>
+        <span>principalbdcollegepatna@gmail.com</span>
+      </a>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=B.D.%20College%20Near%20Gauriamath%20Mithapur%20Patna%20Bihar%20800001"
+        target="_blank">
+        <i class="bi bi-map"></i>
+        <span>View Google Map</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+<!-- FOOTER MAP + CONTACT END -->
+
+  </div>
+
+  <div class="site-shell footer-bottom">
+    <span>&copy; 2026 B.D. College, Patna. All Rights Reserved.</span>
+
+    <div class="footer-bottom-links">
+      <a href="index.html">Home</a>
+      <a href="contact-us.html">Contact</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="#top">Back to top <i class="bi bi-arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Search modal: frontend-only search UI placeholder -->
+<div class="search-modal" id="searchModal" aria-hidden="true">
+  <div class="search-box">
+    <button class="close-search" id="closeSearch" type="button" aria-label="Close search">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <h3>Search Website</h3>
+
+    <div class="search-row">
+      <input type="search" placeholder="Search notices, admissions, departments, downloads...">
+      <button class="btn primary" type="button">
+        <i class="bi bi-search"></i>
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery: used for professional carousel/slider interactions -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

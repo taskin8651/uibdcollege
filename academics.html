@@ -1,0 +1,1099 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B.D. College, Patna | Official Website Redesign</title>
+  <meta name="description" content="Frontend redesign prototype for B.D. College, Patna covering notices, admissions, academics, departments, NAAC/IQAC, RTI, downloads and student support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Accessibility: keyboard users can jump directly to page content -->
+    <!-- Accessibility: keyboard users can jump directly to page content -->
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <!-- Top contact bar: affiliation, AISHE code, email and phone -->
+  <div class="topbar">
+    <div class="site-shell topbar-inner">
+      <div class="topbar-left">
+        <span><i class="bi bi-bank2"></i> A Constituent Unit of Patliputra University, Patna</span>
+        <span><i class="bi bi-patch-check-fill"></i> AISHE Code C-12847</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:principalbdcollegepatna@gmail.com"><i class="bi bi-envelope"></i> principalbdcollegepatna@gmail.com</a>
+        <a href="tel:06122209909"><i class="bi bi-telephone"></i> 06122209909</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand header: college logo, name, university logo and accreditation highlights -->
+  <header class="masthead" id="top">
+    <div class="site-shell masthead-inner">
+      <a href="#top" class="brand">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College logo">
+        <span>
+          <strong>B.D. College, Patna</strong>
+          <small>भुवनेश्वरी दयाल कॉलेज, पटना</small>
+        </span>
+      </a>
+
+      <div class="identity-strip">
+        <img src="assets/img/logo_ppupat.png" alt="Patliputra University logo">
+        <span>NAAC Accredited Grade B+ with CGPA 2.39/4</span>
+        <span>Near Gauriamath, Mithapur, Patna</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main menu: dropdown structure follows the current B.D. College website grouping -->
+<nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+  <div class="site-shell nav-inner">
+
+    <a class="nav-link" href="index.html">Home</a>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        About <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="about.html#briefHistory">Introduction</a>
+        <a href="about.html#visionMission">Vision & Mission</a>
+        <a href="about.html#collegeGlance">Rules & Regulation</a>
+        <a href="administration.html#principalDesk">Principal's Message</a>
+        <a href="about.html#collegeGlance">College Magazine</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Academic <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="academics.html">Academic Overview</a>
+        <a href="academics.html#coursesOffered">Courses Offered</a>
+        <a href="academics.html#holidayCalendar">List of Holidays</a>
+        <a href="academics.html#timeTable">Time Table</a>
+        <a href="academics.html#syllabus">Syllabus</a>
+        <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Administration <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="administration.html">Administration</a>
+        <a href="administration.html#formerPrincipals">Former Principals</a>
+        <a href="administration.html#adminStaff">Administrative Staff</a>
+        <a href="administration.html#staffList">Staff List</a>
+        <a href="administration.html#adminGallery">Photo Gallery</a>
+        <a href="administration.html#adminGallery">News & Media</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Department <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="department.html">All Department</a>
+        <a href="department-detail.html">Department Detail</a>
+        <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+        <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Student Zone <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-zone.html">Student Zone</a>
+        <a href="student-zone.html#studentServices">Student Login</a>
+        <a href="student-zone.html#studentServices">Online Fee Payment</a>
+        <a href="https://admission.ppuponline.in/" target="_blank">Online Admission (PPU)</a>
+        <a href="reservation-policy.html">Reservation Policy</a>
+        <a href="student-zone.html#formsCertificates">Certificates / Forms</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Extension Activity <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="extension-activity.html">Extension Activity</a>
+        <a href="nss.html">NSS</a>
+        <a href="ncc.html">NCC</a>
+        <a href="startup-cell.html">Startup Cell</a>
+        <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+        <a href="debate-club.html">Debate Club</a>
+        <a href="dramatics-society.html">Dramatics Society</a>
+        <a href="literary-society.html">Literary Society</a>
+        <a href="health-center.html">Health Center</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        IQAC & SSR <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="iqac.html">IQAC Home</a>
+        <a href="iqac-reports.html#ssrReports">SSR</a>
+        <a href="iqac-members.html">Members</a>
+        <a href="iqac-policy.html">Policy Documents</a>
+        <a href="iqac-reports.html#meetingReports">Minutes of Meeting</a>
+        <a href="iqac-reports.html#bestPractices">Best Practices</a>
+        <a href="iqac-feedback.html">Satisfaction Surveys</a>
+        <a href="iqac-reports.html#aqarReports">AQAR</a>
+        <a href="iqac-reports.html">Yearly Reports</a>
+        <a href="iqac-reports.html#activities">Activities</a>
+        <a href="iqac-feedback.html#feedbackTypes">Student Feedback</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        NIRF <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="nirf.html">NIRF Home</a>
+        <a href="nirf-reports.html">NIRF Reports</a>
+        <a href="nirf-data.html">NIRF Data</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Notice <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="notice.html">Notice</a>
+        <a href="events.html">Events</a>
+        <a href="tenders.html">Tenders</a>
+        <a href="notice-detail.html">Notice Detail</a>
+        <a href="index.html#downloads">Downloads</a>
+        <a href="index.html#admission">Admission Merit List</a>
+      </div>
+    </div>
+
+    <div class="nav-item has-dropdown">
+      <button class="nav-link nav-drop" type="button">
+        Feedback <i class="bi bi-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a href="student-feedback.html">Student's Feedback</a>
+        <a href="teacher-feedback.html">Teachers' Feedback</a>
+        <a href="contact-us.html">Parents Feedback</a>
+        <a href="feedback-statistics.html">Statistics of Feedback</a>
+      </div>
+    </div>
+
+    <a class="nav-link" href="contact-us.html">Contact Us</a>
+    <a class="nav-link login-link" href="student-zone.html#studentServices">Login</a>
+
+    <button class="search-trigger" id="searchTrigger" type="button" aria-label="Search website">
+      <i class="bi bi-search"></i>
+    </button>
+
+  </div>
+</nav>
+
+  <!-- Notice ticker: fast access to latest college/university updates -->
+  <section class="alert-strip" aria-label="Latest updates">
+    <div class="site-shell alert-inner">
+      <strong><i class="bi bi-megaphone-fill"></i> Latest Updates</strong>
+      <div class="ticker">
+        <span>Vocational Part-I Exam Schedule 2026 &nbsp; | &nbsp; UG Admission updates & merit list placeholder &nbsp; | &nbsp; Semester subject selection notices &nbsp; | &nbsp; NAAC / IQAC reports and statutory disclosures</span>
+      </div>
+      <a href="index.html#notices">View All</a>
+    </div>
+  </section>
+<main id="mainContent">
+
+  <!-- ACADEMIC PAGE HERO START -->
+  <section class="academic-page-hero">
+    <div class="academic-hero-bg"></div>
+
+    <div class="site-shell academic-hero-inner">
+      <div class="academic-hero-content reveal">
+        <span class="eyebrow">
+          <i class="bi bi-mortarboard"></i>
+          Academic Information
+        </span>
+
+        <h1>Academics</h1>
+
+        <p>
+          Access verified academic resources, holiday calendar, timetable,
+          syllabus, courses, examination information and national digital
+          learning initiatives in one structured place.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#holidayCalendar" class="btn primary">
+            <i class="bi bi-calendar-event"></i>
+            Holiday Calendar
+          </a>
+          <a href="#timeTable" class="btn light">
+            <i class="bi bi-table"></i>
+            Time Table
+          </a>
+          <a href="#syllabus" class="btn ghost">
+            <i class="bi bi-file-earmark-text"></i>
+            Syllabus
+          </a>
+        </div>
+      </div>
+
+      <div class="academic-hero-card reveal delay-1">
+        <div class="academic-card-icon">
+          <i class="bi bi-journal-bookmark"></i>
+        </div>
+        <h3>Academic Desk</h3>
+        <p>Courses, calendar, syllabus, timetable and digital initiatives.</p>
+
+        <div class="academic-hero-pills">
+          <span>UG / PG</span>
+          <span>Timetable</span>
+          <span>Syllabus</span>
+          <span>Holidays</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ACADEMIC PAGE HERO END -->
+
+
+  <!-- BREADCRUMB START -->
+  <section class="academic-breadcrumb">
+    <div class="site-shell breadcrumb-inner">
+      <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+      <i class="bi bi-chevron-right"></i>
+      <span>Academic</span>
+      <i class="bi bi-chevron-right"></i>
+      <strong>Academic Information</strong>
+    </div>
+  </section>
+  <!-- BREADCRUMB END -->
+
+
+  <!-- ACADEMIC QUICK LINKS START -->
+  <section class="academic-quick-section">
+    <div class="site-shell academic-quick-grid">
+
+      <a href="#holidayCalendar" class="academic-quick-card reveal">
+        <i class="bi bi-calendar2-week"></i>
+        <strong>List of Holidays</strong>
+        <span>College, Government and University calendars</span>
+      </a>
+
+      <a href="#timeTable" class="academic-quick-card reveal delay-1">
+        <i class="bi bi-table"></i>
+        <strong>Time Table</strong>
+        <span>Class-wise and department-wise schedules</span>
+      </a>
+
+      <a href="#syllabus" class="academic-quick-card reveal delay-2">
+        <i class="bi bi-file-earmark-text"></i>
+        <strong>Syllabus</strong>
+        <span>Course and subject-wise academic syllabus</span>
+      </a>
+
+      <a href="#digitalInitiatives" class="academic-quick-card reveal delay-3">
+        <i class="bi bi-globe2"></i>
+        <strong>Digital Initiatives</strong>
+        <span>SWAYAM, NDL, Virtual Labs and e-resources</span>
+      </a>
+
+    </div>
+  </section>
+  <!-- ACADEMIC QUICK LINKS END -->
+
+
+  <!-- ACADEMIC OVERVIEW START -->
+  <section class="section academic-overview-section">
+    <div class="site-shell two-col">
+
+      <div class="image-panel reveal">
+        <img src="assets/img/bdcpat_img_001.jpg" alt="B.D. College academic campus">
+      </div>
+
+      <div class="content-block reveal delay-1">
+        <span class="section-kicker">
+          <i class="bi bi-bank2"></i>
+          Academic Overview
+        </span>
+
+        <h2>Structured academic information for students and departments.</h2>
+
+        <p>
+          The Academic section is designed to provide students with quick access
+          to important resources such as courses, holiday calendar, syllabus,
+          timetable, university academic guidelines and national digital learning
+          platforms.
+        </p>
+
+        <p>
+          This page can later be connected with CMS so the college can upload
+          department-wise timetable, syllabus PDFs, academic calendar and learning
+          resources directly from the admin panel.
+        </p>
+
+        <div class="check-grid">
+          <span><i class="bi bi-check2-circle"></i> Courses offered</span>
+          <span><i class="bi bi-check2-circle"></i> Holiday calendar</span>
+          <span><i class="bi bi-check2-circle"></i> Class timetable</span>
+          <span><i class="bi bi-check2-circle"></i> Subject syllabus</span>
+          <span><i class="bi bi-check2-circle"></i> Academic calendar</span>
+          <span><i class="bi bi-check2-circle"></i> Digital initiatives</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ACADEMIC OVERVIEW END -->
+
+
+  <!-- COURSES OFFERED START -->
+  <section class="section courses-section" id="coursesOffered">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-mortarboard"></i>
+          Courses Offered
+        </span>
+        <h2>Academic programmes and course information.</h2>
+        <p>
+          Final course list, seats and eligibility should be verified by the college
+          before making the page live.
+        </p>
+      </div>
+
+      <div class="course-category-grid">
+
+        <article class="course-category-card reveal">
+          <div class="course-icon">
+            <i class="bi bi-flask"></i>
+          </div>
+          <h3>Science</h3>
+          <p>Department-wise programme information, practical classes, laboratory details and syllabus access.</p>
+          <div class="course-tags">
+            <span>Physics</span>
+            <span>Chemistry</span>
+            <span>Botany</span>
+            <span>Zoology</span>
+            <span>Mathematics</span>
+          </div>
+        </article>
+
+        <article class="course-category-card reveal delay-1">
+          <div class="course-icon">
+            <i class="bi bi-book"></i>
+          </div>
+          <h3>Humanities</h3>
+          <p>Subject information, faculty details, academic resources and department notices.</p>
+          <div class="course-tags">
+            <span>Hindi</span>
+            <span>English</span>
+            <span>History</span>
+            <span>Political Science</span>
+            <span>Sociology</span>
+          </div>
+        </article>
+
+        <article class="course-category-card reveal delay-2">
+          <div class="course-icon">
+            <i class="bi bi-cash-coin"></i>
+          </div>
+          <h3>Commerce</h3>
+          <p>Commerce programme details, syllabus, academic schedule and examination updates.</p>
+          <div class="course-tags">
+            <span>Accounts</span>
+            <span>Business Studies</span>
+            <span>Finance</span>
+            <span>Economics</span>
+          </div>
+        </article>
+
+        <article class="course-category-card reveal delay-3">
+          <div class="course-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <h3>Vocational / Professional</h3>
+          <p>Professional and career-oriented courses with timetable, admission updates and practical learning information.</p>
+          <div class="course-tags">
+            <span>BCA</span>
+            <span>BBA</span>
+            <span>MBA</span>
+            <span>MCA</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- COURSES OFFERED END -->
+
+
+  <!-- HOLIDAY CALENDAR START -->
+  <section class="section holiday-section" id="holidayCalendar">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-calendar-event"></i>
+          List of Holidays
+        </span>
+        <h2>Holiday calendar and official academic breaks.</h2>
+        <p>
+          Current website lists holiday calendars for B.D. College, Governor of Bihar,
+          Government of Bihar and Patliputra University.
+        </p>
+      </div>
+
+      <div class="holiday-layout">
+
+        <div class="holiday-main reveal">
+          <div class="holiday-head">
+            <div>
+              <h3>Holiday Calendar</h3>
+              <p>Latest and previous year holiday calendar records.</p>
+            </div>
+            <a href="#" class="btn primary">
+              <i class="bi bi-download"></i>
+              Download Latest
+            </a>
+          </div>
+
+          <div class="holiday-list">
+
+            <article class="holiday-item">
+              <div class="holiday-year">2026</div>
+              <div>
+                <h4>Holiday Calendar 2026 of the B.D. College, Patna</h4>
+                <p>Update date: 25/05/2026 05:35:58</p>
+              </div>
+              <a href="#"><i class="bi bi-download"></i></a>
+            </article>
+
+            <article class="holiday-item">
+              <div class="holiday-year">2026</div>
+              <div>
+                <h4>Holiday Calendar 2026 of the Governor of Bihar</h4>
+                <p>Update date: 16/01/2026 14:18:43</p>
+              </div>
+              <a href="#"><i class="bi bi-download"></i></a>
+            </article>
+
+            <article class="holiday-item">
+              <div class="holiday-year">2026</div>
+              <div>
+                <h4>Holiday Calendar 2026 of the Government of Bihar</h4>
+                <p>Update date: 19/02/2026 10:32:26</p>
+              </div>
+              <a href="#"><i class="bi bi-download"></i></a>
+            </article>
+
+            <article class="holiday-item">
+              <div class="holiday-year">2025</div>
+              <div>
+                <h4>Holiday Calendar 2025 of the B.D. College, Patna</h4>
+                <p>Update date: 19/11/2024 00:00:00</p>
+              </div>
+              <a href="#"><i class="bi bi-download"></i></a>
+            </article>
+
+            <article class="holiday-item">
+              <div class="holiday-year">2025</div>
+              <div>
+                <h4>Holiday Calendar 2025 of the Governor of Bihar</h4>
+                <p>Update date: 19/11/2024 00:00:00</p>
+              </div>
+              <a href="#"><i class="bi bi-download"></i></a>
+            </article>
+
+            <article class="holiday-item">
+              <div class="holiday-year">2025</div>
+              <div>
+                <h4>Holiday Calendar 2025 of the Government of Bihar</h4>
+                <p>Update date: 19/11/2024 00:00:00</p>
+              </div>
+              <a href="#"><i class="bi bi-download"></i></a>
+            </article>
+
+            <article class="holiday-item">
+              <div class="holiday-year">2024</div>
+              <div>
+                <h4>Holiday Calendar 2024 of the Patliputra University, Patna</h4>
+                <p>Update date: 19/08/2025 00:00:00</p>
+              </div>
+              <a href="#"><i class="bi bi-download"></i></a>
+            </article>
+
+          </div>
+        </div>
+
+        <aside class="holiday-side reveal delay-1">
+          <h3>Calendar Categories</h3>
+
+          <a href="#">
+            <span><i class="bi bi-building"></i> College Calendar</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+
+          <a href="#">
+            <span><i class="bi bi-bank"></i> Governor of Bihar</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+
+          <a href="#">
+            <span><i class="bi bi-shield-check"></i> Government of Bihar</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+
+          <a href="#">
+            <span><i class="bi bi-mortarboard"></i> Patliputra University</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+
+          <div class="holiday-note">
+            <i class="bi bi-info-circle"></i>
+            <p>
+              Holiday calendar may be updated as per University, Government
+              or College notification.
+            </p>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- HOLIDAY CALENDAR END -->
+
+
+  <!-- TIME TABLE START -->
+  <section class="section timetable-section" id="timeTable">
+    <div class="site-shell split-section">
+
+      <div class="content-block reveal">
+        <span class="section-kicker">
+          <i class="bi bi-table"></i>
+          Time Table
+        </span>
+
+        <h2>Class-wise, department-wise and session-wise timetable.</h2>
+
+        <p>
+          Time Table section should allow students to access regular class timetable,
+          practical schedule, department timetable and examination timetable in PDF
+          or structured table format.
+        </p>
+
+        <div class="timeline">
+          <div>
+            <span>01</span>
+            <b>Regular Classes</b>
+            <small>Class and section-wise schedule</small>
+          </div>
+
+          <div>
+            <span>02</span>
+            <b>Department Timetable</b>
+            <small>Subject and faculty-wise schedule</small>
+          </div>
+
+          <div>
+            <span>03</span>
+            <b>Practical Schedule</b>
+            <small>Lab and practical class timing</small>
+          </div>
+
+          <div>
+            <span>04</span>
+            <b>Exam Timetable</b>
+            <small>Internal and university examination schedule</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="timetable-card reveal delay-1">
+        <h3>Latest Time Table</h3>
+        <p>Upload latest timetable PDF from admin panel.</p>
+
+        <div class="timetable-list">
+          <a href="#">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>
+              <b>UG Class Time Table</b>
+              <small>Department-wise class routine</small>
+            </span>
+            <em>PDF</em>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>
+              <b>PG Class Time Table</b>
+              <small>Semester-wise routine</small>
+            </span>
+            <em>PDF</em>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>
+              <b>Practical Time Table</b>
+              <small>Lab schedule and batch details</small>
+            </span>
+            <em>PDF</em>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- TIME TABLE END -->
+
+
+  <!-- SYLLABUS START -->
+  <section class="section syllabus-section" id="syllabus">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-file-earmark-text"></i>
+          Syllabus
+        </span>
+        <h2>Course-wise and subject-wise syllabus access.</h2>
+        <p>
+          Syllabus documents can be uploaded by course, department, semester and
+          academic session.
+        </p>
+      </div>
+
+      <div class="syllabus-grid">
+
+        <article class="syllabus-card reveal">
+          <i class="bi bi-flask"></i>
+          <h3>Science Syllabus</h3>
+          <p>Physics, Chemistry, Botany, Zoology, Mathematics and practical syllabus.</p>
+          <a href="#">View Syllabus <i class="bi bi-arrow-right"></i></a>
+        </article>
+
+        <article class="syllabus-card reveal delay-1">
+          <i class="bi bi-book"></i>
+          <h3>Humanities Syllabus</h3>
+          <p>Hindi, English, History, Political Science, Sociology and other subjects.</p>
+          <a href="#">View Syllabus <i class="bi bi-arrow-right"></i></a>
+        </article>
+
+        <article class="syllabus-card reveal delay-2">
+          <i class="bi bi-cash-coin"></i>
+          <h3>Commerce Syllabus</h3>
+          <p>Commerce, accounting, business studies, finance and economics syllabus.</p>
+          <a href="#">View Syllabus <i class="bi bi-arrow-right"></i></a>
+        </article>
+
+        <article class="syllabus-card reveal delay-3">
+          <i class="bi bi-laptop"></i>
+          <h3>Vocational Syllabus</h3>
+          <p>BCA, BBA, MBA, MCA and professional course syllabus documents.</p>
+          <a href="#">View Syllabus <i class="bi bi-arrow-right"></i></a>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- SYLLABUS END -->
+
+
+  <!-- ACADEMIC CALENDAR START -->
+  <section class="section academic-calendar-section" id="academicCalendar">
+    <div class="site-shell two-col reverse">
+
+      <div class="content-block reveal">
+        <span class="section-kicker">
+          <i class="bi bi-calendar-check"></i>
+          Academic Calendar
+        </span>
+
+        <h2>Session planning for teaching, examination and activities.</h2>
+
+        <p>
+          Academic Calendar section should include important dates related to
+          admission, induction, teaching days, internal assessment, practical
+          examination, university examination, holidays and academic events.
+        </p>
+
+        <div class="check-grid">
+          <span><i class="bi bi-check2-circle"></i> Admission timeline</span>
+          <span><i class="bi bi-check2-circle"></i> Teaching schedule</span>
+          <span><i class="bi bi-check2-circle"></i> Internal assessment</span>
+          <span><i class="bi bi-check2-circle"></i> Practical examination</span>
+          <span><i class="bi bi-check2-circle"></i> University exam</span>
+          <span><i class="bi bi-check2-circle"></i> Academic events</span>
+        </div>
+      </div>
+
+      <div class="calendar-panel reveal delay-1">
+        <div class="calendar-panel-head">
+          <i class="bi bi-calendar2-week"></i>
+          <div>
+            <h3>Academic Session</h3>
+            <p>Upload session-wise calendar PDF</p>
+          </div>
+        </div>
+
+        <div class="calendar-month-grid">
+          <span>Jan</span>
+          <span>Feb</span>
+          <span>Mar</span>
+          <span>Apr</span>
+          <span>May</span>
+          <span>Jun</span>
+          <span>Jul</span>
+          <span>Aug</span>
+          <span>Sep</span>
+          <span>Oct</span>
+          <span>Nov</span>
+          <span>Dec</span>
+        </div>
+
+        <a href="#" class="btn primary">
+          <i class="bi bi-download"></i>
+          Download Academic Calendar
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ACADEMIC CALENDAR END -->
+
+
+  <!-- NATIONAL DIGITAL INITIATIVES START -->
+  <section class="section digital-section" id="digitalInitiatives">
+    <div class="site-shell">
+
+      <div class="section-title reveal">
+        <span class="section-kicker">
+          <i class="bi bi-globe2"></i>
+          National Digital Initiatives
+        </span>
+        <h2>Digital learning platforms and academic e-resources.</h2>
+        <p>
+          Useful national digital platforms can help students access lectures,
+          e-books, virtual labs, digital library and academic learning resources.
+        </p>
+      </div>
+
+      <div class="digital-grid">
+
+        <a class="digital-card reveal" href="https://swayam.gov.in/" target="_blank" rel="noopener">
+          <i class="bi bi-play-circle"></i>
+          <strong>SWAYAM</strong>
+          <span>Online courses and learning resources</span>
+        </a>
+
+        <a class="digital-card reveal delay-1" href="https://swayamprabha.gov.in/" target="_blank" rel="noopener">
+          <i class="bi bi-tv"></i>
+          <strong>SWAYAM PRABHA</strong>
+          <span>Educational TV channels</span>
+        </a>
+
+        <a class="digital-card reveal delay-2" href="https://ndl.iitkgp.ac.in/" target="_blank" rel="noopener">
+          <i class="bi bi-journal-bookmark"></i>
+          <strong>National Digital Library</strong>
+          <span>Digital library resources</span>
+        </a>
+
+        <a class="digital-card reveal delay-3" href="https://www.vlab.co.in/" target="_blank" rel="noopener">
+          <i class="bi bi-cpu"></i>
+          <strong>Virtual Labs</strong>
+          <span>Online practical and simulation labs</span>
+        </a>
+
+        <a class="digital-card reveal delay-4" href="https://epgp.inflibnet.ac.in/" target="_blank" rel="noopener">
+          <i class="bi bi-file-richtext"></i>
+          <strong>e-PG Pathshala</strong>
+          <span>Postgraduate learning modules</span>
+        </a>
+
+        <a class="digital-card reveal delay-5" href="https://nlist.inflibnet.ac.in/" target="_blank" rel="noopener">
+          <i class="bi bi-database"></i>
+          <strong>N-LIST</strong>
+          <span>E-journals and e-books</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- NATIONAL DIGITAL INITIATIVES END -->
+
+
+  <!-- ACADEMIC HELP DESK START -->
+  <section class="section academic-help-section">
+    <div class="site-shell academic-help-box reveal">
+
+      <div>
+        <span class="section-kicker light-kicker">
+          <i class="bi bi-headset"></i>
+          Academic Help Desk
+        </span>
+
+        <h2>Need academic information?</h2>
+
+        <p>
+          Students can contact the college office for timetable, syllabus,
+          examination, admission and academic document related support.
+        </p>
+      </div>
+
+      <div class="academic-help-actions">
+        <a href="tel:06122209909" class="btn light">
+          <i class="bi bi-telephone"></i>
+          06122209909
+        </a>
+
+        <a href="mailto:principalbdcollegepatna@gmail.com" class="btn ghost">
+          <i class="bi bi-envelope"></i>
+          Email College
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ACADEMIC HELP DESK END -->
+
+</main>
+
+
+
+  <!-- Footer: repeated important links and copyright -->
+<footer class="footer">
+  <div class="site-shell footer-grid">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        <img src="assets/img/logo_bdcpat.png" alt="B.D. College Logo">
+        <div>
+          <h3>B.D. College, Patna</h3>
+          <span>A Constituent Unit of Patliputra University</span>
+        </div>
+      </a>
+
+      <p>
+        Official college website for academic information, admission updates,
+        notices, statutory disclosures, student support and institutional transparency.
+      </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="about.html#briefHistory">Introduction</a>
+      <a href="about.html#visionMission">Vision & Mission</a>
+      <a href="about.html#collegeGlance">Rules & Regulation</a>
+      <a href="administration.html#principalDesk">Principalâ€™s Message</a>
+      <a href="about.html#collegeGlance">College Magazine</a>
+    </div>
+
+    <!-- ACADEMIC -->
+    <div class="footer-col">
+      <h4>Academic</h4>
+      <a href="academics.html">Academic Overview</a>
+      <a href="department.html">Departments</a>
+      <a href="academics.html#holidayCalendar">List of Holidays</a>
+      <a href="academics.html#timeTable">Time Table</a>
+      <a href="academics.html#syllabus">Syllabus</a>
+      <a href="academics.html#digitalInitiatives">National Digital Initiatives</a>
+    </div>
+
+    <!-- ADMINISTRATION -->
+    <div class="footer-col">
+      <h4>Administration</h4>
+      <a href="administration.html">Administration</a>
+      <a href="administration.html#formerPrincipals">Former Principals</a>
+      <a href="administration.html#adminStaff">Administrative Staff</a>
+      <a href="administration.html#staffList">Staff List</a>
+      <a href="administration.html#adminGallery">Photo Gallery</a>
+      <a href="administration.html#adminGallery">News & Media</a>
+    </div>
+
+    <!-- STUDENT ZONE -->
+    <div class="footer-col">
+      <h4>Student Zone</h4>
+      <a href="student-zone.html">Student Zone</a>
+      <a href="student-zone.html#studentServices">Student Login</a>
+      <a href="student-zone.html#studentServices">Online Fee Payment</a>
+      <a href="https://admission.ppuponline.in/" target="_blank">Online Admission</a>
+      <a href="reservation-policy.html">Reservation Policy</a>
+      <a href="student-zone.html#formsCertificates">Forms & Certificates</a>
+    </div>
+
+    <!-- DEPARTMENTS -->
+    <div class="footer-col">
+      <h4>Departments</h4>
+      <a href="department.html">All Departments</a>
+      <a href="department-detail.html">Department Detail</a>
+      <a href="student-zone.html#studentSupport">Placement & Guidance Cell</a>
+      <a href="student-zone.html#studentSupport">Students Grievance Redressal</a>
+      <a href="nirf.html">NIRF</a>
+      <a href="nirf-reports.html">NIRF Reports</a>
+    </div>
+
+    <!-- EXTENSION ACTIVITY -->
+    <div class="footer-col">
+      <h4>Extension Activity</h4>
+      <a href="extension-activity.html">Extension Activity</a>
+      <a href="nss.html">NSS</a>
+      <a href="ncc.html">NCC</a>
+      <a href="startup-cell.html">Startup Cell</a>
+      <a href="eco-club.html">Vriksha Veda - Eco Club</a>
+      <a href="debate-club.html">Debate Club</a>
+      <a href="dramatics-society.html">Dramatics Society</a>
+      <a href="literary-society.html">Literary Society</a>
+      <a href="health-center.html">Health Center</a>
+    </div>
+
+    <!-- IQAC / PUBLIC INFO -->
+    <div class="footer-col">
+      <h4>IQAC / Public Info</h4>
+      <a href="iqac.html">IQAC & SSR</a>
+      <a href="iqac-members.html">IQAC Members</a>
+      <a href="iqac-policy.html">Policy Documents</a>
+      <a href="iqac-reports.html">SSR / AQAR Reports</a>
+      <a href="iqac-feedback.html">Feedback & Surveys</a>
+      <a href="nirf-data.html">NIRF Data</a>
+    </div>
+
+    <!-- NOTICE -->
+    <div class="footer-col">
+      <h4>Notice</h4>
+      <a href="notice.html">Notice Board</a>
+      <a href="notice-detail.html">Notice Detail</a>
+      <a href="events.html">Events</a>
+      <a href="tenders.html">Tenders</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="index.html#admission">Admission Merit List</a>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="footer-col">
+      <h4>Feedback</h4>
+      <a href="student-feedback.html">Student Feedback</a>
+      <a href="teacher-feedback.html">Teachers Feedback</a>
+      <a href="contact-us.html">Parents Feedback</a>
+      <a href="feedback-statistics.html">Statistics of Feedback</a>
+      <a href="certificate.html">Apply for Certificate</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <!-- CONTACT -->
+    <!-- FOOTER MAP + CONTACT START -->
+<div class="footer-map-contact">
+  <div class="footer-map-wrap">
+    
+    <!-- COL 8 MAP -->
+    <div class="footer-map-col">
+      <iframe
+        src="https://www.google.com/maps?q=B.D.%20College%2C%20Near%20Gauriamath%2C%20Mithapur%2C%20Patna%2C%20Bihar%20800001&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="B.D. College Patna Google Map">
+      </iframe>
+    </div>
+
+    <!-- COL 4 CONTACT DETAILS -->
+    <div class="footer-contact-col">
+      <h4>Contact</h4>
+
+      <a href="contact-us.html">
+        <i class="bi bi-geo-alt"></i>
+        <span>Near Gauriamath, Mithapur, Patna - 800001</span>
+      </a>
+
+      <a href="tel:06122209909">
+        <i class="bi bi-telephone"></i>
+        <span>06122209909</span>
+      </a>
+
+      <a href="tel:+917903912273">
+        <i class="bi bi-headset"></i>
+        <span>+91 7903912273</span>
+      </a>
+
+      <a href="mailto:principalbdcollegepatna@gmail.com">
+        <i class="bi bi-envelope"></i>
+        <span>principalbdcollegepatna@gmail.com</span>
+      </a>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=B.D.%20College%20Near%20Gauriamath%20Mithapur%20Patna%20Bihar%20800001"
+        target="_blank">
+        <i class="bi bi-map"></i>
+        <span>View Google Map</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+<!-- FOOTER MAP + CONTACT END -->
+
+  </div>
+
+  <div class="site-shell footer-bottom">
+    <span>&copy; 2026 B.D. College, Patna. All Rights Reserved.</span>
+
+    <div class="footer-bottom-links">
+      <a href="index.html">Home</a>
+      <a href="contact-us.html">Contact</a>
+      <a href="index.html#downloads">Downloads</a>
+      <a href="#top">Back to top <i class="bi bi-arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Search modal: frontend-only search UI placeholder -->
+<div class="search-modal" id="searchModal" aria-hidden="true">
+  <div class="search-box">
+    <button class="close-search" id="closeSearch" type="button" aria-label="Close search">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <h3>Search Website</h3>
+
+    <div class="search-row">
+      <input type="search" placeholder="Search notices, admissions, departments, downloads...">
+      <button class="btn primary" type="button">
+        <i class="bi bi-search"></i>
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery: used for professional carousel/slider interactions -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
