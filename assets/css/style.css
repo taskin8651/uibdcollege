@@ -861,23 +861,38 @@ h3 {
 .reverse {
   grid-template-columns: 1.05fr 0.95fr;
 }
-
-/* Image panels: official photos with subtle hover zoom */
+/* Founder / Principal portrait image */
 .image-panel {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
   overflow: hidden;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #f6f8fb;
+  box-shadow: var(--shadow-sm);
 }
 
 .image-panel img {
-  height: 430px;
-  object-fit: cover;
-  transition: transform 0.45s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
-.image-panel:hover img {
-  transform: scale(1.05);
+/* Agar same height chahiye */
+.portrait-panel {
+  aspect-ratio: 360 / 460;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portrait-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .content-block p {
