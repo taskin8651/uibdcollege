@@ -1,0 +1,1290 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="/_Devloper/Img/logo_bdcpat.png" rel="shortcut icon" type="image/x-icon" />
+    <!-- font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+
+    
+    
+    <!-- Feather Icon-->
+    <!-- Preload common fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400;600&family=Montserrat:wght@400;500;700&family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;600&family=Source+Sans+Pro:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+    <link href="/Content/css?v=zELVFk4nvBhEtTupk2Fy8VbUGsRyQPbdtorhfX1cTCg1" rel="stylesheet"/>
+
+
+    <script src="/Scripts/jquery-3.7.1.min.js"></script>
+
+</head>
+<body id="dynamicBody">
+    <!--Starting Date 08-02-2024-->
+    <!--Back to Top Button-->
+    <!--
+        To create dynamic and beautiful website for school / college / university contact +91 9430243659, 7004266508
+    -->
+
+
+
+    <body>
+
+        <div class="AitsContainer">
+            <!-- Overlay for closing menu when clicking outside -->
+            <div class="AitsOverlay" id="OverlayAITS"></div>
+
+            <!-- Settings Button -->
+            <button class="Settings-buttonAITS" id="SettingsButtonAITS">
+                <i class="fas fa-cog"></i>
+            </button>
+
+            <!-- Settings Menu -->
+            <div class="Settings-menuAITS" id="SettingsMenuAITS">
+                <div class="Menu-headerAITS">
+                    <h2>Settings</h2>
+                    <button class="Close-btnAITS" id="CloseButtonAITS">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="SettingBoxScrollAITS">
+                    <div class="Setting-groupAITS">
+                        <button id="DarkmodetoggleAITS">🌙Dark Mode</button>
+                        <div class="Setting-optionAITS">
+                            <label class="Setting-labelAITS" for="ThemeColorSelectAITS">Theme</label><br />
+                            <select id="ThemeColorSelectAITS" class="Thems-selectAITS">
+                                <option value="default">Default</option>
+                                
+                            </select>
+                        </div>
+                        <div class="Setting-optionAITS">
+                            <label class="Setting-labelAITS" for="FontfamilySelectAITS">Font Family:</label>
+                            <select id="FontfamilySelectAITS" class="Thems-selectAITS">
+                                <option value="'Inter', sans-serif">Inter</option>
+                                <option value="'Roboto', sans-serif">Roboto</option>
+                                <option value="'Open Sans', sans-serif">Open Sans</option>
+                                <option value="'Montserrat', sans-serif">Montserrat</option>
+                                <option value="'Lato', sans-serif">Lato</option>
+                                <option value="'Poppins', sans-serif">Poppins</option>
+                                <option value="'Merriweather', serif">Merriweather</option>
+                                <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+                                <option value="'Raleway', sans-serif">Raleway</option>
+                                <option value="'Georgia', serif">Georgia (System)</option>
+                                <option value="'Arial', sans-serif">Arial (System)</option>
+                            </select>
+                        </div>
+                        <div class="Setting-optionAITS">
+                            <label for="font-size">Font Size:</label>
+                            <input type="range" id="FontsizeAITS" min="12" max="24" value="14">
+                            <span class="float-end" id="FontsizevalueAITS">14px</span>
+                        </div>
+                        <div class="Setting-optionAITS">
+                            <label class="Setting-labelAITS" for="Font-weightAITS">Font Weight:</label>
+                            <select id="FontweightAITS" class="Thems-selectAITS">
+                                <option value="300" selected>Light (300)</option>
+                                <option value="400">Normal (400)</option>
+                                <option value="500">Medium (500)</option>
+                                <option value="600">Semi-Bold (600)</option>
+                                <option value="700">Bold (700)</option>
+                                <option value="800">Bolder (800)</option>
+                                <option value="900">Boldest (900)</option>
+                            </select>
+                        </div>
+
+                        <div class="Setting-optionAITS">
+                            <label for="line-height">Line Height:</label>
+                            <input type="range" id="LineheightAITS" min="1.2" max="2.5" step="0.1" value="1.4">
+                            <span class="float-end" id="LineheightvalueAITS">1.4</span>
+                        </div>
+
+                        <div class="Button-groupAITS">
+                            <button id="ResetbtnAITS" class="BtnAITS Btn-primaryAITS hvr-back-pulse">Reset to Default</button>
+                            <button id="SavebtnAITS" class="BtnAITS Btn-primaryAITS hvr-back-pulse">Save Preferences</button>
+                        </div>
+
+                        <div class="PresetsAITS">
+                            <h3>Quick Presets:</h3>
+                            <div class="Preset-buttonsAITS">
+                                <button class="Preset-btnAITS" data-font="'Inter', sans-serif" data-size="16"
+                                        data-weight="400">
+                                    Default
+                                </button>
+                                <button class="Preset-btnAITS" data-font="'Open Sans', sans-serif" data-size="18" data-weight="400">
+                                    High Readability
+                                </button>
+                                <button class="Preset-btnAITS" data-font="'Merriweather', serif" data-size="17"
+                                        data-weight="400">
+                                    Classic Reading
+                                </button>
+                                <button class="Preset-btnAITS" data-font="'Montserrat', sans-serif" data-size="16"
+                                        data-weight="600">
+                                    Modern Bold
+                                </button>
+                                <button class="Preset-btnAITS" data-font="'Roboto', sans-serif" data-size="15" data-weight="300">
+                                    Light UI
+                                </button>
+                            </div>
+                        </div>
+                        <div class="Size-toggleAITS">
+                            <button class="Size-btnAITS" data-action="decrease">A-</button>
+                            <button class="Size-btnAITS" data-action="reset">A</button>
+                            <button class="Size-btnAITS" data-action="increase">A+</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--Google Translation Button-->
+        <div id="googleTranslate" onclick="toggleClassAndFunctions()">
+            <img id="gtImg" src="/_Devloper/svg/gtranslate1.svg" class="AitsimgGS00" />
+            <div id="google_translate_element" onclick="toggleClassAndFunctions()">
+            </div>
+        </div>
+
+
+        <!-- Page Navigation -->
+        <!--Icon Heading-->
+        <div class="container-fluid d-none d-md-block AitsLh0  AitsBCQuaternary">
+            <div class="row">
+                <div class="col-lg-4 text-center position-relative border">
+                    <a class="position-absolute top-50 start-50 translate-middle AitsFCSecondary AitsFs2 AitsLh0"
+                       href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=principalbdcollegepatna@gmail.com"
+                       target="_blank"><i class="icon-mail m-1"></i>principalbdcollegepatna@gmail.com</a>
+                </div>
+                <div class="col-lg-4 text-center position-relative border p-0 AitsFs3">
+                        <a href=https://whatsapp.com/channel/0029VaYDBO19cDDcQR49Pv0p target="_blank" class="text-decoration-none mx-3">
+                            <i class="icon-whatsapp nicon AitsFcGreen nicon" title="B.D. College, Patna WhatsApp Chanel"></i>
+                        </a>
+                                            <a href=https://www.facebook.com/share/1DMpgnbTPZ/ target="_blank" class="text-decoration-none mx-3">
+                            <i class="icon-facebook22 nicon AitsFcBlue nicon" title="B.D. College, Patna Facebook Page"></i>
+                        </a>
+                                            <a href=https://x.com/bdcollege?lang=eu target="_blank" class="text-decoration-none mx-3">
+                            <i class="icon-twitter2 AitsFcDark nicon" title="B.D. College, Patna twitter Page"></i>
+                        </a>
+                                            <a href=https://www.instagram.com/p/DNYJdsgIG36/?igsh=OHJiNXQ3emJuNTNt target="_blank" class="text-decoration-none mx-3">
+                            <i class="icon-instagram nicon AitsFcRed nicon" title="B.D. College, Patna Instagram Page"></i>
+                        </a>
+                                            <a href=https://www.linkedin.com/school/b.d.college/?originalSubdomain=in target="_blank" class="text-decoration-none mx-3">
+                            <i class="icon-linkedin2 AitsFcBlue nicon" title="B.D. College, Patna linkeding Page"></i>
+                        </a>
+                                            <a href=https://www.youtube.com/playlist?list=PLTVkwUHponOK7kW1xfCo5oD0o4NbYjqIs target="_blank" class="text-decoration-none mx-3">
+                            <i class="icon-youtube AitsFcRed nicon" title="B.D. College, Patna linkeding Page"></i>
+                        </a>
+                </div>
+                
+                <div class="col-lg-4 text-center position-relative border p-0 AitsFCSecondary AitsFs2 AitsLh0">
+                    <a class="position-absolute top-50 start-50 translate-middle AitsFCSecondary"
+                       href=06122209909>
+                        Call: 06122209909<i class="icon-phone-outline m-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Heading-->
+        <div class="container-fluid AitsbgBlue text-center AitsLh1">
+            <div class="row py-4 justify-content-between align-items-center AitsLh1 AitsFCQuaternary">
+                <div class="col-lg-2 container justify-content-center AitsPhotoContainer AitsLh1 AitsBCQuinary">
+                    <a class="mainLogo " href="/Common/home/index"><img class="imgGrayScale" src="/_Devloper/Img/logo_bdcpat.png"/></a>
+                </div>
+
+                <div class="col-lg-5 text-md-start col-sm-12 text-center AitsFCQuaternary AitsLh1">
+                    <p class="AitsFs9 AitsFw9">B.D. College, Patna</p>
+                    <h6 class="AitsFs3 AitsFw6">A Constituent Unit of Patliputra University, Patna, Bihar (India)</h6>
+                        <h6 class="AitsFs2 AitsFw6">Accredited Grade &quot;B+&quot; by NAAC with CGPA 2.39/4</h6>
+                                                                                                                            <h6>
+                            <a class="AitsFs2 AitsFw6 AitsFCQuaternary text-decoration-none " target="_blank"
+                               href="https://dashboard.aishe.gov.in/hedirectory/#/institutionDirectory/universityDetails/C/ALL">AISHE CODE C-12847</a>
+                        </h6>
+
+                </div>
+                
+                <div class="col-lg-5 col-sm-12 text-end d-none d-md-block AitsFCQuaternary AitsLh1">
+                    <div class="container justify-content-center AitsPhotoContainer AitsLh1 Aitsbgwhite2 AitsBCQuinary d-inline-block">
+                        <a class="mainLogo" href="/Common/home/index"><img class="imgGrayScale" src="/_Devloper/Img/logo_ppupat.png" title="University Logo" /></a>
+                    </div>
+                    <h2 class="AitsFs9 AitsFw9">भुवनेश्वरी दयाल कॉलेज, पटना,बिहार</h2>
+                    <h6 class="AitsFs3 AitsFw6">पाटलिपुत्र विश्वविद्यालय, पटना, बिहार (भारत) की एक घटक इकाई</h6>
+                        <h6 class="AitsFs2 AitsFw6">सीजीपीए 2.39/4 के साथ नैक द्वारा मान्यता प्राप्त ग्रेड &quot;बी&quot;</h6>
+                                                                                
+                </div>
+            </div>
+            <!-- Display in your view -->
+
+            <div class="">
+                <a href="+917903275820" class="AitsFcYellow AitsFs2 AitsFw6 AitsLh1 text-decoration-none">
+                    Admission Enquiry Contact & WhatsApp Number: +917903275820
+                </a>
+            </div>
+        </div>
+
+        <!--Navigation Bar-->
+        <header class="headerr d-print-none AitsLh1">
+            <div class="header-inner">
+                <!--Navigation Bar from Bootstrap 5.3-->
+                <nav class="navbar navbar-expand-lg AitsNavddBg02 AitsFcWhite" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <div class="navddfontColor1 text-md-center d-lg-none d-lg-block">
+                            <a class="navbar-brand hoverable AitsBCQuinary hvr-pulse-shrink" href="/Common/home/index">
+                                <img src="/_Devloper/Img/logo_bdcpat.png" width="40" />
+                            </a>
+                        </div>
+                        <div class="navddfontColor1 text-md-center d-lg-none d-lg-block justify-content-center">
+                            <p class="navddfontColor1 m-0 text-center fontSize5 fontWeight4 FontYelloLightColor">भुवनेश्वरी दयाल कॉलेज, पटना,बिहार</p>
+                        </div>
+                        <button class="navbar-toggler fontSize5 fontWeight4" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse dropdown-center navbar-collapse nav-bg text-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active fontSize5 fontWeight4 lineHeight1 navtextColor" aria-current="page"
+                                       href=/Common/home><i class="navtextColor fa fa-2x fa-home"></i></a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link navtextColor dropdown-toggle  hvr-bob" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown-menu animated fadeIn AitsNavddBg02">
+                                        <li class="nav-item ">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Home/Introduction" onclick="ShowDialog()">Intoduction</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Home/Vision_Mission" onclick="ShowDialog()">Vission &amp; Mission</a>
+                                        </li>
+                                        <li class="nav-item"><a class="dropdown-item navddfontColor1" href="/Common/Home/RuleRegulation" onclick="ShowDialog()">Rules &amp; Regulation</a></li>
+                                        <li class="nav-item"><a href="https://governor.bih.nic.in/document-category/acts-rules-university-laws/" class="dropdown-item navddfontColor1" target="_blank">Acts, Rules & University Laws</a></li>
+                
+
+                                        <li class="nav-item"><a class="dropdown-item navddfontColor1" href="/Common/Home/PrincipalMessage" onclick="ShowDialog()">Principal&#39;s Message</a></li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Home/Magazine" onclick="ShowDialog()">College Magazine</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navtextColor hvr-bob" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        Academic
+                                    </a>
+                                    <ul class="dropdown-menu animated fadeIn AitsNavddBg02">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Home/Holyday" onclick="ShowDialog()">List of Holydays</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/TimeTable" onclick="ShowDialog()">Time Table</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Syllabus" onclick="ShowDialog()">Syllabus</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Home/NDI_MHRD" onclick="ShowDialog()">National Digital Initiatives(MHRD)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navtextColor hvr-bob" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        Administration
+                                    </a>
+                                    <ul class="dropdown-menu animated fadeIn  AitsNavddBg02">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Home/formerPrincipal" onclick="ShowDialog()">Former Principals</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Admin/NonteachingStaff" onclick="ShowDialog()">Administrative Staff</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Employee" onclick="ShowDialog()">Staff List</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/GalleryHome" onclick="ShowDialog()">Photo Gallery</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Media" onclick="ShowDialog()">News &amp; Media</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navtextColor hvr-bob" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        Department
+                                    </a>
+                                    <ul class="dropdown-menu animated fadeIn  AitsNavddBg02">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department" onclick="ShowDialog()">All Department</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/PlacementCell" onclick="ShowDialog()">Placement &amp; Guidance Cell</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Student/Grievance" onclick="ShowDialog()">Students Grievance Redressal</a>
+                                        </li>
+                                        
+
+
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navtextColor hvr-bob" role="button"
+                                       data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Student Zone
+                                    </a>
+                                    <ul class="dropdown-menu animated fadeIn  AitsNavddBg02">
+                                        <li class="nav-item">
+                                            <a href=https://formbuilder.ccavenue.com/live/indian-bank/bd-college class="dropdown-item navddfontColor1"
+                                               target="_blank">Student Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href=https://formbuilder.ccavenue.com/live/indian-bank/bd-college
+                                               target="_blank">Online Fee Payment</a>
+                                        </li>
+                                        <li class="nav-item navddfontColor1">
+                                            <a href="https://admission.ppuponline.in/" class="dropdown-item  navddfontColor1"
+                                               target="_blank">Online Admission (PPU)</a>
+                                        </li>
+                                        <li class="nav-item navddfontColor1">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/reservationPolicy" onclick="ShowDialog()">Reservation Policy</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navtextColor hvr-bob" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        Extension Activity
+                                    </a>
+                                    <ul class="dropdown-menu animated fadeIn  AitsNavddBg02">
+                                        <li class="nav-item">
+                                            
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Student/NSS" onclick="ShowDialog()">NSS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/AboutDepartment/89" onclick="ShowDialog()">NCC</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/AboutDepartment/91" onclick="ShowDialog()">Startup Cell</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/AboutDepartment/108" onclick="ShowDialog()">Vriksha Veda - Eco Club</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/AboutDepartment/109" onclick="ShowDialog()">Debate Club</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/AboutDepartment/106" onclick="ShowDialog()">Dramatics Society</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/AboutDepartment/107" onclick="ShowDialog()">Literary Society</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Department/AboutDepartment/110" onclick="ShowDialog()">Health Center</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item hvr-bounce-in">
+                                    <a class="nav-link navtextColor" href="/Common/IQAC" onclick="ShowDialog()">IQAC &amp; SSR</a>
+                                </li>
+                                <li class="nav-item navtextColor hvr-bounce-in">
+                                    <a class="nav-link navtextColor" href="/Common/Department/NIRF" onclick="ShowDialog()">NIRF</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navtextColor hvr-bob" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        Notice
+                                    </a>
+                                    <ul class="dropdown-menu navDdbg-theme animated fadeIn AitsNavddBg02">
+                                        <li class="nav-item ">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Notice" onclick="ShowDialog()">Notice</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Event" onclick="ShowDialog()">Events</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Tender" onclick="ShowDialog()">Tenders</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navtextColor hvr-bob" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        Feedback
+                                    </a>
+                                    <ul class="dropdown-menu navDdbg-theme animated fadeIn AitsNavddBg02">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Feedback/studentFeedback" onclick="ShowDialog()">Student&#39;s Feedback</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Feedback/teacherFeedback" onclick="ShowDialog()">Teachers&#39; Feedback</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Feedback/parentsFeedback" onclick="ShowDialog()">Parents Feedback</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item navddfontColor1" href="/Common/Feedback/FeedbackStatistics" onclick="ShowDialog()">Statistics of Feedback</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item hvr-bounce-in">
+                                    <a class="nav-link navtextColor" href="/Common/Home/ContactUs" onclick="ShowDialog()">Contact Us</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex collapse text-center hvr-bounce-in">
+<a class="nav-link navtextColor" href="/Common/Account/Login" onclick="ShowDialog()">Login</a>                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <button type="button" class="AitsBtnTop" id="BtnBacktoTopAITS">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <div id="ToastAITS" class="ToastAITS">Settings saved!</div>
+    </body>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+    let mybutton1 = document.getElementById("googleTranslate");
+
+    function toggleClassAndFunctions() {
+        const element = document.getElementById('googleTranslate');
+        element.classList.toggle('active');
+        if (element.classList.contains('active')) {
+            showGT();
+        } else {
+            hideGt();
+        }
+    }
+
+    const elements = document.getElementById('google_translate_element');
+    function showGT() {
+        elements.style.display = "block";
+        elements.style.width = "260px";
+
+    }
+
+    function hideGt() {
+        elements.style.display = "none";
+        elements.style.width = "60px";
+    }
+
+    google_translate_element.addEventListener("change", hideGt);
+    function hideGt() {
+        google_translate_element.style.display = "none";
+        googleTranslate.style.width = "60px";
+    }
+
+    window.onblur = function () {
+        document.getElementById("myDialog").close();
+    }
+
+    function ShowDialog() {
+        document.getElementById("myDialog").showModal();
+    }
+
+    //to google Translate js part
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            { pageLanguage: 'en' },
+            'google_translate_element'
+        );
+    }
+
+    $(function () {
+        var navbar = $('.header-inner');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() <= 365.1) {
+                navbar.removeClass('navbar-scroll');
+            } else {
+                navbar.addClass('navbar-scroll');
+            }
+        });
+    });
+
+</script><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>404 HTML Tempalte by Colorlib</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+
+    <!-- Custom stlylesheet -->
+
+    <style type="text/css">
+        * {
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+        }
+
+        body {
+          padding: 0;
+          margin: 0;
+        }
+
+        #notfound {
+          position: relative;
+          height: 100vh;
+        }
+
+        #notfound .notfound {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+        }
+
+        .notfound {
+          max-width: 410px;
+          width: 100%;
+          text-align: center;
+        }
+
+        .notfound .notfound-404 {
+          height: 280px;
+          position: relative;
+          z-index: -1;
+        }
+
+            .notfound .notfound-404 h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 230px;
+                margin: 0px;
+                font-weight: 900;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                background: url('~/_Devloper/Img/bg.jpg') no-repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: cover;
+                background-position: center;
+            }
+
+
+        .notfound h2 {
+          font-family: 'Montserrat', sans-serif;
+          color: #000;
+          font-size: 24px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-top: 0;
+        }
+
+        .notfound p {
+          font-family: 'Montserrat', sans-serif;
+          color: #000;
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 20px;
+          margin-top: 0px;
+        }
+
+        .notfound a {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          text-decoration: none;
+          text-transform: uppercase;
+          background: #0046d5;
+          display: inline-block;
+          padding: 15px 30px;
+          border-radius: 40px;
+          color: #fff;
+          font-weight: 700;
+          -webkit-box-shadow: 0px 4px 15px -5px #0046d5;
+                  box-shadow: 0px 4px 15px -5px #0046d5;
+        }
+
+
+        @media only screen and (max-width: 767px) {
+            .notfound .notfound-404 {
+              height: 142px;
+            }
+            .notfound .notfound-404 h1 {
+              font-size: 112px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1>Oops!</h1>
+            </div>
+            <h2>404 - Page not found</h2>
+            <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
+            <a href="/home/index">Go To Homepage</a>
+        </div>
+    </div>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+
+<!--Footer-->
+<hr class="m-0 p-0 AitsFCSecondary" />
+<footer class="container-fluid AitsFootBc">
+    <div class="row align-items-baseline py-5">
+        <div class="col-lg-4 text-center AitsFCQuaternary">
+            <h4 class="AitsFw9 text-decoration-underline">Useful Links</h4>
+            <div class="mx-0">
+
+                <a class="AitsNfa FontdarkColor" href="/Common/Home/Introduction">About Us</a> <br />
+                <a class="AitsNfa  FontdarkColor" href="/Common/Home/RuleRegulation">Rules &amp; Regulation</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/Department/reservationPolicy">Reservation Policy</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/Home/formerPrincipal">Former Principals</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/Student/Grievance">Students Grievance Redressal</a> <br />
+
+                <a class="AitsNfa FontdarkColor" href="/Common/MeritList/MeritList">Admission Merit List</a> <br />
+
+                <a href=iqacbdcpatna@gmail.com class="AitsNfa FontdarkColor" target="_blank">
+                    Online Fee Payment
+                </a><br />
+                <a href=https://formbuilder.ccavenue.com/live/indian-bank/bd-college class="AitsNfa FontdarkColor" target="_blank">
+                    Student
+                    Login
+                </a><br />
+
+                <a class="AitsNfa FontdarkColor" href="/Common/IQAC">NAAC</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/IQAC">AQAR</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/IQAC">SSR</a> <br />
+
+
+                <a class="AitsNfa FontdarkColor" href="/Common/Home/NDI_MHRD">National Digital Initiatives (MHRD)</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/Department/PlacementCell">Placement &amp; Guidance Cell</a> <br />
+
+                <a class="AitsNfa FontdarkColor" href="/Common/Home/Holyday">List of Holydays</a> <br />
+
+                <a class="AitsNfa FontdarkColor" href="/Common/Notice">Notice</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/Event">Events</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/Tender">Tenders</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/Syllabus">Syllabus</a> <br />
+
+                <a class="AitsNfa FontdarkColor" href="/Common/Department">Department</a> <br />
+
+                <a class="AitsNfa FontdarkColor" href="/Common/GalleryHome">Photo Gallery</a> <br />
+
+                <a class="AitsNfa FontdarkColor" href="/Common/Student/NSS">NSS</a> <br />
+
+                <a class="AitsNfa FontdarkColor" href="/Common/Home/ContactUs">Contact Us</a> <br />
+                <a class="AitsNfa FontdarkColor" href="/Common/Account/Login">Login</a> <br />
+
+            </div>
+
+
+        </div>
+
+        <div class="col-lg-4 text-center AitsFCQuaternary">
+            <h4 class="AitsFw9 text-decoration-underline">Other Links</h4>
+            <div class="mx-0">
+                <a href="https://ppup.ac.in/" class="AitsNfa FontdarkColor" target="_blank">PPU</a><br />
+                <a href="https://magadhuniversity.ac.in/" class="AitsNfa FontdarkColor"
+                   target="_blank">MU</a><br />
+                <a href="https://governor.bih.nic.in/hi/" class="AitsNfa FontdarkColor" target="_blank">
+                    RAJ BHAWAN
+                    BIHAR
+                </a><br />
+                <a href="https://state.bihar.gov.in/educationbihar/CitizenHome.html" class="AitsNfa FontdarkColor"
+                   target="_blank">EDUCATION DEPARTMENT BIHAR</a><br />
+                <a href="http://rusa.nic.in/" class="AitsNfa FontdarkColor" target="_blank">RUSA</a><br />
+                <a href="http://naac.gov.in/index.php/en/" class="AitsNfa FontdarkColor"
+                   target="_blank">NAAC</a><br />
+                <a href="https://www.csr.res.in/" class="AitsNfa FontdarkColor" target="_blank">UGC-DAE</a><br />
+                <a href="https://dst.gov.in/" class="AitsNfa FontdarkColor" target="_blank">DST</a><br />
+                <a href="https://www.barc.gov.in/" class="AitsNfa FontdarkColor" target="_blank">BARC</a><br />
+                <a href="https://www.csir.res.in/" class="AitsNfa FontdarkColor" target="_blank">CSIR</a><br />
+                <a href="https://nad.gov.in/" class="AitsNfa FontdarkColor" target="_blank">NAD</a><br />
+                <a href="https://www.aicte-india.org/" class="AitsNfa FontdarkColor"
+                   target="_blank">AICTE</a><br />
+                <a href="https://www.isro.gov.in/" class="AitsNfa FontdarkColor" target="_blank">ISRO</a><br />
+                <a href="https://moef.gov.in/moef/index.html" class="AitsNfa FontdarkColor" target="_blank">
+                    MOEF &
+                    CC
+                </a><br />
+                <a href="https://swayam.gov.in/" class="AitsNfa FontdarkColor" target="_blank">SWAYAM</a><br />
+                <a href="https://swayamprabha.gov.in/" class="AitsNfa FontdarkColor"
+                   target="_blank">SWAYAMPRABHA</a><br />
+                <a href="https://ndl.iitkgp.ac.in/" class="AitsNfa FontdarkColor" target="_blank">
+                    NATIONAL DIGITAL
+                    LIBRARY
+                </a><br />
+                <a href="https://ipindia.gov.in/index.htm" class="AitsNfa FontdarkColor"
+                   target="_blank">NIPAM</a><br />
+                <a href="https://nlist.inflibnet.ac.in/" class="AitsNfa FontdarkColor"
+                   target="_blank">N-LIST</a><br />
+                <a href="https://epgp.inflibnet.ac.in/" class="AitsNfa FontdarkColor" target="_blank">
+                    e-PG
+                    PATHSHALA
+                </a><br />
+                <a href="https://www.vlab.co.in/" class="AitsNfa FontdarkColor" target="_blank">
+                    VIRTUAL
+                    LABS
+                </a><br />
+                <a href="https://ncert.nic.in/textbook.php" class="AitsNfa FontdarkColor" target="_blank">
+                    TEXT
+                    BOOK
+                </a><br />
+                <a href="https://indianculture.gov.in/" class="AitsNfa FontdarkColor" target="_blank">
+                    INDIAN
+                    CULTURE
+                </a><br />
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 text-center AitsFCQuaternary">
+            <div class="row text-center">
+                <h4 class="AitsFw9 AitsFw9 text-decoration-underline">Contact Us</h4>
+                <div class="col-lg-12 text-center">
+                    <a href="/Common/Home/Index" class="AitsNiconf text-center">
+                        <img src="/_Devloper/Img/logo_bdcpat.png" height="50" class="AitsBCQuinary AitsimgGS00" />
+                    </a>
+                </div>
+
+                <p class="AitsNfa  ">B.D. College, Patna</p>
+                <hr class="AitsNfa AitsFCQuaternary" />
+                <p class="AitsNfa AitsFw5 ">A Constituent Unit of Patliputra University, Patna, Bihar (India)</p>
+                <hr class="AitsNfa AitsFCQuaternary" />
+
+                <div class="text-center col-lg-12">
+                    <a href="/Common/Home/GoogleMap"
+                       class="AitsNiconf icon-location4 h3 text-decoration-none fw-bold FontdarkColor">
+                    </a>
+                </div>
+
+                <p>
+
+                    B.D. College, Patna, <br /> Near Gauriamath, Mithapur, Patna,, <br />
+                    Post-GPO, Bihar India 800001
+                    <br /><a class="FontdarkColor text-decoration-none" target="_blank"
+                             href="https://dashboard.aishe.gov.in/hedirectory/#/institutionDirectory/universityDetails/C/ALL">
+                        AISHE CODE C-12847
+                    </a>
+                </p>
+                <div class="col-sm-12 text-center">
+                    <div class="AitsNiconf">
+                        <a href=https://whatsapp.com/channel/0029VaYDBO19cDDcQR49Pv0p target="_blank">
+                            <i class="icon-whatsapp h4 fw-bold AitsFcGreen shadow rounded-4"
+                               title="B.D. College, Patna, WhatsApp Chanel"></i>
+                        </a>
+                    </div>
+
+                    <div class="AitsNiconf">
+                        <a href=https://www.facebook.com/share/1DMpgnbTPZ/ target="_blank">
+                            <i class="icon-facebook22 h4 fw-bold AitsFcBlue AitsBCQuinary shadow rounded-2"
+                               title="B.D. College, Patna, Facebook Page"></i>
+                        </a>
+                    </div>
+
+                    <div class="AitsNiconf">
+                        <a href=https://www.youtube.com/playlist?list=PLTVkwUHponOK7kW1xfCo5oD0o4NbYjqIs target="_blank">
+                            <i class="fab fa-youtube-square h4 fw-bold AitsFcRed " title="B.D. College, Patna, Instagram Page"></i>
+                        </a><br />
+                    </div>
+
+                    <div class="AitsNiconf">
+                        <a href=https://x.com/bdcollege?lang=eu target="_blank">
+                            <i class="icon-social-twitter h4 fw-bold AitsFcDark AitsBCQuinary shadow rounded-1 bg-white"
+                               title="B.D. College, Patna, twitter Page"></i>
+                        </a>
+                    </div>
+
+                    <div class="AitsNiconf">
+                        <a href=https://www.linkedin.com/school/b.d.college/?originalSubdomain=in target="_blank">
+                            <i class="icon-dribbble2 h4 fw-bold AitsFcBlue AitsBCQuinary shadow rounded-4"
+                               title="B.D. College, Patna, linkeding Page"></i>
+                        </a>
+                    </div>
+
+                    <div class="AitsNiconf">
+                        <a href=https://www.instagram.com/p/DNYJdsgIG36/?igsh=OHJiNXQ3emJuNTNt target="_blank">
+                            <i class="icon-instagram h4 fw-bold AitsFcRed shadow rounded-3"
+                               title="B.D. College, Patna, Instagram Page"></i>
+                        </a><br />
+                    </div>
+
+
+                </div>
+                <br />
+                <a class="FontdarkColor text-decoration-none" target="_blank" href="tel:06122209909">
+                    <i class="icon-phone h4 fw-bold p-0 m-0">
+                    </i> Call:
+                    06122209909
+                </a><br />
+                <a class="FontdarkColor text-decoration-none" target="_blank"
+                   href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=principalbdcollegepatna@gmail.com">
+                    <i class="icon-mail h4 fw-bold p-0 m-0">
+                    </i>
+                    principalbdcollegepatna@gmail.com
+                </a>
+                <!-- hitwebcounter Code START -->
+                <p class="m-0 p-0">Number of visitors to this site</p>
+
+
+                <div class="m-0 p-0 FontdarkColor animated pulse infinite">
+                    
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=21408690&amp;style=0016&amp;nbdigits=8&amp;type=page&amp;initCount=0"
+                         title="A N COLLEGE Counter Widget" Alt="A N COLLEGE, Visit counter For Websites"
+                         border="0" class="AitsimgGS00" />
+                </div>
+                <div id="sessionTimer"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row align-content-between AitsbgGrdBlack AitsFCQuaternary">
+        <div class="col-lg-12 lh-1 p-3 text-center">
+
+            <p class="fw-bold m-0">
+                Copyright &copy; 2025 - 2026 B.D. College, Patna, All Right Reserved.
+            </p>
+            <p class="fw-bolder text-wrap m-0">
+                
+            </p>
+            <p class="text-wrap m-0">
+                If any queries and problems related to the website are issued please share screenshots on our
+                mail
+                <a class="text-wrap  navtextcolor text-decoration-none1"
+                   href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=iqacbdcpatna@gmail.com" target="_blank">iqacbdcpatna@gmail.com</a>
+                and ask.
+            </p>
+        </div>
+    </div>
+
+</footer>
+<dialog id="myDialog" class="position-fixed top-50 start-50 translate-middle bg-transparent text-center"
+        style="border:none;width:100vw;height:100vh">
+    <div class="position-absolute top-50 start-50 translate-middle loaderSpinner7" style="zoom:2">
+    </div>
+</dialog>
+
+
+
+    
+
+    <script src="/bundles/jquery?v=xJ9-2VZcKMuoKd_FFScwQlPeK52x6-n71X71lr6ua4I1"></script>
+
+
+
+    <script src="/Scripts/bootstrap.bundle.min.js"></script>
+    <script language="javascript" type="text/javascript">
+ 
+        //document.addEventListener('contextmenu', (e) => {
+        //    e.preventDefault();
+        //    // Optional: Show a message to the user
+        //    // alert("Right-click menu has been disabled.");
+        //});
+        //document.addEventListener('keydown', (e) => {
+        //    // Block F12
+        //    if (e.key === 'F12' || e.keyCode === 123) {
+        //        e.preventDefault();
+        //        return false;
+        //    }
+        //    // Block Ctrl+Shift+I (Windows) or Cmd+Opt+I (Mac)
+        //    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+        //        e.preventDefault();
+        //        return false;
+        //    }
+        //    // Block Ctrl+U (Windows) or Cmd+U (Mac) for viewing source
+        //    if (e.ctrlKey && e.key === 'u') {
+        //        e.preventDefault();
+        //        return false;
+        //    }
+        //    // You can add other combinations like Ctrl+Shift+J (open console)
+        //});
+     
+        
+
+    </script>
+
+    <!--to dynamic change web site METHOD 1-->
+    <script>
+        ////DOM Elements
+        //const settingsButton = document.getElementById('SettingsButton-AITS');
+        //const settingsMenu = document.getElementById('SettingsMenu-AITS');
+        //const closeButton = document.getElementById('CloseButton-AITS');
+        //const overlay = document.getElementById('overlay');
+
+        //const fontFamilySelect = document.getElementById('font-family');
+        //const fontSizeSlider = document.getElementById('font-size');
+        //const fontSizeValue = document.getElementById('font-size-value');
+        //const fontWeightSelect = document.getElementById('font-weight');
+        //const lineHeightSlider = document.getElementById('line-height');
+        //const lineHeightValue = document.getElementById('line-height-value');
+        //const resetBtn = document.getElementById('reset-btn');
+        //const saveBtn = document.getElementById('save-btn');
+        //const presetButtons = document.querySelectorAll('.Preset-btn-AITS');
+        //const toast = document.getElementById('toast');
+        //const darkBtn = document.getElementById('dark-mode-toggle');
+        //const darkBtnStyle = document.getElementById('darkModeMoon');
+
+        //// Toggle settings menu
+        //function toggleSettingsMenu() {
+        //    settingsMenu.classList.toggle('active');
+        //    overlay.classList.toggle('active');
+
+        //     //Add a slight rotation to the cog icon when opening
+        //    if (settingsMenu.classList.contains('active')) {
+        //        settingsButton.style.transform = 'rotate(30deg) scale(1.1)';
+        //    } else {
+        //        settingsButton.style.transform = 'rotate(0) scale(1)';
+        //    }
+        //}
+        //// Close settings menu
+        //function closeSettingsMenu() {
+        //    settingsMenu.classList.remove('active');
+        //    overlay.classList.remove('active');
+        //    settingsButton.style.transform = 'rotate(0) scale(1)';
+        //}
+        //// Event Listeners
+        //settingsButton.addEventListener('click', toggleSettingsMenu);
+        //closeButton.addEventListener('click', closeSettingsMenu);
+        //overlay.addEventListener('click', closeSettingsMenu);
+
+        //// Default values
+        //const DEFAULT_SETTINGS = {
+        //    fontFamily: "'Inter', sans-serif",
+        //    fontSize: 16,
+        //    fontWeight: 400,
+        //    lineHeight: 1.6
+        //};
+
+        //// Initialize settings from localStorage or use defaults
+        //let currentSettings = JSON.parse(localStorage.getItem('fontPreferences')) || DEFAULT_SETTINGS;
+
+        //// Apply saved settings on page load
+        //document.addEventListener('DOMContentLoaded', () => {
+        //    applySettings(currentSettings);
+        //    updateControlValues(currentSettings);
+        //    updatePreview();
+        //});
+
+        //// Apply font settings to the page
+        //function applySettings(settings) {
+        //    const root = document.documentElement;
+
+        //    root.style.setProperty('--primary-font', settings.fontFamily);
+        //    root.style.setProperty('--font-size', `${settings.fontSize}px`);
+        //    root.style.setProperty('--font-weight', settings.fontWeight);
+        //    root.style.setProperty('--line-height', settings.lineHeight);
+
+        //     //Also apply to body for immediate effect
+        //    document.body.style.fontFamily = settings.fontFamily;
+        //    document.body.style.fontSize = `${settings.fontSize}px`;
+        //    document.body.style.fontWeight = settings.fontWeight;
+        //    document.body.style.lineHeight = settings.lineHeight;
+        //}
+
+        //// Update control values to match settings
+        //function updateControlValues(settings) {
+        //    fontFamilySelect.value = settings.fontFamily;
+        //    fontSizeSlider.value = settings.fontSize;
+        //    fontSizeValue.textContent = `${settings.fontSize}px`;
+        //    fontWeightSelect.value = settings.fontWeight;
+        //    lineHeightSlider.value = settings.lineHeight;
+        //    lineHeightValue.textContent = settings.lineHeight;
+        //}
+
+        //// Update the preview box
+        //function updatePreview() {
+        //    const previewBox = document.querySelector('.Preview-box-AITS');
+        //    if (previewBox) {
+        //        previewBox.style.fontFamily = currentSettings.fontFamily;
+        //        previewBox.style.fontSize = `${currentSettings.fontSize}px`;
+        //        previewBox.style.fontWeight = currentSettings.fontWeight;
+        //        previewBox.style.lineHeight = currentSettings.lineHeight;
+        //    }
+        //}
+
+        //// Font Family Change
+        //fontFamilySelect.addEventListener('change', (e) => {
+        //    currentSettings.fontFamily = e.target.value;
+        //    applySettings(currentSettings);
+        //    updatePreview();
+        //});
+
+        //// Font Size Change
+        //fontSizeSlider.addEventListener('input', (e) => {
+        //    const size = e.target.value;
+        //    currentSettings.fontSize = size;
+        //    fontSizeValue.textContent = `${size}px`;
+        //    applySettings(currentSettings);
+        //    updatePreview();
+        //});
+
+        //// Font Weight Change
+        //fontWeightSelect.addEventListener('change', (e) => {
+        //    currentSettings.fontWeight = e.target.value;
+        //    applySettings(currentSettings);
+        //    updatePreview();
+        //});
+
+        //// Line Height Change
+        //lineHeightSlider.addEventListener('input', (e) => {
+        //    const height = e.target.value;
+        //    currentSettings.lineHeight = height;
+        //    lineHeightValue.textContent = height;
+        //    applySettings(currentSettings);
+        //    updatePreview();
+        //});
+
+        //// Reset to Default
+        //resetBtn.addEventListener('click', () => {
+        //    currentSettings = { ...DEFAULT_SETTINGS };
+        //    applySettings(currentSettings);
+        //    updateControlValues(currentSettings);
+        //    updatePreview();
+        //    showToast('Reset to default settings');
+        //});
+
+        //// Save Preferences
+        //saveBtn.addEventListener('click', () => {
+        //    localStorage.setItem('fontPreferences', JSON.stringify(currentSettings));
+        //    showToast('Preferences saved! They will be remembered next time.');
+        //});
+
+        //// Preset Buttons
+        //presetButtons.forEach(button => {
+        //    button.addEventListener('click', () => {
+        //        const font = button.getAttribute('data-font');
+        //        const size = button.getAttribute('data-size');
+        //        const weight = button.getAttribute('data-weight');
+
+        //        currentSettings = {
+        //            fontFamily: font,
+        //            fontSize: parseInt(size),
+        //            fontWeight: parseInt(weight),
+        //            lineHeight: 1.6
+        //        };
+
+        //        applySettings(currentSettings);
+        //        updateControlValues(currentSettings);
+        //        updatePreview();
+        //        showToast(`Applied "${button.textContent}" preset`);
+        //    });
+        //});
+
+        //// Toast Notification
+        //function showToast(message) {
+        //    toast.textContent = message;
+        //    toast.classList.add('show');
+
+        //    setTimeout(() => {
+        //        toast.classList.remove('show');
+        //    }, 3000);
+        //}
+
+        //// Additional Features
+
+        //// 1. Keyboard Shortcuts
+        //document.addEventListener('keydown', (e) => {
+        //     //Ctrl + Alt + F: Focus font selector
+        //    if (e.ctrlKey && e.altKey && e.key === 'f') {
+        //        e.preventDefault();
+        //        fontFamilySelect.focus();
+        //    }
+
+        //     Ctrl + Alt + R: Reset
+        //    if (e.ctrlKey && e.altKey && e.key === 'r') {
+        //        e.preventDefault();
+        //        resetBtn.click();
+        //    }
+        //});
+
+        //// 2. Detect System Preferences
+        //function detectSystemPreferences() {
+        //     //Check for prefers-reduced-motion
+        //    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        //    if (prefersReducedMotion.matches) {
+        //        document.body.style.transition = 'none';
+        //    }
+
+        //     //Check for dark mode preference
+        //    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+
+        //    if (prefersDarkMode.matches) {
+        //        document.documentElement.style.setProperty('--bg-color', '#1a1a1a');
+        //        document.documentElement.style.setProperty('--textColor', '#ffffff');
+        //    }
+        //}
+
+        //// 3. Export/Import Settings
+        //function exportSettings() {
+        //    const settingsStr = JSON.stringify(currentSettings, null, 2);
+        //    const blob = new Blob([settingsStr], { type: 'application/json' });
+        //    const url = URL.createObjectURL(blob);
+
+        //    const a = document.createElement('a');
+        //    a.href = url;
+        //    a.download = 'font-preferences.json';
+        //    document.body.appendChild(a);
+        //    a.click();
+        //    document.body.removeChild(a);
+        //    URL.revokeObjectURL(url);
+        //}
+
+        //function importSettings(event) {
+        //    const file = event.target.files[0];
+        //    const reader = new FileReader();
+
+        //    reader.onload = function (e) {
+        //        try {
+        //            const importedSettings = JSON.parse(e.target.result);
+        //            currentSettings = { ...currentSettings, ...importedSettings };
+        //            applySettings(currentSettings);
+        //            updateControlValues(currentSettings);
+        //            updatePreview();
+        //            showToast('Settings imported successfully');
+        //        } catch (error) {
+        //            showToast('Error importing settings');
+        //        }
+        //    };
+
+        //    reader.readAsText(file);
+        //}
+
+        //// Add export/import buttons (optional)
+        //function addExportImportButtons() {
+        //    const buttonGroup = document.querySelector('.Button-group-AITS');
+
+        //    const exportBtn = document.createElement('button');
+        //    exportBtn.className = 'btn btn-secondary';
+        //    exportBtn.textContent = 'Export Settings';
+        //    exportBtn.onclick = exportSettings;
+
+        //    const importBtn = document.createElement('button');
+        //    importBtn.className = 'btn btn-secondary';
+        //    importBtn.textContent = 'Import Settings';
+
+        //    const fileInput = document.createElement('input');
+        //    fileInput.type = 'file';
+        //    fileInput.accept = '.json';
+        //    fileInput.style.display = 'none';
+        //    fileInput.onchange = importSettings;
+
+        //    importBtn.onclick = () => fileInput.click();
+
+        //    buttonGroup.appendChild(exportBtn);
+        //    buttonGroup.appendChild(importBtn);
+        //    document.body.appendChild(fileInput);
+        //}
+
+        //// Initialize additional features
+        //detectSystemPreferences();
+        //// Uncomment to add export/import functionality:
+        // addExportImportButtons();
+
+        // //4. Auto-save after changes
+        //let saveTimeout;
+        //const inputs = [fontFamilySelect, fontSizeSlider, fontWeightSelect, lineHeightSlider];
+
+        //inputs.forEach(input => {
+        //    input.addEventListener('change', () => {
+        //        clearTimeout(saveTimeout);
+        //        saveTimeout = setTimeout(() => {
+        //            localStorage.setItem('fontPreferences', JSON.stringify(currentSettings));
+        //        }, 1000);
+        //    });
+        //});
+
+        // //Add size toggle buttons
+        //document.querySelectorAll('.Size-btn-AITS').forEach(btn => {
+        //    btn.addEventListener('click', (e) => {
+        //        const action = e.target.getAttribute('data-action');
+
+        //        switch (action) {
+        //            case 'increase':
+        //                currentSettings.fontSize = Math.min(24, currentSettings.fontSize + 1);
+        //                break;
+        //            case 'decrease':
+        //                currentSettings.fontSize = Math.max(12, currentSettings.fontSize - 1);
+        //                break;
+        //            case 'reset':
+        //                currentSettings.fontSize = DEFAULT_SETTINGS.fontSize;
+        //                break;
+        //        }
+
+        //        applySettings(currentSettings);
+        //        updateControlValues(currentSettings);
+        //        updatePreview();
+        //    });
+        //});
+        // //Dark Mode Toggle
+        // //Add to JavaScript:
+        //const darkModeToggle = document.getElementById('dark-mode-toggle');
+        //let isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+        //if (isDarkMode) {
+        //    document.body.classList.add('dark-mode');
+        //}
+
+
+        //darkModeToggle.addEventListener('click', () => {
+        //    isDarkMode = !isDarkMode;
+        //    document.body.classList.toggle('dark-mode', isDarkMode);
+        //    localStorage.setItem('darkMode', isDarkMode);
+        //    if (darkBtn.textContent.trim() == 'Dark Mode 🌙') {
+        //        darkBtn.textContent = 'Light Mode ☀️';
+        //    }
+        //    else {
+        //        darkBtn.textContent = 'Dark Mode 🌙';
+        //    }
+        //});
+
+
+    </script>
+    <!--  <!--to dynamic change web site METHOD 1-->
+
+   
+
+</body="">
+</html>
