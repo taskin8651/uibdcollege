@@ -204,7 +204,20 @@ textarea {
 }
 
 .mobile-admission-btn {
-  display: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-height: 40px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: var(--red);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.15;
+  text-align: center;
+  animation: admission-blink 1.2s ease-in-out infinite;
 }
 
 @keyframes admission-blink {
@@ -2261,20 +2274,9 @@ h3 {
   }
 
   .mobile-admission-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
     min-height: 38px;
     padding: 7px 11px;
-    border-radius: 8px;
-    background: var(--red);
-    color: #fff;
     font-size: 12px;
-    font-weight: 900;
-    line-height: 1.15;
-    text-align: center;
-    animation: admission-blink 1.2s ease-in-out infinite;
   }
 
   .hero h1 {
