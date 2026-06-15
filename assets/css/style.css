@@ -203,6 +203,21 @@ textarea {
   font-size: 22px;
 }
 
+.mobile-admission-btn {
+  display: none;
+}
+
+@keyframes admission-blink {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(180, 35, 24, 0.45);
+  }
+  50% {
+    opacity: 0.65;
+    box-shadow: 0 0 0 7px rgba(180, 35, 24, 0);
+  }
+}
+
 /* Main navigation: sticky menu with desktop dropdowns */
 .main-nav {
   position: sticky;
@@ -2205,6 +2220,10 @@ h3 {
     width: min(100% - 24px, var(--shell));
   }
 
+  .masthead-inner {
+    gap: 10px;
+  }
+
   .topbar-inner,
   .topbar-left,
   .topbar-right,
@@ -2222,16 +2241,40 @@ h3 {
   }
 
   .brand {
+    flex: 1;
     min-width: 0;
+    gap: 10px;
   }
 
   .brand img {
-    width: 54px;
-    height: 54px;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  .brand strong {
+    font-size: clamp(16px, 4.5vw, 20px);
   }
 
   .brand small {
-    font-size: 13px;
+    font-size: 11px;
+  }
+
+  .mobile-admission-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-height: 38px;
+    padding: 7px 11px;
+    border-radius: 8px;
+    background: var(--red);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.15;
+    text-align: center;
+    animation: admission-blink 1.2s ease-in-out infinite;
   }
 
   .hero h1 {
@@ -2371,6 +2414,15 @@ h3 {
 
 /* Very small phones: keep hero statistic cards compact and readable */
 @media (max-width: 380px) {
+  .masthead-inner {
+    gap: 8px;
+  }
+
+  .mobile-admission-btn {
+    padding: 6px 8px;
+    font-size: 10.5px;
+  }
+
   .hero-metrics {
     gap: 6px;
   }
