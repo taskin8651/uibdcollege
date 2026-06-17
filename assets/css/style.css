@@ -381,6 +381,14 @@ textarea {
   animation: ticker 30s linear infinite;
 }
 
+.ticker .ticker-download {
+  color: inherit;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
 .alert-inner a {
   color: var(--blue);
   font-size: 13px;
